@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import intro from "../../assets/intro.png";
 import react from "../../assets/react-logo.png";
 import tailwind from "../../assets/tailwind-logo.png";
@@ -11,24 +12,52 @@ export function Intro(props: IIntroProps) {
   const technologies = [react, typescript, tailwind, web3];
   return (
     <div className="relative w-full h-screen flex items-center">
-      <img src={intro} alt="intro" className="absolute top-0 left-0 sm:left-[60%] -z-10" />
+      <img
+        src={intro}
+        alt="intro"
+        className="absolute top-0 left-0 sm:left-[60%] -z-10"
+      />
       <div
         id="main"
-        className="grid grid-cols-[20px_1fr] w-full gap-4 md:gap-11 items-end h-max p-4"
+        className="grid grid-cols-[20px_1fr] w-full gap-4 md:gap-11 items-end h-max"
       >
         <div id="line" className="w-5 flex flex-col items-center h-full">
           <div className="w-3 h-3 rounded-full bg-transparent border-2 border-white opacity-30" />
-          <div className="w-[3px] rounded-lg flex-1 bg-transparent-to-purple" />
-          <div className="w-6 h-6 relative flex items-center justify-center before:absolute before:rounded-full before:w-full before:h-full before:bg-[#7C72FF] before:blur-[8px]">
-            <CodeIcon />
+          <div className="flex-1">
+            {" "}
+            <motion.div
+              whileInView={{ height: "100%" }}
+              initial={{ height: 0 }}
+              transition={{ duration: 0.5 }}
+              className="w-[3px] rounded-lg bg-transparent-to-purple"
+            ></motion.div>
           </div>
-          <div className="w-[3px] rounded-lg flex-1 bg-purple-to-green" />
+
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="w-6 h-6 relative flex items-center justify-center"
+          >
+            <div className="absolute w-full h-full rounded-full bg-[#7C72FF] blur-[8px]" />
+            <CodeIcon />
+          </motion.div>
+          <div className="flex-1">
+            <motion.div
+              whileInView={{ height: "100%" }}
+              initial={{ height: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              className="w-[3px] rounded-lg flex-1 bg-purple-to-green"
+            />
+          </div>
         </div>
         <div
           id="content"
           className="flex flex-col items-start justify-start max-w-2xl"
         >
-          <span className="text-white text-6xl md:text-8xl font-bold text-left">Hello, I’m Nhi</span>
+          <span className="text-white text-6xl md:text-8xl font-bold text-left">
+            Hello, I’m Nhi
+          </span>
           <span className="text-[#848D97] text-xl md:text-2xl font-normal text-left mt-8">
             I’m a front-end developer based in Vietnam. I code beautifully
             simple things, and I love what I do
