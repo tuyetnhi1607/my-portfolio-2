@@ -49,12 +49,11 @@ const computePosition = (
     z: (size * Math.cos(phi)) / 2,
   };
 };
-function CreateTag(idx: number, image: string, size: number) {
+function CreateTag(idx: number, size: number) {
   const tagRef = useRef<HTMLDivElement | null>(null);
 
   return {
     idx: idx,
-    image: image,
     opacity: 0,
     filter: "alpha(opacity=0)",
     transform: "translate3d(-50%, -50%, 0) scale(1)",
@@ -68,7 +67,6 @@ interface ItemProps {
   opacity: number;
   filter: string;
   idx: number;
-  image: string;
   x: number;
   y: number;
   z: number;
@@ -77,8 +75,8 @@ interface ItemProps {
 }
 
 const createInitialState = (size: number) => {
-  return cloudImages.map((image, i) => {
-    return CreateTag(i, image, size);
+  return cloudImages.map((_, i) => {
+    return CreateTag(i, size);
   });
 };
 
