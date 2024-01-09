@@ -2238,6 +2238,13 @@
     "@types/mime" "*"
     "@types/node" "*"
 
+"@types/simple-icons@^5.21.1":
+  version "5.21.1"
+  resolved "https://registry.yarnpkg.com/@types/simple-icons/-/simple-icons-5.21.1.tgz#d80b05d50312f841b0bf77d7e3b005fb5ed52091"
+  integrity sha512-exnKcr2DxKe0UsGIjvw/hv88OAWkxwPped5iq7YlgC9flaxAJHHvsjmq45Sr7FYjjyrwJI8VFh85xzY6k+L5WQ==
+  dependencies:
+    simple-icons "*"
+
 "@types/sockjs@^0.3.33":
   version "0.3.36"
   resolved "https://registry.yarnpkg.com/@types/sockjs/-/sockjs-0.3.36.tgz#ce322cf07bcc119d4cbf7f88954f3a3bd0f67535"
@@ -8469,6 +8476,11 @@ signal-exit@^4.0.1:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-4.1.0.tgz#952188c1cbd546070e2dd20d0f41c0ae0530cb04"
   integrity sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==
+
+simple-icons@*:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-11.0.0.tgz#ffa7a2ca4a42ea4ccac62ae1a2f5321fe8bffd96"
+  integrity sha512-n6z6fQwODmhRfy4RBkNmnP67yzqGUa/0ETJDkMX8Fl2riLSl1O8nB3qAl5Ij0oyEwgYC0WbMLXn1dkyYSTDs1w==
 
 sisteransi@^1.0.5:
   version "1.0.5"

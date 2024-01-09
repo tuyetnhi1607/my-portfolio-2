@@ -19,6 +19,13 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 10s linear infinite",
+        "spin-rotateY": "spinRotateY 10s linear infinite",
+      },
+      keyframes: {
+        spinRotateY: {
+          "0%": { transform: "rotateY(0deg)" },
+          "100%": { transform: "rotateY(360deg)" },
+        },
       },
     },
   },
