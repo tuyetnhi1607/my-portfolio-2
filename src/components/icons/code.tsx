@@ -2,7 +2,7 @@ export interface ICodeIconProps {
   className?: string;
 }
 
-export function CodeIcon({ className }: ICodeIconProps) {
+export function CodeIcon({ className = "" }: ICodeIconProps) {
   return (
     <svg
       width="25"
