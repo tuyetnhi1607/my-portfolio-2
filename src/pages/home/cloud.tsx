@@ -14,6 +14,8 @@ import figma from "../../assets/logo/figma.png";
 import framer from "../../assets/logo/framer.png";
 import nextjs from "../../assets/logo/nextjs.png";
 import material from "../../assets/logo/material.png";
+import axios from "../../assets/logo/axios.png";
+
 export interface ICloudIconProps {}
 
 const cloudImages = [
@@ -32,6 +34,7 @@ const cloudImages = [
   figma,
   nextjs,
   material,
+  axios,
 ];
 const computePosition = (
   idx: number,
