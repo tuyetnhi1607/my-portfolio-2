@@ -193,7 +193,6 @@ export function CloudIcon(props: ICloudIconProps) {
               opacity: item.opacity,
               filter: item.filter,
               transform: item.transform,
-              // mixBlendMode: "lighten",
             }}
           >
             <img src={cloudImages[i]} alt="" />
