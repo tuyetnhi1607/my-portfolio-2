@@ -16,7 +16,7 @@ export function Project(props: IProjectProps) {
   const { rotateX, rotateY, mouseX, mouseY } = useMouseMove(ref);
 
   return (
-    <div className="relative w-full my-[5rem] md:my-[20rem] flex h-max">
+    <div className="relative w-full my-[5rem] md:my-[15rem] flex h-max">
       <div className="grid grid-cols-[20px_1fr] w-full gap-4 md:gap-11 items-end h-full">
         <div
           id="line"

@@ -16,6 +16,8 @@ module.exports = {
       "transparent-to-pink":
         "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #F778BA 30%)",
       "purple-to-orange": "linear-gradient(-250deg, #5e16ef 0%, #e66d2c 100%)",
+      "footer-gradient":
+        "linear-gradient(180deg, #0D1117 0%, rgba(0, 0, 0, 0) 50%, #0D1117 100%), linear-gradient(90deg, #0D1117 0%, rgba(0, 0, 0, 0) 50%, #0D1117 100%)",
     },
 
     extend: {
@@ -25,11 +27,17 @@ module.exports = {
       animation: {
         "spin-slow": "spin 10s linear infinite",
         "spin-rotateY": "spinRotateY 10s linear infinite",
+        "home-footer-float": "home-footer-float 5s linear infinite alternate",
       },
       keyframes: {
         spinRotateY: {
           "0%": { transform: "rotateY(0deg)" },
           "100%": { transform: "rotateY(360deg)" },
+        },
+        "home-footer-float": {
+          "0%": {
+            transform: "rotate(10deg) translateY(-10%) scale(1.02)",
+          },
         },
       },
     },

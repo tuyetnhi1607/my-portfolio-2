@@ -18,7 +18,7 @@ export function Kirby (props: IKirbyProps) {
   , []);
   return (
     <div
-      className="kirby"
+      className="kirby z-[1000]"
       style={{
         top: positionY,
         transition: "top 1s ease-in-out",
