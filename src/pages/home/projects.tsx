@@ -159,7 +159,7 @@ export function Project(props: IProjectProps) {
               </div>
               <div className="flex items-center">
                 <CommitIcon className="w-5 h-5 mr-2" />
-                <span className="text-white">update</span>
+                <span className="text-white">196f339 update</span>
               </div>
             </div>
           </motion.div>
