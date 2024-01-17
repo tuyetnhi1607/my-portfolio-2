@@ -5,6 +5,7 @@ import tailwind from "../../assets/tailwind-logo.png";
 import typescript from "../../assets/typescript_logo.png";
 import web3 from "../../assets/web3_logo.png";
 import { CodeIcon } from "../../components/icons";
+import { NextjsLogo } from "../../components/icons/nextjs-logo";
 
 export interface IIntroProps {}
 
@@ -78,7 +79,7 @@ export function Intro(props: IIntroProps) {
           <div className=" md:hidden w-full h-[1px] bg-[#30363D] my-4" />
           <div className="flex flex-col items-start justify-start md:my-24">
             <span className="text-[#848D97] text-lg md:text-xl font-normal text-left">
-              Technologies I use regularly
+              The technologies I'm using
             </span>
             <div className="flex flex-wrap gap-8 mt-7">
               {technologies.map((technology, index) => (
@@ -93,6 +94,7 @@ export function Intro(props: IIntroProps) {
                   />
                 </div>
               ))}
+              <NextjsLogo className="h-12 w-12" />
             </div>
           </div>
         </div>
