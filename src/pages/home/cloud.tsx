@@ -165,7 +165,7 @@ export function CloudIcon(props: ICloudIconProps) {
   return (
     <div
       ref={tagCloudRef}
-      className="tag-cloud flex items-center justify-center mt-[20rem] mx-auto"
+      className="tag-cloud flex items-center justify-center mx-auto"
       onMouseMove={(ev) => {
         if (tagCloudRef?.current) {
           const rect = tagCloudRef.current.getBoundingClientRect();

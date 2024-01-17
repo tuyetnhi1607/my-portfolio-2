@@ -2,6 +2,7 @@ import { Kirby } from "../../components/atoms/kirby";
 import { CloudIcon } from "./cloud";
 import { Intro } from "./intro";
 import { Milestone2 } from "./milestone2";
+import { Project } from "./projects";
 import { Roadmap } from "./roadmap";
 
 export interface IHomeProps {}
@@ -12,7 +13,8 @@ export function Home(props: IHomeProps) {
       <Intro />
       <Roadmap />
       <Milestone2 />
-      <CloudIcon />
+      <Project />
+      {/* <CloudIcon /> */}
       <Kirby />
     </div>
   );

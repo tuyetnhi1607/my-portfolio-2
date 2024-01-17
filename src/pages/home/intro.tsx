@@ -66,7 +66,12 @@ export function Intro(props: IIntroProps) {
             <div className="h-12  p-4 bg-white rounded-md md:rounded-tr-none md:rounded-br-none  flex items-center text-[#6E7781]">
               dinhtuyetnhi1607@gmail.com
             </div>
-            <div className="h-12 p-4 bg-[#6E40C9] rounded-md md:rounded-tl-none md:rounded-bl-none text-white flex items-center">
+            <div
+              className="h-12 p-4 bg-[#6E40C9] rounded-md md:rounded-tl-none md:rounded-bl-none text-white flex items-center cursor-pointer"
+              onClick={() => {
+                window.open("mailto:dinhtuyetnhi1607@gmail.com");
+              }}
+            >
               Contact me by Email
             </div>
           </div>

@@ -1,42 +1,16 @@
 import { motion } from "framer-motion";
-import React, { useEffect } from "react";
+import React from "react";
 import connect_wallet from "../../assets/connect-wallet.png";
 import demo from "../../assets/demo.png";
 import line from "../../assets/line.png";
 import shape2 from "../../assets/shape-2.png";
 import swap from "../../assets/swap.png";
+import { useMouseMove } from "../../hooks/useMouseMove";
 export interface IMilestone2Props {}
 
 export function Milestone2(props: IMilestone2Props) {
   const ref = React.useRef<any>(null);
-  const [rotateX, setRotateX] = React.useState(0); 
-  const [rotateY, setRotateY] = React.useState(0); 
-  const [mouseX, setMouseX] = React.useState(0);
-  const [mouseY, setMouseY] = React.useState(0);
-  useEffect(() => {
-    const handleMouseMove = (event: MouseEvent) => {
-      const { clientX, clientY } = event;
-      const { current } = ref;
-      if (current) {
-        const { top, left, width, height} =
-          current.getBoundingClientRect();
-        const centerX = left + width / 2;
-        const centerY = top + height / 2;
-        const moveX = clientX - centerX;
-        const moveY = clientY - centerY;
-        const percentX = moveX / (width / 2);
-        const percentY = moveY / (height / 2);
-        setRotateX(percentY);
-        setRotateY(-percentX);
-        setMouseX(clientX - left);
-        setMouseY(clientY - top);
-      }
-    };
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
+  const { rotateX, rotateY, mouseX, mouseY } = useMouseMove(ref);
   return (
     <>
       <div
@@ -84,16 +58,8 @@ export function Milestone2(props: IMilestone2Props) {
           className="animate-spin-slow absolute -top-2/3 right-0 -z-10 w-[40%]"
         />
       </div>
-      <div
-        className="relative w-full"
-        ref={ref}
-        style={{
-          transform: `perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
-        }}
-      >
-        <div
-          className="absolute top-0 left-0 w-full h-full overflow-hidden"
-        >
+      <div className="relative w-full" ref={ref}>
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
           {" "}
           <div
             className="absolute w-[500px] aspect-square rounded-full bg-[#3FB950] blur-[180px] z-10 mix-blend-soft-light"

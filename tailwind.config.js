@@ -11,6 +11,11 @@ module.exports = {
         "linear-gradient(180deg, #3FB950 0%, rgba(63, 185, 80, 0.00) 100%)",
       "transparent-to-green-to-transparent":
         "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #3FB950 30%, rgba(63, 185, 80, 0.00) 100%)",
+      "pink-to-transparent":
+        "linear-gradient(180deg, #F778BA 0%, rgba(255, 124, 124, 0.00) 100%)",
+      "transparent-to-pink":
+        "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #F778BA 30%)",
+      "purple-to-orange": "linear-gradient(-250deg, #5e16ef 0%, #e66d2c 100%)",
     },
 
     extend: {
