@@ -122,7 +122,7 @@ export function Project(props: IProjectProps) {
               <div className="flex flex-col gap-1">
                 <span className="text-white opacity-50">Create</span>
                 <div className="text-white flex items-center gap-1">
-                  2h ago by tuyetnhi1607
+                  2d ago by tuyetnhi1607
                   <div className="w-6 h-6 rounded-full bg-purple-to-orange ml-1"></div>
                 </div>
               </div>
