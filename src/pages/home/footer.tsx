@@ -23,7 +23,7 @@ export function Footer(props: IFooterProps) {
       </div>
 
       <div className="px-10 py-16 md:px16 md:py-20 absolute z-10 top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2 w-max h-max max-w-[90vw] flex items-center justify-center bg-[#D9D9D91C] backdrop-blur-[3px] md:backdrop-blur-[16px] rounded-3xl border border-[#5F626E]">
-        <div className="flex flex-col items-center justify-center w-max h-max">
+        <div className="relative z-20 flex flex-col items-center justify-center w-max h-max">
           <span className="text-white text-2xl md:text-6xl font-bold">
             Let’s connect
           </span>
