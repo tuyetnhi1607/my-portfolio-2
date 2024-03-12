@@ -28,10 +28,11 @@ export function InputAnswer({
         total: wordSelected.total + 1,
       };
       dispatch(addNewWord(newWord));
+       document.getElementById("answer")!.style.display = "none";
       setInputValue("");
     } else {
       document.getElementById("answer")!.style.display = "flex";
-      document.getElementById("inputAnswer")!.setAttribute("disabled", "true");
+      // document.getElementById("inputAnswer")!.setAttribute("disabled", "true");
     }
   };
 
@@ -44,9 +45,9 @@ export function InputAnswer({
     document.getElementById("answer")!.style.display = "none";
     dispatch(addNewWord(newWord));
     setInputValue("");
-    document.getElementById("inputAnswer")!.removeAttribute("disabled");
-    // focus input
-    document.getElementById("inputAnswer")!.focus();
+    // document.getElementById("inputAnswer")!.removeAttribute("disabled");
+    // // focus input
+    // document.getElementById("inputAnswer")!.focus();
   };
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
