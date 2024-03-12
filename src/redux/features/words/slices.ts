@@ -1,85 +1,29 @@
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
+import { newWordsUnit1, newWordsUnit2, newWordsUnit3, newWordsUnit4 } from "../../../constants/new-words";
 
 let data: IWord[] = [
-  {
-    word: "かさ",
-    reading: "kasa",
-    meaning: "umbrella",
-    total: 0,
-    right: 0,
-  },
-  {
-    word: "くつ",
-    reading: "kutsu",
-    total: 0,
-    right: 0,
-    meaning: "shoes",
-  },
-  {
-    word: "ぼうし",
-    reading: "boushi",
-    total: 0,
-    right: 0,
-    meaning: "hat",
-  },
-  {
-    word: "てがみ",
-    reading: "tegami",
-    total: 0,
-    right: 0,
-    meaning: "letter",
-  },
-  {
-    word: "とけい",
-    reading: "tokei",
-    total: 0,
-    right: 0,
-    meaning: "watch",
-  },
-  {
-    word: "ほん",
-    reading: "hon",
-    total: 0,
-    right: 0,
-    meaning: "book",
-  },
-  {
-    word: "ほんだな",
-    reading: "hondana",
-    total: 0,
-    right: 0,
-    meaning: "bookshelf",
-  },
-  {
-    word: "ほんだな",
-    reading: "hondana",
-    total: 0,
-    right: 0,
-    meaning: "bookshelf",
-  },
-  {
-    word: "ほんだな",
-    reading: "hondana",
-    total: 0,
-    right: 0,
-    meaning: "bookshelf",
-  },
+  ...newWordsUnit1,
+  ...newWordsUnit2,
+  ...newWordsUnit3,
+  ...newWordsUnit4,
 ];
 
 export interface IWord {
   word: string;
-  reading: string;
   meaning: string;
   total: number;
   right: number;
+  unit: number;
 }
 export interface WordsState {
   words: IWord[];
+  unit: number;
 }
 
 const initialState: WordsState = {
   words: data,
+  unit: 0,
 };
 
 export const WordsSlice = createSlice({
@@ -87,12 +31,25 @@ export const WordsSlice = createSlice({
   initialState,
   reducers: {
     addNewWord: (state, action: PayloadAction<IWord>) => {
-      state.words.push(action.payload);
+      let tmp = state.words;
+      let index = tmp.findIndex((word) => word.word === action.payload.word);
+      console.log(index, action.payload.word, tmp);
+      if (index !== -1) {
+        tmp[index] = action.payload;
+      } else {
+        tmp = [action.payload, ...tmp];
+      }
+      tmp.sort((a, b) => {
+        return a.right / a.total - b.right / b.total;
+      });
+      state.words = tmp;
+    },
+    filterUnit: (state, action: PayloadAction<number>) => {
+      state.unit = action.payload;
     },
   },
 });
 
-// Action creators are generated for each case reducer function
-export const { addNewWord } = WordsSlice.actions;
+export const { addNewWord, filterUnit } = WordsSlice.actions;
 
 export default WordsSlice.reducer;
