@@ -1,21 +1,24 @@
 import React, { useRef } from "react";
+import { useSelector } from "react-redux";
 import { useOnClickOutside } from "usehooks-ts";
+import { RootState } from "../redux/store";
 
 export interface IDropdownProps {
   options: {
     label: string;
-    value: number;
+    value: string;
   }[];
   onChange: (value: string) => void;
+  defaultSelected?: string;
 }
 
 export function Dropdown(props: IDropdownProps) {
   const [open, setOpen] = React.useState(false);
-  const [selected, setSelected] = React.useState(props.options[0].value);
+  const [selected, setSelected] = React.useState<string>(props.defaultSelected || "");
   const ref = useRef(null);
   useOnClickOutside(ref, () => setOpen(false));
   return (
-    <div className="relative inline-block text-left" ref={ref}>
+    <div className="relative inline-block text-left w-full" ref={ref}>
       <div>
         <button
           type="button"
