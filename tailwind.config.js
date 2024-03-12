@@ -29,6 +29,9 @@ module.exports = {
         "spin-rotateY": "spinRotateY 10s linear infinite",
         "home-footer-float": "home-footer-float 5s linear infinite alternate",
       },
+      fontFamily:{
+        "noto-JP": ["Noto Serif JP", "serif"],
+      },
       keyframes: {
         spinRotateY: {
           "0%": { transform: "rotateY(0deg)" },
