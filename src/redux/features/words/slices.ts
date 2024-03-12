@@ -1,36 +1,29 @@
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
-import {
-  newWordsUnit1,
-  newWordsUnit2,
-  newWordsUnit3,
-  newWordsUnit4,
-} from "../../../constants/new-words";
+import { vocabularyAll } from "../../../constants/new-words";
+import { ETopic } from "../../../types/topic.types";
+import { LANGUAGES_CODE } from "../../../types/text-to-speech.types";
 
-let data: IWord[] = [
-  ...newWordsUnit1,
-  ...newWordsUnit2,
-  ...newWordsUnit3,
-  ...newWordsUnit4,
-];
-
+let data: IWord[] = [...vocabularyAll];
 export interface IWord {
   word: string;
   meaning: string;
   total: number;
   right: number;
-  unit: number;
+  topic: ETopic;
+  kanji?: string;
 }
+
 export interface WordsState {
   words: IWord[];
-  unit: number;
-  modeView: "jp" | "en";
+  topic: ETopic;
+  modeView: LANGUAGES_CODE;
 }
 
 const initialState: WordsState = {
   words: data,
-  unit: 0,
-  modeView: "en",
+  topic: ETopic.All,
+  modeView: LANGUAGES_CODE.JA,
 };
 
 export const WordsSlice = createSlice({
@@ -50,15 +43,15 @@ export const WordsSlice = createSlice({
       });
       state.words = tmp;
     },
-    filterUnit: (state, action: PayloadAction<number>) => {
-      state.unit = action.payload;
+    filterTopic: (state, action: PayloadAction<ETopic>) => {
+      state.topic = action.payload;
     },
-    setModeView: (state, action: PayloadAction<"jp" | "en">) => {
+    setModeView: (state, action: PayloadAction<LANGUAGES_CODE>) => {
       state.modeView = action.payload;
     },
   },
 });
 
-export const { addNewWord, filterUnit, setModeView } = WordsSlice.actions;
+export const { addNewWord, filterTopic, setModeView } = WordsSlice.actions;
 
 export default WordsSlice.reducer;

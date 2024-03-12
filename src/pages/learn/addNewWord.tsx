@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useDispatch } from "react-redux";
 import { IWord, addNewWord } from "../../redux/features/words/slices";
+import { ETopic } from "../../types/topic.types";
 
 export interface IAddNewWordProps {}
 
@@ -10,7 +11,7 @@ export function AddNewWord(props: IAddNewWordProps) {
     meaning: "",
     total: 0,
     right: 0,
-    unit: 0,
+    topic: ETopic.All,
   });
   const dispatch = useDispatch();
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -22,7 +23,7 @@ export function AddNewWord(props: IAddNewWordProps) {
       meaning: "",
       total: 0,
       right: 0,
-      unit: 0,
+      topic: ETopic.All,
     });
   };
   return (

@@ -22,7 +22,7 @@ export function Dropdown(props: IDropdownProps) {
       <div>
         <button
           type="button"
-          className="inline-flex w-full justify-between gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 "
+          className="capitalize inline-flex w-full justify-between gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 "
           id="menu-button"
           aria-expanded="true"
           aria-haspopup="true"
@@ -59,7 +59,7 @@ export function Dropdown(props: IDropdownProps) {
             <button
               key={index}
               type="button"
-              className="text-gray-700 block w-full px-4 py-2 text-left text-sm hover:bg-gray-100 hover:text-gray-900 first:rounded-t-md last:rounded-b-md"
+              className="capitalize text-gray-700 block w-full px-4 py-2 text-left text-sm hover:bg-gray-100 hover:text-gray-900 first:rounded-t-md last:rounded-b-md"
               role="menuitem"
               id={`menu-item-${index}`}
               onClick={() => {

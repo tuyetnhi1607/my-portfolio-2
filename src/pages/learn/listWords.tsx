@@ -2,50 +2,94 @@ import { useDispatch, useSelector } from "react-redux";
 import { Dropdown } from "../../components/dropdown";
 import {
   IWord,
-  filterUnit,
+  filterTopic,
   setModeView,
 } from "../../redux/features/words/slices";
 import { RootState } from "../../redux/store";
+import { ETopic } from "../../types/topic.types";
+import { LANGUAGES, LANGUAGES_CODE } from "../../types/text-to-speech.types";
 
 export interface IListWordsProps {}
 
 export function ListWords(props: IListWordsProps) {
-  const { words, unit, modeView } = useSelector((state: RootState) => state);
+  const { words, topic, modeView } = useSelector((state: RootState) => state);
   const dispatch = useDispatch();
-  const options = [
-    {
-      label: "All",
-      value: "0",
-    },
-    {
-      label: "Unit 1",
-      value: "1",
-    },
-    {
-      label: "Unit 2",
-      value: "2",
-    },
-    {
-      label: "Unit 3",
-      value: "3",
-    },
-    { label: "Unit 4", value: "4" },
-  ];
-  const modeViewOptions: {
+  const options: {
     label: string;
-    value: "jp" | "en";
+    value: ETopic;
   }[] = [
     {
-      label: "JP",
-      value: "jp",
+      label: "All",
+      value: ETopic.All,
     },
     {
-      label: "EN",
-      value: "en",
+      label: "animals",
+      value: ETopic.ANIMALS,
+    },
+    {
+      label: "colors",
+      value: ETopic.COLORS,
+    },
+    {
+      label: "food",
+      value: ETopic.FOOD,
+    },
+    {
+      label: "items",
+      value: ETopic.ITEMS,
+    },
+    {
+      label: "jobs",
+      value: ETopic.JOBS,
+    },
+    {
+      label: "numbers",
+      value: ETopic.NUMBERS,
+    },
+    {
+      label: "places",
+      value: ETopic.PLACES,
+    },
+    {
+      label: "professions",
+      value: ETopic.PROFESSIONS,
+    },
+    {
+      label: "school",
+      value: ETopic.SCHOOL,
+    },
+    {
+      label: "shopping",
+      value: ETopic.SHOPPING,
+    },
+    {
+      label: "sports",
+      value: ETopic.SPORTS,
+    },
+    {
+      label: "time",
+      value: ETopic.TIME,
+    },
+    {
+      label: "transportation",
+      value: ETopic.TRANSPORTATION,
+    },
+    {
+      label: "subjects",
+      value: ETopic.SUBJECTS,
+    },
+    {
+      label: "weather",
+      value: ETopic.WEATHER,
+    },
+    {
+      label: "family",
+      value: ETopic.FAMILY,
     },
   ];
+  const modeViewOptions = [...LANGUAGES];
   const filteredWords = [...words].filter((word) => {
-    return unit === 0 || word.unit === unit;
+    return topic === ETopic.All || word.topic === topic;
   });
   return (
     <div className="flex flex-col bg-white w-max py-4 gap-4 max-h-screen">
@@ -54,14 +98,14 @@ export function ListWords(props: IListWordsProps) {
         <Dropdown
           options={options}
           onChange={(value) => {
-            dispatch(filterUnit(Number(value)));
+            dispatch(filterTopic(value as ETopic));
           }}
-          defaultSelected={unit.toString()}
+          defaultSelected={topic}
         />
         <Dropdown
           options={modeViewOptions}
           onChange={(value) => {
-            dispatch(setModeView(value === "jp" ? "jp" : "en"));
+            dispatch(setModeView(value as LANGUAGES_CODE));
           }}
           defaultSelected={modeView}
         />
@@ -74,7 +118,7 @@ export function ListWords(props: IListWordsProps) {
           return (
             <div
               key={index}
-              className="flex w-full justify-between gap-8 px-2 py-1"
+              className="flex w-full justify-between gap-8 px-2 py-1 rounded-md"
               style={{
                 backgroundColor:
                   percentage === 100
@@ -92,9 +136,11 @@ export function ListWords(props: IListWordsProps) {
             >
               <div className="whitespace-nowrap">{index + 1}</div>
               <div className="whitespace-nowrap text-left w-full">
-                {word.word}
+                {modeView === LANGUAGES_CODE.JA ? word.word : word.meaning}
               </div>
-              <div className="whitespace-nowrap">{percentage.toFixed(1)}%</div>
+              <div className="whitespace-nowrap">
+                {percentage.toFixed(1)}% ({word.right}/{word.total})
+              </div>
             </div>
           );
         })}
