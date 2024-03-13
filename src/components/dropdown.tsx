@@ -47,7 +47,7 @@ export function Dropdown(props: IDropdownProps) {
       <div
         className={
           open
-            ? "origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+            ? "origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none max-h-[50vh] overflow-auto"
             : "hidden"
         }
         role="menu"

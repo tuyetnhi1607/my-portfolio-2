@@ -14,79 +14,12 @@ export interface IListWordsProps {}
 export function ListWords(props: IListWordsProps) {
   const { words, topic, modeView } = useSelector((state: RootState) => state);
   const dispatch = useDispatch();
-  const options: {
-    label: string;
-    value: ETopic;
-  }[] = [
-    {
-      label: "All",
-      value: ETopic.All,
-    },
-    {
-      label: "animals",
-      value: ETopic.ANIMALS,
-    },
-    {
-      label: "colors",
-      value: ETopic.COLORS,
-    },
-    {
-      label: "food",
-      value: ETopic.FOOD,
-    },
-    {
-      label: "items",
-      value: ETopic.ITEMS,
-    },
-    {
-      label: "jobs",
-      value: ETopic.JOBS,
-    },
-    {
-      label: "numbers",
-      value: ETopic.NUMBERS,
-    },
-    {
-      label: "places",
-      value: ETopic.PLACES,
-    },
-    {
-      label: "professions",
-      value: ETopic.PROFESSIONS,
-    },
-    {
-      label: "school",
-      value: ETopic.SCHOOL,
-    },
-    {
-      label: "shopping",
-      value: ETopic.SHOPPING,
-    },
-    {
-      label: "sports",
-      value: ETopic.SPORTS,
-    },
-    {
-      label: "time",
-      value: ETopic.TIME,
-    },
-    {
-      label: "transportation",
-      value: ETopic.TRANSPORTATION,
-    },
-    {
-      label: "subjects",
-      value: ETopic.SUBJECTS,
-    },
-    {
-      label: "weather",
-      value: ETopic.WEATHER,
-    },
-    {
-      label: "family",
-      value: ETopic.FAMILY,
-    },
-  ];
+  const options = Object.keys(ETopic).map((key) => {
+    return {
+      label: key.replace(/_/g, " ").toLowerCase(),
+      value: ETopic[key as keyof typeof ETopic],
+    };
+  });
   const modeViewOptions = [...LANGUAGES];
   const filteredWords = [...words].filter((word) => {
     return topic === ETopic.All || word.topic === topic;
