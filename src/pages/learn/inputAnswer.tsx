@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addNewWord } from "../../redux/features/words/slices";
 import { RootState } from "../../redux/store";
 import { LANGUAGES_CODE } from "../../types/text-to-speech.types";
-import { Speaker } from "./speaker";
+import { CustomTTSComponent } from "./tts";
 
 export function InputAnswer({
   wordSelected,
@@ -27,7 +27,7 @@ export function InputAnswer({
       newWord = {
         ...wordSelected,
         right: wordSelected.right + 1,
-        total: wordSelected.total + count ,
+        total: wordSelected.total + count,
       };
       dispatch(addNewWord(newWord));
       setInputValue("");
@@ -64,8 +64,14 @@ export function InputAnswer({
       />
       {status === "wrong" && (
         <div id="answer" className="text-4xl font-bold text-red-500 flex gap-4">
-          <Speaker text={wordView.answer} mode={modeAnswer} />
-          {wordView.answer}
+          <CustomTTSComponent
+            lang={modeAnswer}
+            classNameIcon="relative"
+            className="flex gap-4 w-full"
+            key={wordView.answer}
+          >
+            {wordView.answer}{" "}
+          </CustomTTSComponent>
         </div>
       )}
     </>

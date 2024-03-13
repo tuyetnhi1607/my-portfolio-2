@@ -4,7 +4,7 @@ import { RootState } from "../../redux/store";
 import { LANGUAGES_CODE } from "../../types/text-to-speech.types";
 import { ETopic } from "../../types/topic.types";
 import { InputAnswer } from "./inputAnswer";
-import { Speaker } from "./speaker";
+import { CustomTTSComponent } from "./tts";
 
 export interface IMainProps {}
 
@@ -41,7 +41,6 @@ export function Main(props: IMainProps) {
   const percentage = (wordSelected.right / wordSelected.total) * 100 || 0;
   const listColor = ["#35b8a6", "#fc8f58", "#399acb", "#c93eec", "#f30940"];
   const color = listColor[Math.floor(Math.random() * listColor.length)];
-
   return (
     <div className="font-noto-JP flex-1 h-full min-w-96 flex flex-col items-center justify-center gap-8">
       <div className={`w-full max-w-2xl min-w-xl flex items-center`}>
@@ -54,18 +53,21 @@ export function Main(props: IMainProps) {
               backgroundColor: color,
             }}
           ></div>
-          <span
-            className="z-10 text-8xl font-bold text-center "
-            style={{
-              color: color,
-            }}
+          <CustomTTSComponent
+            lang={modeView}
+            classNameIcon="absolute right-3 bottom-3"
+            className=""
+            key={wordView.view}
           >
-            {wordView.view}
-          </span>
-          <div className="absolute right-0 bottom-0 p-3">
-            <Speaker text={wordView.view} mode={modeView} />
-          </div>
-
+            <div
+              className="z-10 text-8xl font-bold text-center w-full h-full"
+              style={{
+                color: color,
+              }}
+            >
+              {wordView.view}
+            </div>
+          </CustomTTSComponent>
           <div className="absolute right-0 top-0 text-xl py-2 px-3 text-white font-bold">
             {percentage.toFixed(1)}% ({wordSelected.right}/{wordSelected.total})
           </div>

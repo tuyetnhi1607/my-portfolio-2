@@ -2891,6 +2891,13 @@ axe-core@=4.7.0:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.7.0.tgz#34ba5a48a8b564f67e103f0aa5768d76e15bbbbf"
   integrity sha512-M0JtH+hlOL5pLQwHOLNYZaXuhqmvS8oExsqB1SBYgA4Dk7u/xx+YdGHXaK5pyUfed5mYXdlYiphWq3G8cRi5JQ==
 
+axios@^0.21.0:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
+  dependencies:
+    follow-redirects "^1.14.0"
+
 axobject-query@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-3.2.1.tgz#39c378a6e3b06ca679f29138151e45b2b32da62a"
@@ -4767,6 +4774,11 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.4.tgz#cdc7d308bf6493126b17ea2191ea0ccf3e535adf"
   integrity sha512-Cr4D/5wlrb0z9dgERpUL3LrmPKVDsETIJhaCMeDfuFYcqa5bldGV6wBsAN6X/vxlXQtFBMrXdXxdL8CbDTGniw==
 
+follow-redirects@^1.14.0:
+  version "1.15.5"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.5.tgz#54d4d6d062c0fa7d9d17feb008461550e3ba8020"
+  integrity sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==
+
 for-each@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/for-each/-/for-each-0.3.3.tgz#69b447e88a0a5d32c3e7084f3f1710034b21376e"
@@ -5019,6 +5031,13 @@ globby@^11.0.4, globby@^11.1.0:
     ignore "^5.2.0"
     merge2 "^1.4.1"
     slash "^3.0.0"
+
+google-tts-api@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/google-tts-api/-/google-tts-api-2.0.2.tgz#5f02bbde9b41f57569a94a3dd1d2de808a97bb97"
+  integrity sha512-MkQYbBJEdom8hJpfEVDfD3tpBtkz0X59C+FNsoRhbnCiFjZRnzyurGQ5OrAr3xkigII56/jmk0JNwZsp450G+Q==
+  dependencies:
+    axios "^0.21.0"
 
 gopd@^1.0.1:
   version "1.0.1"
@@ -8550,6 +8569,13 @@ simple-icons@*:
   resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-11.0.0.tgz#ffa7a2ca4a42ea4ccac62ae1a2f5321fe8bffd96"
   integrity sha512-n6z6fQwODmhRfy4RBkNmnP67yzqGUa/0ETJDkMX8Fl2riLSl1O8nB3qAl5Ij0oyEwgYC0WbMLXn1dkyYSTDs1w==
 
+simple-tts-mp3@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/simple-tts-mp3/-/simple-tts-mp3-1.1.0.tgz#2c6fd560bda19b797d1a99b447c5ece27df1e812"
+  integrity sha512-DjnBDP3lDQLaoTZYEdhhyVo0d7D53547ppffZMY8f3srZwfz1XdJF70OqiQ2nRtCkhupheMRy4jVRUEgPhQu+w==
+  dependencies:
+    google-tts-api "^2.0.2"
+
 sisteransi@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
@@ -9156,6 +9182,11 @@ tsutils@^3.21.0:
   integrity sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==
   dependencies:
     tslib "^1.8.1"
+
+tts-react@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/tts-react/-/tts-react-3.0.6.tgz#a984e739f6ba0f6f6e7a82b66c5bb59b75f7ebb7"
+  integrity sha512-r8WYOihMEdS6apoQFJ6iVf+pDxc77Z6cWRcC1DQ8tHRcarEZ1VDEA29mnvjN1AhQNflIhtp5qYTz/0/iJWjsjA==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
