@@ -23,7 +23,7 @@ const router = createBrowserRouter(
 
 function App() {
   return (
-    <div className="App w-screen overflow-hidden relative">
+    <div className="App w-screen relative">
       <RouterProvider router={router} />
     </div>
   );
