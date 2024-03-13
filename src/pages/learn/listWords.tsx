@@ -6,8 +6,8 @@ import {
   setModeView,
 } from "../../redux/features/words/slices";
 import { RootState } from "../../redux/store";
-import { ETopic } from "../../types/topic.types";
 import { LANGUAGES, LANGUAGES_CODE } from "../../types/text-to-speech.types";
+import { ETopic } from "../../types/topic.types";
 
 export interface IListWordsProps {}
 
@@ -47,24 +47,13 @@ export function ListWords(props: IListWordsProps) {
       <div className="grid grid-cols-1 gap-2 overflow-y-auto w-full">
         {" "}
         {filteredWords.map((word: IWord, index: number) => {
-          const percentage = (word.right / word.total) * 100 || 0;
+          const percentageRight = (word.right / word.total) * 100 || 0;
           return (
             <div
               key={index}
               className="flex w-full justify-between gap-8 px-2 py-1 rounded-md"
               style={{
-                backgroundColor:
-                  percentage === 100
-                    ? "#66e283"
-                    : percentage < 50
-                    ? "#f8d7da"
-                    : "#fff3cd",
-                color:
-                  percentage === 100
-                    ? "#0f5132"
-                    : percentage < 50
-                    ? "#842029"
-                    : "#664d03",
+                background: `linear-gradient(to right, #66e283 ${percentageRight}%, #f8d7da ${percentageRight}%)`,
               }}
             >
               <div className="whitespace-nowrap">{index + 1}</div>
@@ -72,7 +61,7 @@ export function ListWords(props: IListWordsProps) {
                 {modeView === LANGUAGES_CODE.JA ? word.word : word.meaning}
               </div>
               <div className="whitespace-nowrap">
-                {percentage.toFixed(1)}% ({word.right}/{word.total})
+                {percentageRight.toFixed(1)}% ({word.right}/{word.total})
               </div>
             </div>
           );

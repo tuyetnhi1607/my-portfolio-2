@@ -17,26 +17,29 @@ export function InputAnswer({
   const [count, setCount] = React.useState(1);
   const { modeView } = useSelector((state: RootState) => state);
   const [status, setStatus] = React.useState<"right" | "wrong" | null>(null);
+  const answer = wordView.answer.split(";");
   const modeAnswer =
     modeView === LANGUAGES_CODE.JA ? LANGUAGES_CODE.EN : LANGUAGES_CODE.JA;
   const handleSubmit = useCallback(() => {
     let newWord = wordSelected;
-    if (inputValue.toLowerCase() === wordView.answer.toLowerCase()) {
+    if (answer.includes(inputValue)) {
       setStatus("right");
       newWord = {
         ...wordSelected,
         right: wordSelected.right + 1,
-        total: wordSelected.total + count,
+        total: wordSelected.total + count ,
       };
       dispatch(addNewWord(newWord));
       setInputValue("");
       setCount(1);
     } else {
       setStatus("wrong");
-      dispatch(addNewWord(newWord));
       setCount((prev) => prev + 1);
+      setTimeout(() => {
+        setStatus(null);
+      }, 3000);
     }
-  }, [dispatch, inputValue, wordSelected, wordView, count]);
+  }, [answer, count, dispatch, inputValue, wordSelected]);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
