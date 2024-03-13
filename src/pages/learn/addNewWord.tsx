@@ -27,7 +27,7 @@ export function AddNewWord(props: IAddNewWordProps) {
     });
   };
   return (
-    <div className="h-max bg-blue-100 p-3 rounded-md">
+    <div className="h-max bg-blue-100 p-3 rounded-md max-w-64">
       <form
         className="flex gap-1 flex-col items-center"
         onSubmit={handleSubmit}

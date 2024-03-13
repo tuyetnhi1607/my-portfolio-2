@@ -10,7 +10,7 @@ declare global {
 }
 export function Learn(props: ILearnProps) {
   return (
-    <div className="flex w-full h-screen bg-white">
+    <div className="flex flex-col md:flex-row w-full h-screen bg-white gap-4 ">
       <AddNewWord />
       <Main />
       <ListWords />

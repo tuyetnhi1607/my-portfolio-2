@@ -92,7 +92,7 @@ export function ListWords(props: IListWordsProps) {
     return topic === ETopic.All || word.topic === topic;
   });
   return (
-    <div className="flex flex-col bg-white w-max py-4 gap-4 max-h-screen">
+    <div className="w-full flex flex-col bg-white py-4 gap-4 max-h-screen md:max-w-64">
       <div className="flex w-full gap-2">
         {" "}
         <Dropdown
@@ -111,7 +111,7 @@ export function ListWords(props: IListWordsProps) {
         />
       </div>
 
-      <div className="grid grid-cols-1 w-max gap-2 overflow-y-auto  min-w-[300px]">
+      <div className="grid grid-cols-1 gap-2 overflow-y-auto w-full">
         {" "}
         {filteredWords.map((word: IWord, index: number) => {
           const percentage = (word.right / word.total) * 100 || 0;
@@ -135,7 +135,7 @@ export function ListWords(props: IListWordsProps) {
               }}
             >
               <div className="whitespace-nowrap">{index + 1}</div>
-              <div className="whitespace-nowrap text-left w-full">
+              <div className="whitespace-nowrap text-left w-full md:text-ellipsis max-w-[100px] overflow-hidden">
                 {modeView === LANGUAGES_CODE.JA ? word.word : word.meaning}
               </div>
               <div className="whitespace-nowrap">

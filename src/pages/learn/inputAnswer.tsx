@@ -50,7 +50,7 @@ export function InputAnswer({
       <input
         id="inputAnswer"
         type="text"
-        className="w-1/2 text-5xl text-center p-2 border-2 border-slate-400 rounded-xl focus:border-blue-600 outline-none "
+        className="w-full max-w-2xl text-5xl text-center p-2 border-2 border-slate-400 rounded-xl focus:border-blue-600 outline-none "
         value={inputValue}
         onChange={(e) => {
           setInputValue(e.target.value);

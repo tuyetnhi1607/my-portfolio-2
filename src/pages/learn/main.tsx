@@ -43,10 +43,10 @@ export function Main(props: IMainProps) {
   const color = listColor[Math.floor(Math.random() * listColor.length)];
 
   return (
-    <div className="font-noto-JP w-full min-w-[300px] h-full flex flex-col items-center justify-center gap-8">
-      <div className={`w-1/2 flex items-center`}>
+    <div className="font-noto-JP flex-1 h-full min-w-96 flex flex-col items-center justify-center gap-8">
+      <div className={`w-full max-w-2xl min-w-xl flex items-center`}>
         <div
-          className={`relative w-full min-h-[30vh] flex items-center justify-center px-6`}
+          className={`relative w-full min-h-[30vh] flex items-center justify-center p-6`}
         >
           <div
             className="absolute top-0 left-0 w-full h-full opacity-20 rounded-lg"
@@ -55,7 +55,7 @@ export function Main(props: IMainProps) {
             }}
           ></div>
           <span
-            className="z-10 text-8xl font-bold text-center"
+            className="z-10 text-8xl font-bold text-center "
             style={{
               color: color,
             }}
