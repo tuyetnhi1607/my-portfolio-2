@@ -43,7 +43,7 @@ export function Main(props: IMainProps) {
   const color = listColor[Math.floor(Math.random() * listColor.length)];
 
   return (
-    <div className="font-noto-JP w-full h-full flex flex-col items-center justify-center gap-8">
+    <div className="font-noto-JP w-full min-w-[300px] h-full flex flex-col items-center justify-center gap-8">
       <div className={`w-1/2 flex items-center`}>
         <div
           className={`relative w-full min-h-[30vh] flex items-center justify-center px-6`}
