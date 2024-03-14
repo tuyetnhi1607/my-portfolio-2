@@ -32,4 +32,12 @@ export enum ETopic {
   HUMAN_LIFE = "human_life",
   VERBS = "verbs",
   N5 = "n5",
+  CONVERSATION = "conversation",
+  INTRODUCE_YOURSELF = "introduce_yourself",
+  OBJECT_LOCATION = "object_location",
+  ACTION_EXECUTION_TIME = "action_execution_time",
+  MOVEMENT_SENTENCE = "movement_sentence",
+  DESCRIPTION_ACTION = "description_action",
+  // GIVE_RECEIVE = "give_receive",
+
 }

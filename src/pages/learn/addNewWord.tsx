@@ -1,13 +1,13 @@
 import * as React from "react";
 import { useDispatch } from "react-redux";
-import { IWord, addNewWord } from "../../redux/features/words/slices";
+import { IWordOrSentence, addNewWord } from "../../redux/features/words/slices";
 import { ETopic } from "../../types/topic.types";
 
 export interface IAddNewWordProps {}
 
 export function AddNewWord(props: IAddNewWordProps) {
-  const [word, setWord] = React.useState<IWord>({
-    word: "",
+  const [wordOrSentence, setWord] = React.useState<IWordOrSentence>({
+    wordOrSentence: "",
     meaning: "",
     total: 0,
     right: 0,
@@ -16,10 +16,10 @@ export function AddNewWord(props: IAddNewWordProps) {
   const dispatch = useDispatch();
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!word.word || !word.meaning) return;
-    dispatch(addNewWord(word));
+    if (!wordOrSentence.wordOrSentence || !wordOrSentence.meaning) return;
+    dispatch(addNewWord(wordOrSentence));
     setWord({
-      word: "",
+      wordOrSentence: "",
       meaning: "",
       total: 0,
       right: 0,
@@ -34,15 +34,15 @@ export function AddNewWord(props: IAddNewWordProps) {
       >
         <input
           type="text"
-          placeholder="word"
+          placeholder="wordOrSentence"
           className="p-2 border border-slate-200 rounded-md focus:border-blue-600 outline-none"
-          onChange={(e) => setWord({ ...word, word: e.target.value })}
+          onChange={(e) => setWord({ ...wordOrSentence, wordOrSentence: e.target.value })}
         />
         <input
           type="text"
           className="p-2 border border-slate-200 rounded-md focus:border-blue-600 outline-none"
           placeholder="meaning"
-          onChange={(e) => setWord({ ...word, meaning: e.target.value })}
+          onChange={(e) => setWord({ ...wordOrSentence, meaning: e.target.value })}
         />
         <button
           type="submit"

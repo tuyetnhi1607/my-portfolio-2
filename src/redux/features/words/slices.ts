@@ -4,18 +4,19 @@ import { vocabularyAll } from "../../../constants/new-words";
 import { ETopic } from "../../../types/topic.types";
 import { LANGUAGES_CODE } from "../../../types/text-to-speech.types";
 
-let data: IWord[] = [...vocabularyAll];
-export interface IWord {
-  word: string;
+let data: IWordOrSentence[] = [...vocabularyAll];
+export interface IWordOrSentence {
+  wordOrSentence: string;
   meaning: string;
   total: number;
   right: number;
   topic: ETopic;
   kanji?: string;
+  vn?: string;
 }
 
 export interface WordsState {
-  words: IWord[];
+  words: IWordOrSentence[];
   topic: ETopic;
   modeView: LANGUAGES_CODE;
 }
@@ -30,9 +31,9 @@ export const WordsSlice = createSlice({
   name: "words",
   initialState,
   reducers: {
-    addNewWord: (state, action: PayloadAction<IWord>) => {
+    addNewWord: (state, action: PayloadAction<IWordOrSentence>) => {
       let tmp = state.words;
-      let index = tmp.findIndex((word) => word.word === action.payload.word);
+      let index = tmp.findIndex((wordOrSentence) => wordOrSentence.wordOrSentence === action.payload.wordOrSentence);
       if (index !== -1) {
         tmp[index] = action.payload;
       } else {

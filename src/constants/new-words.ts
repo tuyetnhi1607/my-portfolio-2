@@ -1,9 +1,9 @@
-import { IWord } from "../redux/features/words/slices";
+import { IWordOrSentence } from "../redux/features/words/slices";
 import { ETopic } from "../types/topic.types";
 
-export const vocabularyFamily: IWord[] = [
+export const vocabularyFamily: IWordOrSentence[] = [
   {
-    word: "ひと",
+    wordOrSentence: "ひと",
     kanji: "人",
     meaning: "person",
     total: 0,
@@ -11,7 +11,7 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
   {
-    word: "かぞく",
+    wordOrSentence: "かぞく",
     kanji: "家族",
     meaning: "family",
     total: 0,
@@ -19,7 +19,7 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
   {
-    word: "おとうさん",
+    wordOrSentence: "おとうさん",
     kanji: "お父さん",
     meaning: "father",
     total: 0,
@@ -27,7 +27,7 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
   {
-    word: "おかあさん",
+    wordOrSentence: "おかあさん",
     kanji: "お母さん",
     meaning: "mother",
     total: 0,
@@ -35,7 +35,7 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
   {
-    word: "あに",
+    wordOrSentence: "あに",
     kanji: "兄",
     meaning: "older brother",
     total: 0,
@@ -43,7 +43,7 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
   {
-    word: "あね",
+    wordOrSentence: "あね",
     kanji: "姉",
     meaning: "older sister",
     total: 0,
@@ -51,7 +51,7 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
   {
-    word: "おとうと",
+    wordOrSentence: "おとうと",
     kanji: "弟",
     meaning: "younger brother",
     total: 0,
@@ -59,7 +59,7 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
   {
-    word: "いもうと",
+    wordOrSentence: "いもうと",
     kanji: "妹",
     meaning: "younger sister",
     total: 0,
@@ -67,7 +67,7 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
   {
-    word: "こども",
+    wordOrSentence: "こども",
     kanji: "子供",
     meaning: "child",
     total: 0,
@@ -75,7 +75,7 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
   {
-    word: "むすこ",
+    wordOrSentence: "むすこ",
     kanji: "息子",
     meaning: "son",
     total: 0,
@@ -83,7 +83,7 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
   {
-    word: "むすめ",
+    wordOrSentence: "むすめ",
     kanji: "娘",
     meaning: "daughter",
     total: 0,
@@ -91,7 +91,7 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
   {
-    word: "じいさん",
+    wordOrSentence: "じいさん",
     kanji: "祖父さん",
     meaning: "grandfather",
     total: 0,
@@ -99,7 +99,7 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
   {
-    word: "ばあさん",
+    wordOrSentence: "ばあさん",
     kanji: "祖母さん",
     meaning: "grandmother",
     total: 0,
@@ -107,7 +107,7 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
   {
-    word: "いとこ",
+    wordOrSentence: "いとこ",
     kanji: "いとこ",
     meaning: "cousin",
     total: 0,
@@ -115,9 +115,9 @@ export const vocabularyFamily: IWord[] = [
     topic: ETopic.FAMILY,
   },
 ];
-export const vocabularyWeather: IWord[] = [
+export const vocabularyWeather: IWordOrSentence[] = [
   {
-    word: "てんき",
+    wordOrSentence: "てんき",
     kanji: "天気",
     meaning: "weather",
     total: 0,
@@ -125,7 +125,7 @@ export const vocabularyWeather: IWord[] = [
     topic: ETopic.WEATHER,
   },
   {
-    word: "あめ",
+    wordOrSentence: "あめ",
     kanji: "雨",
     meaning: "rain",
     total: 0,
@@ -133,7 +133,7 @@ export const vocabularyWeather: IWord[] = [
     topic: ETopic.WEATHER,
   },
   {
-    word: "ゆき",
+    wordOrSentence: "ゆき",
     kanji: "雪",
     meaning: "snow",
     total: 0,
@@ -141,7 +141,7 @@ export const vocabularyWeather: IWord[] = [
     topic: ETopic.WEATHER,
   },
   {
-    word: "くもり",
+    wordOrSentence: "くもり",
     kanji: "曇り",
     meaning: "cloudy",
     total: 0,
@@ -149,7 +149,7 @@ export const vocabularyWeather: IWord[] = [
     topic: ETopic.WEATHER,
   },
   {
-    word: "はれ",
+    wordOrSentence: "はれ",
     kanji: "晴れ",
     meaning: "sunny",
     total: 0,
@@ -157,7 +157,7 @@ export const vocabularyWeather: IWord[] = [
     topic: ETopic.WEATHER,
   },
   {
-    word: "かぜ",
+    wordOrSentence: "かぜ",
     kanji: "風",
     meaning: "wind",
     total: 0,
@@ -165,7 +165,7 @@ export const vocabularyWeather: IWord[] = [
     topic: ETopic.WEATHER,
   },
   {
-    word: "かみなり",
+    wordOrSentence: "かみなり",
     kanji: "雷",
     meaning: "thunder",
     total: 0,
@@ -173,7 +173,7 @@ export const vocabularyWeather: IWord[] = [
     topic: ETopic.WEATHER,
   },
   {
-    word: "たいふう",
+    wordOrSentence: "たいふう",
     kanji: "台風",
     meaning: "typhoon",
     total: 0,
@@ -181,7 +181,7 @@ export const vocabularyWeather: IWord[] = [
     topic: ETopic.WEATHER,
   },
   {
-    word: "あらし",
+    wordOrSentence: "あらし",
     kanji: "嵐",
     meaning: "storm",
     total: 0,
@@ -189,7 +189,7 @@ export const vocabularyWeather: IWord[] = [
     topic: ETopic.WEATHER,
   },
   {
-    word: "あらし",
+    wordOrSentence: "あらし",
     kanji: "嵐",
     meaning: "storm",
     total: 0,
@@ -197,9 +197,9 @@ export const vocabularyWeather: IWord[] = [
     topic: ETopic.WEATHER,
   },
 ];
-export const vocabularyFood: IWord[] = [
+export const vocabularyFood: IWordOrSentence[] = [
   {
-    word: "ごはん",
+    wordOrSentence: "ごはん",
     kanji: "ご飯",
     meaning: "rice",
     total: 0,
@@ -207,7 +207,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "さかな",
+    wordOrSentence: "さかな",
     kanji: "魚",
     meaning: "fish",
     total: 0,
@@ -215,7 +215,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "にく",
+    wordOrSentence: "にく",
     kanji: "肉",
     meaning: "meat",
     total: 0,
@@ -223,7 +223,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "やさい",
+    wordOrSentence: "やさい",
     kanji: "野菜",
     meaning: "vegetable",
     total: 0,
@@ -231,7 +231,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "くだもの",
+    wordOrSentence: "くだもの",
     kanji: "果物",
     meaning: "fruit",
     total: 0,
@@ -239,7 +239,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "パン",
+    wordOrSentence: "パン",
     kanji: "パン",
     meaning: "bread",
     total: 0,
@@ -247,7 +247,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "たまご",
+    wordOrSentence: "たまご",
     kanji: "卵",
     meaning: "egg",
     total: 0,
@@ -255,7 +255,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "チーズ",
+    wordOrSentence: "チーズ",
     kanji: "チーズ",
     meaning: "cheese",
     total: 0,
@@ -263,7 +263,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "ヨーグルト",
+    wordOrSentence: "ヨーグルト",
     kanji: "ヨーグルト",
     meaning: "yogurt",
     total: 0,
@@ -271,7 +271,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "うどん",
+    wordOrSentence: "うどん",
     kanji: "うどん",
     meaning: "udon noodles",
     total: 0,
@@ -279,7 +279,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "そば",
+    wordOrSentence: "そば",
     kanji: "そば",
     meaning: "soba noodles",
     total: 0,
@@ -287,7 +287,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "ラーメン",
+    wordOrSentence: "ラーメン",
     kanji: "ラーメン",
     meaning: "ramen",
     total: 0,
@@ -295,7 +295,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "ピザ",
+    wordOrSentence: "ピザ",
     kanji: "ピザ",
     meaning: "pizza",
     total: 0,
@@ -303,7 +303,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "ハンバーガー",
+    wordOrSentence: "ハンバーガー",
     kanji: "ハンバーガー",
     meaning: "hamburger",
     total: 0,
@@ -311,7 +311,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "ステーキ",
+    wordOrSentence: "ステーキ",
     kanji: "ステーキ",
     meaning: "steak",
     total: 0,
@@ -319,7 +319,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "カレー",
+    wordOrSentence: "カレー",
     kanji: "カレー",
     meaning: "curry",
     total: 0,
@@ -327,7 +327,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "おにぎり",
+    wordOrSentence: "おにぎり",
     kanji: "お握り",
     meaning: "rice ball",
     total: 0,
@@ -335,7 +335,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "すし",
+    wordOrSentence: "すし",
     kanji: "寿司",
     meaning: "sushi",
     total: 0,
@@ -343,7 +343,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "てんぷら",
+    wordOrSentence: "てんぷら",
     kanji: "天ぷら",
     meaning: "tempura",
     total: 0,
@@ -351,7 +351,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "おかし",
+    wordOrSentence: "おかし",
     kanji: "お菓子",
     meaning: "snack",
     total: 0,
@@ -359,7 +359,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "アイスクリーム",
+    wordOrSentence: "アイスクリーム",
     kanji: "アイスクリーム",
     meaning: "ice cream",
     total: 0,
@@ -367,7 +367,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "フルーツ",
+    wordOrSentence: "フルーツ",
     kanji: "フルーツ",
     meaning: "fruit",
     total: 0,
@@ -375,7 +375,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "サラダ",
+    wordOrSentence: "サラダ",
     kanji: "サラダ",
     meaning: "salad",
     total: 0,
@@ -383,7 +383,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "コーヒー",
+    wordOrSentence: "コーヒー",
     kanji: "コーヒー",
     meaning: "coffee",
     total: 0,
@@ -391,7 +391,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "おちゃ",
+    wordOrSentence: "おちゃ",
     kanji: "お茶",
     meaning: "tea",
     total: 0,
@@ -399,7 +399,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "ビール",
+    wordOrSentence: "ビール",
     kanji: "ビール",
     meaning: "beer",
     total: 0,
@@ -407,7 +407,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "ワイン",
+    wordOrSentence: "ワイン",
     kanji: "ワイン",
     meaning: "wine",
     total: 0,
@@ -415,7 +415,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "ジュース",
+    wordOrSentence: "ジュース",
     kanji: "ジュース",
     meaning: "juice",
     total: 0,
@@ -423,7 +423,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "みず",
+    wordOrSentence: "みず",
     kanji: "水",
     meaning: "water",
     total: 0,
@@ -431,7 +431,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "おさけ",
+    wordOrSentence: "おさけ",
     kanji: "お酒",
     meaning: "alcohol",
     total: 0,
@@ -439,7 +439,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "やきにく",
+    wordOrSentence: "やきにく",
     kanji: "焼き肉",
     meaning: "grilled meat",
     total: 0,
@@ -447,7 +447,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "きんにく",
+    wordOrSentence: "きんにく",
     kanji: "筋肉",
     meaning: "muscle",
     total: 0,
@@ -455,7 +455,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "てんぷら",
+    wordOrSentence: "てんぷら",
     kanji: "天ぷら",
     meaning: "tempura",
     total: 0,
@@ -463,7 +463,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "やきとり",
+    wordOrSentence: "やきとり",
     kanji: "焼き鳥",
     meaning: "grilled chicken",
     total: 0,
@@ -471,7 +471,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "おすし",
+    wordOrSentence: "おすし",
     kanji: "お寿司",
     meaning: "sushi",
     total: 0,
@@ -479,7 +479,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "そば",
+    wordOrSentence: "そば",
     kanji: "蕎麦",
     meaning: "buckwheat noodles",
     total: 0,
@@ -487,7 +487,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "たこやき",
+    wordOrSentence: "たこやき",
     kanji: "たこ焼き",
     meaning: "octopus balls",
     total: 0,
@@ -495,7 +495,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "とんかつ",
+    wordOrSentence: "とんかつ",
     kanji: "とんかつ",
     meaning: "pork cutlet",
     total: 0,
@@ -503,7 +503,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "うなぎ",
+    wordOrSentence: "うなぎ",
     kanji: "鰻",
     meaning: "eel",
     total: 0,
@@ -511,7 +511,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "そうめん",
+    wordOrSentence: "そうめん",
     kanji: "素麺",
     meaning: "somen noodles",
     total: 0,
@@ -519,7 +519,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "ちらし",
+    wordOrSentence: "ちらし",
     kanji: "ちらし寿司",
     meaning: "scattered sushi",
     total: 0,
@@ -527,7 +527,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "ひつまぶし",
+    wordOrSentence: "ひつまぶし",
     kanji: "ひつまぶし",
     meaning: "eel over rice",
     total: 0,
@@ -535,7 +535,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "おでん",
+    wordOrSentence: "おでん",
     kanji: "おでん",
     meaning: "oden",
     total: 0,
@@ -543,7 +543,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "かれー",
+    wordOrSentence: "かれー",
     kanji: "カレー",
     meaning: "curry",
     total: 0,
@@ -551,7 +551,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "おこわ",
+    wordOrSentence: "おこわ",
     kanji: "おこわ",
     meaning: "steamed rice cake",
     total: 0,
@@ -559,7 +559,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "なべ",
+    wordOrSentence: "なべ",
     kanji: "鍋",
     meaning: "hot pot",
     total: 0,
@@ -567,7 +567,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "すきやき",
+    wordOrSentence: "すきやき",
     kanji: "すき焼き",
     meaning: "sukiyaki",
     total: 0,
@@ -575,7 +575,7 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
   {
-    word: "しゃぶしゃぶ",
+    wordOrSentence: "しゃぶしゃぶ",
     kanji: "しゃぶしゃぶ",
     meaning: "shabu-shabu",
     total: 0,
@@ -583,9 +583,9 @@ export const vocabularyFood: IWord[] = [
     topic: ETopic.FOOD,
   },
 ];
-export const vocabularyTransportation: IWord[] = [
+export const vocabularyTransportation: IWordOrSentence[] = [
   {
-    word: "くるま",
+    wordOrSentence: "くるま",
     kanji: "車",
     meaning: "car",
     total: 0,
@@ -593,7 +593,7 @@ export const vocabularyTransportation: IWord[] = [
     topic: ETopic.TRANSPORTATION,
   },
   {
-    word: "じてんしゃ",
+    wordOrSentence: "じてんしゃ",
     kanji: "自転車",
     meaning: "bicycle",
     total: 0,
@@ -601,7 +601,7 @@ export const vocabularyTransportation: IWord[] = [
     topic: ETopic.TRANSPORTATION,
   },
   {
-    word: "でんしゃ",
+    wordOrSentence: "でんしゃ",
     kanji: "電車",
     meaning: "train",
     total: 0,
@@ -609,7 +609,7 @@ export const vocabularyTransportation: IWord[] = [
     topic: ETopic.TRANSPORTATION,
   },
   {
-    word: "バス",
+    wordOrSentence: "バス",
     kanji: "バス",
     meaning: "bus",
     total: 0,
@@ -617,7 +617,7 @@ export const vocabularyTransportation: IWord[] = [
     topic: ETopic.TRANSPORTATION,
   },
   {
-    word: "てんしゃ",
+    wordOrSentence: "てんしゃ",
     kanji: "電車",
     meaning: "tram",
     total: 0,
@@ -625,7 +625,7 @@ export const vocabularyTransportation: IWord[] = [
     topic: ETopic.TRANSPORTATION,
   },
   {
-    word: "くうこう",
+    wordOrSentence: "くうこう",
     kanji: "空港",
     meaning: "airport",
     total: 0,
@@ -633,7 +633,7 @@ export const vocabularyTransportation: IWord[] = [
     topic: ETopic.TRANSPORTATION,
   },
   {
-    word: "ふね",
+    wordOrSentence: "ふね",
     kanji: "船",
     meaning: "boat",
     total: 0,
@@ -642,9 +642,9 @@ export const vocabularyTransportation: IWord[] = [
   },
 ];
 
-export const vocabularyShopping: IWord[] = [
+export const vocabularyShopping: IWordOrSentence[] = [
   {
-    word: "かいもの",
+    wordOrSentence: "かいもの",
     kanji: "買い物",
     meaning: "shopping",
     total: 0,
@@ -652,7 +652,7 @@ export const vocabularyShopping: IWord[] = [
     topic: ETopic.SHOPPING,
   },
   {
-    word: "デパート",
+    wordOrSentence: "デパート",
     kanji: "デパート",
     meaning: "department store",
     total: 0,
@@ -660,7 +660,7 @@ export const vocabularyShopping: IWord[] = [
     topic: ETopic.SHOPPING,
   },
   {
-    word: "しょうしょ",
+    wordOrSentence: "しょうしょ",
     kanji: "商店",
     meaning: "shop",
     total: 0,
@@ -668,7 +668,7 @@ export const vocabularyShopping: IWord[] = [
     topic: ETopic.SHOPPING,
   },
   {
-    word: "えいが",
+    wordOrSentence: "えいが",
     kanji: "映画",
     meaning: "movie",
     total: 0,
@@ -676,7 +676,7 @@ export const vocabularyShopping: IWord[] = [
     topic: ETopic.SHOPPING,
   },
   {
-    word: "みせ",
+    wordOrSentence: "みせ",
     kanji: "店",
     meaning: "store",
     total: 0,
@@ -684,7 +684,7 @@ export const vocabularyShopping: IWord[] = [
     topic: ETopic.SHOPPING,
   },
   {
-    word: "レストラン",
+    wordOrSentence: "レストラン",
     kanji: "レストラン",
     meaning: "restaurant",
     total: 0,
@@ -692,7 +692,7 @@ export const vocabularyShopping: IWord[] = [
     topic: ETopic.SHOPPING,
   },
   {
-    word: "スーパー",
+    wordOrSentence: "スーパー",
     kanji: "スーパー",
     meaning: "supermarket",
     total: 0,
@@ -700,7 +700,7 @@ export const vocabularyShopping: IWord[] = [
     topic: ETopic.SHOPPING,
   },
   {
-    word: "レジ",
+    wordOrSentence: "レジ",
     kanji: "レジ",
     meaning: "cash register",
     total: 0,
@@ -709,9 +709,9 @@ export const vocabularyShopping: IWord[] = [
   },
 ];
 
-export const vocabularySports: IWord[] = [
+export const vocabularySports: IWordOrSentence[] = [
   {
-    word: "スポーツ",
+    wordOrSentence: "スポーツ",
     kanji: "スポーツ",
     meaning: "sports",
     total: 0,
@@ -719,7 +719,7 @@ export const vocabularySports: IWord[] = [
     topic: ETopic.SPORTS,
   },
   {
-    word: "サッカー",
+    wordOrSentence: "サッカー",
     kanji: "サッカー",
     meaning: "soccer",
     total: 0,
@@ -727,7 +727,7 @@ export const vocabularySports: IWord[] = [
     topic: ETopic.SPORTS,
   },
   {
-    word: "テニス",
+    wordOrSentence: "テニス",
     kanji: "テニス",
     meaning: "tennis",
     total: 0,
@@ -735,7 +735,7 @@ export const vocabularySports: IWord[] = [
     topic: ETopic.SPORTS,
   },
   {
-    word: "バスケットボール",
+    wordOrSentence: "バスケットボール",
     kanji: "バスケットボール",
     meaning: "basketball",
     total: 0,
@@ -743,7 +743,7 @@ export const vocabularySports: IWord[] = [
     topic: ETopic.SPORTS,
   },
   {
-    word: "バレーボール",
+    wordOrSentence: "バレーボール",
     kanji: "バレーボール",
     meaning: "volleyball",
     total: 0,
@@ -751,7 +751,7 @@ export const vocabularySports: IWord[] = [
     topic: ETopic.SPORTS,
   },
   {
-    word: "野球",
+    wordOrSentence: "野球",
     kanji: "野球",
     meaning: "baseball",
     total: 0,
@@ -759,7 +759,7 @@ export const vocabularySports: IWord[] = [
     topic: ETopic.SPORTS,
   },
   {
-    word: "ゴルフ",
+    wordOrSentence: "ゴルフ",
     kanji: "ゴルフ",
     meaning: "golf",
     total: 0,
@@ -767,7 +767,7 @@ export const vocabularySports: IWord[] = [
     topic: ETopic.SPORTS,
   },
   {
-    word: "スキー",
+    wordOrSentence: "スキー",
     kanji: "スキー",
     meaning: "skiing",
     total: 0,
@@ -775,7 +775,7 @@ export const vocabularySports: IWord[] = [
     topic: ETopic.SPORTS,
   },
   {
-    word: "スケート",
+    wordOrSentence: "スケート",
     kanji: "スケート",
     meaning: "skating",
     total: 0,
@@ -783,7 +783,7 @@ export const vocabularySports: IWord[] = [
     topic: ETopic.SPORTS,
   },
   {
-    word: "サーフィン",
+    wordOrSentence: "サーフィン",
     kanji: "サーフィン",
     meaning: "surfing",
     total: 0,
@@ -792,9 +792,9 @@ export const vocabularySports: IWord[] = [
   },
 ];
 
-export const vocabularySchool: IWord[] = [
+export const vocabularySchool: IWordOrSentence[] = [
   {
-    word: "がっこう",
+    wordOrSentence: "がっこう",
     kanji: "学校",
     meaning: "school",
     total: 0,
@@ -802,7 +802,7 @@ export const vocabularySchool: IWord[] = [
     topic: ETopic.SCHOOL,
   },
   {
-    word: "せんせい",
+    wordOrSentence: "せんせい",
     kanji: "先生",
     meaning: "teacher",
     total: 0,
@@ -810,7 +810,7 @@ export const vocabularySchool: IWord[] = [
     topic: ETopic.SCHOOL,
   },
   {
-    word: "がくせい",
+    wordOrSentence: "がくせい",
     kanji: "学生",
     meaning: "student",
     total: 0,
@@ -818,7 +818,7 @@ export const vocabularySchool: IWord[] = [
     topic: ETopic.SCHOOL,
   },
   {
-    word: "きょうしつ",
+    wordOrSentence: "きょうしつ",
     kanji: "教室",
     meaning: "classroom",
     total: 0,
@@ -826,7 +826,7 @@ export const vocabularySchool: IWord[] = [
     topic: ETopic.SCHOOL,
   },
   {
-    word: "ほん",
+    wordOrSentence: "ほん",
     kanji: "本",
     meaning: "book",
     total: 0,
@@ -834,7 +834,7 @@ export const vocabularySchool: IWord[] = [
     topic: ETopic.SCHOOL,
   },
   {
-    word: "とけい",
+    wordOrSentence: "とけい",
     kanji: "時計",
     meaning: "clock",
     total: 0,
@@ -842,7 +842,7 @@ export const vocabularySchool: IWord[] = [
     topic: ETopic.SCHOOL,
   },
   {
-    word: "ペン",
+    wordOrSentence: "ペン",
     kanji: "ペン",
     meaning: "pen",
     total: 0,
@@ -850,7 +850,7 @@ export const vocabularySchool: IWord[] = [
     topic: ETopic.SCHOOL,
   },
   {
-    word: "ノート",
+    wordOrSentence: "ノート",
     kanji: "ノート",
     meaning: "notebook",
     total: 0,
@@ -858,7 +858,7 @@ export const vocabularySchool: IWord[] = [
     topic: ETopic.SCHOOL,
   },
   {
-    word: "しけん",
+    wordOrSentence: "しけん",
     kanji: "試験",
     meaning: "exam",
     total: 0,
@@ -866,7 +866,7 @@ export const vocabularySchool: IWord[] = [
     topic: ETopic.SCHOOL,
   },
   {
-    word: "かばん",
+    wordOrSentence: "かばん",
     kanji: "鞄",
     meaning: "bag",
     total: 0,
@@ -875,9 +875,9 @@ export const vocabularySchool: IWord[] = [
   },
 ];
 
-export const vocabularyJobs: IWord[] = [
+export const vocabularyJobs: IWordOrSentence[] = [
   {
-    word: "しごと",
+    wordOrSentence: "しごと",
     kanji: "仕事",
     meaning: "job",
     total: 0,
@@ -885,7 +885,7 @@ export const vocabularyJobs: IWord[] = [
     topic: ETopic.JOBS,
   },
   {
-    word: "かいしゃいん",
+    wordOrSentence: "かいしゃいん",
     kanji: "会社員",
     meaning: "company employee",
     total: 0,
@@ -893,7 +893,7 @@ export const vocabularyJobs: IWord[] = [
     topic: ETopic.JOBS,
   },
   {
-    word: "せんせい",
+    wordOrSentence: "せんせい",
     kanji: "先生",
     meaning: "teacher",
     total: 0,
@@ -901,7 +901,7 @@ export const vocabularyJobs: IWord[] = [
     topic: ETopic.JOBS,
   },
   {
-    word: "いしゃ",
+    wordOrSentence: "いしゃ",
     kanji: "医者",
     meaning: "doctor",
     total: 0,
@@ -909,7 +909,7 @@ export const vocabularyJobs: IWord[] = [
     topic: ETopic.JOBS,
   },
   {
-    word: "けんちくか",
+    wordOrSentence: "けんちくか",
     kanji: "建築家",
     meaning: "architect",
     total: 0,
@@ -917,7 +917,7 @@ export const vocabularyJobs: IWord[] = [
     topic: ETopic.JOBS,
   },
   {
-    word: "かしゅ",
+    wordOrSentence: "かしゅ",
     kanji: "歌手",
     meaning: "singer",
     total: 0,
@@ -925,7 +925,7 @@ export const vocabularyJobs: IWord[] = [
     topic: ETopic.JOBS,
   },
   {
-    word: "えいがか",
+    wordOrSentence: "えいがか",
     kanji: "映画家",
     meaning: "filmmaker",
     total: 0,
@@ -933,7 +933,7 @@ export const vocabularyJobs: IWord[] = [
     topic: ETopic.JOBS,
   },
   {
-    word: "べんごし",
+    wordOrSentence: "べんごし",
     kanji: "弁護士",
     meaning: "lawyer",
     total: 0,
@@ -941,7 +941,7 @@ export const vocabularyJobs: IWord[] = [
     topic: ETopic.JOBS,
   },
   {
-    word: "こうむいん",
+    wordOrSentence: "こうむいん",
     kanji: "公務員",
     meaning: "public servant",
     total: 0,
@@ -949,7 +949,7 @@ export const vocabularyJobs: IWord[] = [
     topic: ETopic.JOBS,
   },
   {
-    word: "だいがくきょうし",
+    wordOrSentence: "だいがくきょうし",
     kanji: "大学教師",
     meaning: "university professor",
     total: 0,
@@ -958,9 +958,9 @@ export const vocabularyJobs: IWord[] = [
   },
 ];
 
-export const vocabularyAnimals: IWord[] = [
+export const vocabularyAnimals: IWordOrSentence[] = [
   {
-    word: "どうぶつ",
+    wordOrSentence: "どうぶつ",
     kanji: "動物",
     meaning: "animal",
     total: 0,
@@ -968,7 +968,7 @@ export const vocabularyAnimals: IWord[] = [
     topic: ETopic.ANIMALS,
   },
   {
-    word: "いぬ",
+    wordOrSentence: "いぬ",
     kanji: "犬",
     meaning: "dog",
     total: 0,
@@ -976,7 +976,7 @@ export const vocabularyAnimals: IWord[] = [
     topic: ETopic.ANIMALS,
   },
   {
-    word: "ねこ",
+    wordOrSentence: "ねこ",
     kanji: "猫",
     meaning: "cat",
     total: 0,
@@ -984,7 +984,7 @@ export const vocabularyAnimals: IWord[] = [
     topic: ETopic.ANIMALS,
   },
   {
-    word: "うさぎ",
+    wordOrSentence: "うさぎ",
     kanji: "うさぎ",
     meaning: "rabbit",
     total: 0,
@@ -992,7 +992,7 @@ export const vocabularyAnimals: IWord[] = [
     topic: ETopic.ANIMALS,
   },
   {
-    word: "とり",
+    wordOrSentence: "とり",
     kanji: "鳥",
     meaning: "bird",
     total: 0,
@@ -1000,7 +1000,7 @@ export const vocabularyAnimals: IWord[] = [
     topic: ETopic.ANIMALS,
   },
   {
-    word: "さる",
+    wordOrSentence: "さる",
     kanji: "猿",
     meaning: "monkey",
     total: 0,
@@ -1008,7 +1008,7 @@ export const vocabularyAnimals: IWord[] = [
     topic: ETopic.ANIMALS,
   },
   {
-    word: "ぞう",
+    wordOrSentence: "ぞう",
     kanji: "象",
     meaning: "elephant",
     total: 0,
@@ -1016,7 +1016,7 @@ export const vocabularyAnimals: IWord[] = [
     topic: ETopic.ANIMALS,
   },
   {
-    word: "ひつじ",
+    wordOrSentence: "ひつじ",
     kanji: "羊",
     meaning: "sheep",
     total: 0,
@@ -1024,7 +1024,7 @@ export const vocabularyAnimals: IWord[] = [
     topic: ETopic.ANIMALS,
   },
   {
-    word: "ねずみ",
+    wordOrSentence: "ねずみ",
     kanji: "鼠",
     meaning: "mouse",
     total: 0,
@@ -1032,7 +1032,7 @@ export const vocabularyAnimals: IWord[] = [
     topic: ETopic.ANIMALS,
   },
   {
-    word: "うし",
+    wordOrSentence: "うし",
     kanji: "牛",
     meaning: "cow",
     total: 0,
@@ -1041,9 +1041,9 @@ export const vocabularyAnimals: IWord[] = [
   },
 ];
 
-export const vocabularyItems: IWord[] = [
+export const vocabularyItems: IWordOrSentence[] = [
   {
-    word: "もの",
+    wordOrSentence: "もの",
     kanji: "物",
     meaning: "thing",
     total: 0,
@@ -1051,7 +1051,7 @@ export const vocabularyItems: IWord[] = [
     topic: ETopic.ITEMS,
   },
   {
-    word: "えんぴつ",
+    wordOrSentence: "えんぴつ",
     kanji: "鉛筆",
     meaning: "pencil",
     total: 0,
@@ -1059,7 +1059,7 @@ export const vocabularyItems: IWord[] = [
     topic: ETopic.ITEMS,
   },
   {
-    word: "ペン",
+    wordOrSentence: "ペン",
     kanji: "ペン",
     meaning: "pen",
     total: 0,
@@ -1067,7 +1067,7 @@ export const vocabularyItems: IWord[] = [
     topic: ETopic.ITEMS,
   },
   {
-    word: "ほん",
+    wordOrSentence: "ほん",
     kanji: "本",
     meaning: "book",
     total: 0,
@@ -1075,7 +1075,7 @@ export const vocabularyItems: IWord[] = [
     topic: ETopic.ITEMS,
   },
   {
-    word: "かさ",
+    wordOrSentence: "かさ",
     kanji: "傘",
     meaning: "umbrella",
     total: 0,
@@ -1083,7 +1083,7 @@ export const vocabularyItems: IWord[] = [
     topic: ETopic.ITEMS,
   },
   {
-    word: "とけい",
+    wordOrSentence: "とけい",
     kanji: "時計",
     meaning: "watch",
     total: 0,
@@ -1091,7 +1091,7 @@ export const vocabularyItems: IWord[] = [
     topic: ETopic.ITEMS,
   },
   {
-    word: "でんしゃ",
+    wordOrSentence: "でんしゃ",
     kanji: "電車",
     meaning: "train",
     total: 0,
@@ -1099,7 +1099,7 @@ export const vocabularyItems: IWord[] = [
     topic: ETopic.ITEMS,
   },
   {
-    word: "くるま",
+    wordOrSentence: "くるま",
     kanji: "車",
     meaning: "car",
     total: 0,
@@ -1107,7 +1107,7 @@ export const vocabularyItems: IWord[] = [
     topic: ETopic.ITEMS,
   },
   {
-    word: "てちょう",
+    wordOrSentence: "てちょう",
     kanji: "手帳",
     meaning: "notebook",
     total: 0,
@@ -1115,7 +1115,7 @@ export const vocabularyItems: IWord[] = [
     topic: ETopic.ITEMS,
   },
   {
-    word: "けしゴム",
+    wordOrSentence: "けしゴム",
     kanji: "消しゴム",
     meaning: "eraser",
     total: 0,
@@ -1123,7 +1123,7 @@ export const vocabularyItems: IWord[] = [
     topic: ETopic.ITEMS,
   },
   {
-    word: "かぎ",
+    wordOrSentence: "かぎ",
     kanji: "鍵",
     meaning: "key",
     total: 0,
@@ -1132,9 +1132,9 @@ export const vocabularyItems: IWord[] = [
   },
 ];
 
-export const vocabularyProfessions: IWord[] = [
+export const vocabularyProfessions: IWordOrSentence[] = [
   {
-    word: "かいしゃいん",
+    wordOrSentence: "かいしゃいん",
     kanji: "会社員",
     meaning: "company employee",
     total: 0,
@@ -1142,7 +1142,7 @@ export const vocabularyProfessions: IWord[] = [
     topic: ETopic.PROFESSIONS,
   },
   {
-    word: "せんせい",
+    wordOrSentence: "せんせい",
     kanji: "先生",
     meaning: "teacher",
     total: 0,
@@ -1150,7 +1150,7 @@ export const vocabularyProfessions: IWord[] = [
     topic: ETopic.PROFESSIONS,
   },
   {
-    word: "べんごし",
+    wordOrSentence: "べんごし",
     kanji: "弁護士",
     meaning: "lawyer",
     total: 0,
@@ -1158,7 +1158,7 @@ export const vocabularyProfessions: IWord[] = [
     topic: ETopic.PROFESSIONS,
   },
   {
-    word: "いしゃ",
+    wordOrSentence: "いしゃ",
     kanji: "医者",
     meaning: "doctor",
     total: 0,
@@ -1166,7 +1166,7 @@ export const vocabularyProfessions: IWord[] = [
     topic: ETopic.PROFESSIONS,
   },
   {
-    word: "けんちくか",
+    wordOrSentence: "けんちくか",
     kanji: "建築家",
     meaning: "architect",
     total: 0,
@@ -1174,7 +1174,7 @@ export const vocabularyProfessions: IWord[] = [
     topic: ETopic.PROFESSIONS,
   },
   {
-    word: "かしゅ",
+    wordOrSentence: "かしゅ",
     kanji: "歌手",
     meaning: "singer",
     total: 0,
@@ -1182,7 +1182,7 @@ export const vocabularyProfessions: IWord[] = [
     topic: ETopic.PROFESSIONS,
   },
   {
-    word: "かいがいりょこうがいしゃいん",
+    wordOrSentence: "かいがいりょこうがいしゃいん",
     kanji: "海外旅行会社員",
     meaning: "travel agency employee",
     total: 0,
@@ -1190,7 +1190,7 @@ export const vocabularyProfessions: IWord[] = [
     topic: ETopic.PROFESSIONS,
   },
   {
-    word: "エンジニア",
+    wordOrSentence: "エンジニア",
     kanji: "エンジニア",
     meaning: "engineer",
     total: 0,
@@ -1198,7 +1198,7 @@ export const vocabularyProfessions: IWord[] = [
     topic: ETopic.PROFESSIONS,
   },
   {
-    word: "パイロット",
+    wordOrSentence: "パイロット",
     kanji: "パイロット",
     meaning: "pilot",
     total: 0,
@@ -1206,7 +1206,7 @@ export const vocabularyProfessions: IWord[] = [
     topic: ETopic.PROFESSIONS,
   },
   {
-    word: "おかしや",
+    wordOrSentence: "おかしや",
     kanji: "お菓子屋",
     meaning: "confectioner",
     total: 0,
@@ -1215,9 +1215,9 @@ export const vocabularyProfessions: IWord[] = [
   },
 ];
 
-export const vocabularySubjects: IWord[] = [
+export const vocabularySubjects: IWordOrSentence[] = [
   {
-    word: "れきし",
+    wordOrSentence: "れきし",
     kanji: "歴史",
     meaning: "history",
     total: 0,
@@ -1225,7 +1225,7 @@ export const vocabularySubjects: IWord[] = [
     topic: ETopic.SUBJECTS,
   },
   {
-    word: "さんすう",
+    wordOrSentence: "さんすう",
     kanji: "算数",
     meaning: "mathematics",
     total: 0,
@@ -1233,7 +1233,7 @@ export const vocabularySubjects: IWord[] = [
     topic: ETopic.SUBJECTS,
   },
   {
-    word: "けいざい",
+    wordOrSentence: "けいざい",
     kanji: "経済",
     meaning: "economics",
     total: 0,
@@ -1241,7 +1241,7 @@ export const vocabularySubjects: IWord[] = [
     topic: ETopic.SUBJECTS,
   },
   {
-    word: "りか",
+    wordOrSentence: "りか",
     kanji: "理科",
     meaning: "science",
     total: 0,
@@ -1249,7 +1249,7 @@ export const vocabularySubjects: IWord[] = [
     topic: ETopic.SUBJECTS,
   },
   {
-    word: "ぶんがく",
+    wordOrSentence: "ぶんがく",
     kanji: "文学",
     meaning: "literature",
     total: 0,
@@ -1257,7 +1257,7 @@ export const vocabularySubjects: IWord[] = [
     topic: ETopic.SUBJECTS,
   },
   {
-    word: "かがく",
+    wordOrSentence: "かがく",
     kanji: "化学",
     meaning: "chemistry",
     total: 0,
@@ -1265,7 +1265,7 @@ export const vocabularySubjects: IWord[] = [
     topic: ETopic.SUBJECTS,
   },
   {
-    word: "ぎじゅつ",
+    wordOrSentence: "ぎじゅつ",
     kanji: "技術",
     meaning: "technology",
     total: 0,
@@ -1273,7 +1273,7 @@ export const vocabularySubjects: IWord[] = [
     topic: ETopic.SUBJECTS,
   },
   {
-    word: "えいご",
+    wordOrSentence: "えいご",
     kanji: "英語",
     meaning: "English",
     total: 0,
@@ -1281,7 +1281,7 @@ export const vocabularySubjects: IWord[] = [
     topic: ETopic.SUBJECTS,
   },
   {
-    word: "にほんご",
+    wordOrSentence: "にほんご",
     kanji: "日本語",
     meaning: "Japanese",
     total: 0,
@@ -1289,7 +1289,7 @@ export const vocabularySubjects: IWord[] = [
     topic: ETopic.SUBJECTS,
   },
   {
-    word: "じょうほうがく",
+    wordOrSentence: "じょうほうがく",
     kanji: "情報学",
     meaning: "informatics",
     total: 0,
@@ -1298,9 +1298,9 @@ export const vocabularySubjects: IWord[] = [
   },
 ];
 
-export const vocabularyPlaces: IWord[] = [
+export const vocabularyPlaces: IWordOrSentence[] = [
   {
-    word: "えき",
+    wordOrSentence: "えき",
     kanji: "駅",
     meaning: "station",
     total: 0,
@@ -1308,7 +1308,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "こうえん",
+    wordOrSentence: "こうえん",
     kanji: "公園",
     meaning: "park",
     total: 0,
@@ -1316,7 +1316,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "うみ",
+    wordOrSentence: "うみ",
     kanji: "海",
     meaning: "sea",
     total: 0,
@@ -1324,7 +1324,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "いえ",
+    wordOrSentence: "いえ",
     kanji: "家",
     meaning: "house",
     total: 0,
@@ -1332,7 +1332,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "やま",
+    wordOrSentence: "やま",
     kanji: "山",
     meaning: "mountain",
     total: 0,
@@ -1340,7 +1340,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "ほんや",
+    wordOrSentence: "ほんや",
     kanji: "本屋",
     meaning: "bookstore",
     total: 0,
@@ -1348,7 +1348,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "びょういん",
+    wordOrSentence: "びょういん",
     kanji: "病院",
     meaning: "hospital",
     total: 0,
@@ -1356,7 +1356,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "えいがかん",
+    wordOrSentence: "えいがかん",
     kanji: "映画館",
     meaning: "movie theater",
     total: 0,
@@ -1364,7 +1364,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "まち",
+    wordOrSentence: "まち",
     kanji: "町",
     meaning: "town",
     total: 0,
@@ -1372,7 +1372,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "うみべ",
+    wordOrSentence: "うみべ",
     kanji: "海辺",
     meaning: "beach",
     total: 0,
@@ -1380,7 +1380,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "けいさつしょ",
+    wordOrSentence: "けいさつしょ",
     kanji: "警察署",
     meaning: "police station",
     total: 0,
@@ -1388,7 +1388,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "ぎんこう",
+    wordOrSentence: "ぎんこう",
     kanji: "銀行",
     meaning: "bank",
     total: 0,
@@ -1396,7 +1396,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "ゆうびんきょく",
+    wordOrSentence: "ゆうびんきょく",
     kanji: "郵便局",
     meaning: "post office",
     total: 0,
@@ -1404,7 +1404,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "きっさてん",
+    wordOrSentence: "きっさてん",
     kanji: "喫茶店",
     meaning: "cafe",
     total: 0,
@@ -1412,7 +1412,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "くうこう",
+    wordOrSentence: "くうこう",
     kanji: "空港",
     meaning: "airport",
     total: 0,
@@ -1420,7 +1420,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "びじゅつかん",
+    wordOrSentence: "びじゅつかん",
     kanji: "美術館",
     meaning: "art museum",
     total: 0,
@@ -1428,7 +1428,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "としょかん",
+    wordOrSentence: "としょかん",
     kanji: "図書館",
     meaning: "library",
     total: 0,
@@ -1436,7 +1436,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "ゆうびんばんごう",
+    wordOrSentence: "ゆうびんばんごう",
     kanji: "郵便番号",
     meaning: "postal code",
     total: 0,
@@ -1444,7 +1444,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "ぎょえん",
+    wordOrSentence: "ぎょえん",
     kanji: "魚園",
     meaning: "aquarium",
     total: 0,
@@ -1452,7 +1452,7 @@ export const vocabularyPlaces: IWord[] = [
     topic: ETopic.PLACES,
   },
   {
-    word: "びじんかん",
+    wordOrSentence: "びじんかん",
     kanji: "美人館",
     meaning: "beauty salon",
     total: 0,
@@ -1461,9 +1461,9 @@ export const vocabularyPlaces: IWord[] = [
   },
 ];
 
-export const vocabularyNumbers: IWord[] = [
+export const vocabularyNumbers: IWordOrSentence[] = [
   {
-    word: "じゅういち",
+    wordOrSentence: "じゅういち",
     kanji: "十一",
     meaning: "eleven;11",
     total: 0,
@@ -1471,7 +1471,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "にじゅう",
+    wordOrSentence: "にじゅう",
     kanji: "二十",
     meaning: "twenty;20",
     total: 0,
@@ -1479,7 +1479,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "さんじゅう",
+    wordOrSentence: "さんじゅう",
     kanji: "三十",
     meaning: "thirty;30",
     total: 0,
@@ -1487,7 +1487,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "よんじゅう",
+    wordOrSentence: "よんじゅう",
     kanji: "四十",
     meaning: "forty;40",
     total: 0,
@@ -1495,7 +1495,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "ごじゅう",
+    wordOrSentence: "ごじゅう",
     kanji: "五十",
     meaning: "fifty;50",
     total: 0,
@@ -1503,7 +1503,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "ろくじゅう",
+    wordOrSentence: "ろくじゅう",
     kanji: "六十",
     meaning: "sixty;60",
     total: 0,
@@ -1511,7 +1511,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "ななじゅう",
+    wordOrSentence: "ななじゅう",
     kanji: "七十",
     meaning: "seventy;70",
     total: 0,
@@ -1519,7 +1519,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "はちじゅう",
+    wordOrSentence: "はちじゅう",
     kanji: "八十",
     meaning: "eighty;80",
     total: 0,
@@ -1527,7 +1527,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "きゅうじゅう",
+    wordOrSentence: "きゅうじゅう",
     kanji: "九十",
     meaning: "ninety;90",
     total: 0,
@@ -1535,7 +1535,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "ひゃくいち",
+    wordOrSentence: "ひゃくいち",
     kanji: "百一",
     meaning: "one hundred one;101",
     total: 0,
@@ -1543,7 +1543,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "さんびゃくごじゅうに",
+    wordOrSentence: "さんびゃくごじゅうに",
     kanji: "三百五十二",
     meaning: "three hundred fifty-two;352",
     total: 0,
@@ -1551,7 +1551,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "せんはっぴゃくじゅう",
+    wordOrSentence: "せんはっぴゃくじゅう",
     kanji: "千八百十",
     meaning: "one thousand eight hundred ten;1810",
     total: 0,
@@ -1559,7 +1559,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "ごせん",
+    wordOrSentence: "ごせん",
     kanji: "五千",
     meaning: "five thousand;5000",
     total: 0,
@@ -1567,7 +1567,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "ななせんごひゃく",
+    wordOrSentence: "ななせんごひゃく",
     kanji: "七千五百",
     meaning: "seven thousand five hundred;7500",
     total: 0,
@@ -1575,7 +1575,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "じゅうまん",
+    wordOrSentence: "じゅうまん",
     kanji: "十万",
     meaning: "one hundred thousand;100000",
     total: 0,
@@ -1583,7 +1583,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "さんびゃくまん",
+    wordOrSentence: "さんびゃくまん",
     kanji: "三百万",
     meaning: "three million;3000000",
     total: 0,
@@ -1591,7 +1591,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "いち",
+    wordOrSentence: "いち",
     kanji: "一",
     meaning: "one;1",
     total: 0,
@@ -1599,7 +1599,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "に",
+    wordOrSentence: "に",
     kanji: "二",
     meaning: "two;2",
     total: 0,
@@ -1607,7 +1607,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "さん",
+    wordOrSentence: "さん",
     kanji: "三",
     meaning: "three;3",
     total: 0,
@@ -1615,7 +1615,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "し",
+    wordOrSentence: "し",
     kanji: "四",
     meaning: "four;4",
     total: 0,
@@ -1623,7 +1623,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "ご",
+    wordOrSentence: "ご",
     kanji: "五",
     meaning: "five;5",
     total: 0,
@@ -1631,7 +1631,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "ろく",
+    wordOrSentence: "ろく",
     kanji: "六",
     meaning: "six;6",
     total: 0,
@@ -1639,7 +1639,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "しち",
+    wordOrSentence: "しち",
     kanji: "七",
     meaning: "seven;7",
     total: 0,
@@ -1647,7 +1647,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "はち",
+    wordOrSentence: "はち",
     kanji: "八",
     meaning: "eight;8",
     total: 0,
@@ -1655,7 +1655,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "きゅう",
+    wordOrSentence: "きゅう",
     kanji: "九",
     meaning: "nine;9",
     total: 0,
@@ -1663,7 +1663,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "じゅう",
+    wordOrSentence: "じゅう",
     kanji: "十",
     meaning: "ten;10",
     total: 0,
@@ -1671,7 +1671,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "ひゃく",
+    wordOrSentence: "ひゃく",
     kanji: "百",
     meaning: "hundred;100",
     total: 0,
@@ -1679,7 +1679,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "せん",
+    wordOrSentence: "せん",
     kanji: "千",
     meaning: "thousand;1000",
     total: 0,
@@ -1687,7 +1687,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "まん",
+    wordOrSentence: "まん",
     kanji: "万",
     meaning: "ten thousand;10000",
     total: 0,
@@ -1695,7 +1695,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "おく",
+    wordOrSentence: "おく",
     kanji: "億",
     meaning: "hundred million;100000000",
     total: 0,
@@ -1703,7 +1703,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "てん",
+    wordOrSentence: "てん",
     kanji: "点",
     meaning: "point",
     total: 0,
@@ -1711,7 +1711,7 @@ export const vocabularyNumbers: IWord[] = [
     topic: ETopic.NUMBERS,
   },
   {
-    word: "ぜろ",
+    wordOrSentence: "ぜろ",
     kanji: "零",
     meaning: "zero;0",
     total: 0,
@@ -1720,9 +1720,9 @@ export const vocabularyNumbers: IWord[] = [
   },
 ];
 
-export const vocabularyColors: IWord[] = [
+export const vocabularyColors: IWordOrSentence[] = [
   {
-    word: "あか",
+    wordOrSentence: "あか",
     kanji: "赤",
     meaning: "red",
     total: 0,
@@ -1730,7 +1730,7 @@ export const vocabularyColors: IWord[] = [
     topic: ETopic.COLORS,
   },
   {
-    word: "あお",
+    wordOrSentence: "あお",
     kanji: "青",
     meaning: "blue",
     total: 0,
@@ -1738,7 +1738,7 @@ export const vocabularyColors: IWord[] = [
     topic: ETopic.COLORS,
   },
   {
-    word: "きいろ",
+    wordOrSentence: "きいろ",
     kanji: "黄色",
     meaning: "yellow",
     total: 0,
@@ -1746,7 +1746,7 @@ export const vocabularyColors: IWord[] = [
     topic: ETopic.COLORS,
   },
   {
-    word: "みどり",
+    wordOrSentence: "みどり",
     kanji: "緑",
     meaning: "green",
     total: 0,
@@ -1754,7 +1754,7 @@ export const vocabularyColors: IWord[] = [
     topic: ETopic.COLORS,
   },
   {
-    word: "しろ",
+    wordOrSentence: "しろ",
     kanji: "白",
     meaning: "white",
     total: 0,
@@ -1762,7 +1762,7 @@ export const vocabularyColors: IWord[] = [
     topic: ETopic.COLORS,
   },
   {
-    word: "くろ",
+    wordOrSentence: "くろ",
     kanji: "黒",
     meaning: "black",
     total: 0,
@@ -1770,7 +1770,7 @@ export const vocabularyColors: IWord[] = [
     topic: ETopic.COLORS,
   },
   {
-    word: "むらさき",
+    wordOrSentence: "むらさき",
     kanji: "紫",
     meaning: "purple",
     total: 0,
@@ -1778,7 +1778,7 @@ export const vocabularyColors: IWord[] = [
     topic: ETopic.COLORS,
   },
   {
-    word: "ピンク",
+    wordOrSentence: "ピンク",
     kanji: "ピンク",
     meaning: "pink",
     total: 0,
@@ -1786,7 +1786,7 @@ export const vocabularyColors: IWord[] = [
     topic: ETopic.COLORS,
   },
   {
-    word: "オレンジ",
+    wordOrSentence: "オレンジ",
     kanji: "オレンジ",
     meaning: "orange",
     total: 0,
@@ -1794,7 +1794,7 @@ export const vocabularyColors: IWord[] = [
     topic: ETopic.COLORS,
   },
   {
-    word: "ブラウン",
+    wordOrSentence: "ブラウン",
     kanji: "ブラウン",
     meaning: "brown",
     total: 0,
@@ -1803,9 +1803,9 @@ export const vocabularyColors: IWord[] = [
   },
 ];
 
-export const vocabularyTime: IWord[] = [
+export const vocabularyTime: IWordOrSentence[] = [
   {
-    word: "じかん",
+    wordOrSentence: "じかん",
     kanji: "時間",
     meaning: "time",
     total: 0,
@@ -1813,7 +1813,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "ひ",
+    wordOrSentence: "ひ",
     kanji: "日",
     meaning: "day",
     total: 0,
@@ -1821,7 +1821,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "しゅう",
+    wordOrSentence: "しゅう",
     kanji: "週",
     meaning: "week",
     total: 0,
@@ -1829,7 +1829,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "つき",
+    wordOrSentence: "つき",
     kanji: "月",
     meaning: "month",
     total: 0,
@@ -1837,7 +1837,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "ねん",
+    wordOrSentence: "ねん",
     kanji: "年",
     meaning: "year",
     total: 0,
@@ -1845,7 +1845,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "あさ",
+    wordOrSentence: "あさ",
     kanji: "朝",
     meaning: "morning",
     total: 0,
@@ -1853,7 +1853,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "ひる",
+    wordOrSentence: "ひる",
     kanji: "昼",
     meaning: "noon",
     total: 0,
@@ -1861,7 +1861,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "ばん",
+    wordOrSentence: "ばん",
     kanji: "晩",
     meaning: "evening",
     total: 0,
@@ -1869,7 +1869,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "ごご",
+    wordOrSentence: "ごご",
     kanji: "午後",
     meaning: "afternoon",
     total: 0,
@@ -1877,7 +1877,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "ごぜん",
+    wordOrSentence: "ごぜん",
     kanji: "午前",
     meaning: "morning",
     total: 0,
@@ -1885,7 +1885,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "げつようび",
+    wordOrSentence: "げつようび",
     kanji: "月曜日",
     meaning: "Monday",
     total: 0,
@@ -1893,7 +1893,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "かようび",
+    wordOrSentence: "かようび",
     kanji: "火曜日",
     meaning: "Tuesday",
     total: 0,
@@ -1901,7 +1901,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "すいようび",
+    wordOrSentence: "すいようび",
     kanji: "水曜日",
     meaning: "Wednesday",
     total: 0,
@@ -1909,7 +1909,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "もくようび",
+    wordOrSentence: "もくようび",
     kanji: "木曜日",
     meaning: "Thursday",
     total: 0,
@@ -1917,7 +1917,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "きんようび",
+    wordOrSentence: "きんようび",
     kanji: "金曜日",
     meaning: "Friday",
     total: 0,
@@ -1925,7 +1925,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "どようび",
+    wordOrSentence: "どようび",
     kanji: "土曜日",
     meaning: "Saturday",
     total: 0,
@@ -1933,7 +1933,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "にちようび",
+    wordOrSentence: "にちようび",
     kanji: "日曜日",
     meaning: "Sunday",
     total: 0,
@@ -1941,7 +1941,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "ついたち",
+    wordOrSentence: "ついたち",
     kanji: "一日",
     meaning: "the first day of the month",
     total: 0,
@@ -1949,7 +1949,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "ふつか",
+    wordOrSentence: "ふつか",
     kanji: "二日",
     meaning: "the second day of the month",
     total: 0,
@@ -1957,7 +1957,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "みっか",
+    wordOrSentence: "みっか",
     kanji: "三日",
     meaning: "the third day of the month",
     total: 0,
@@ -1965,7 +1965,7 @@ export const vocabularyTime: IWord[] = [
     topic: ETopic.TIME,
   },
   {
-    word: "よっか",
+    wordOrSentence: "よっか",
     kanji: "四日",
     meaning: "the fourth day of the month",
     total: 0,
@@ -1974,9 +1974,9 @@ export const vocabularyTime: IWord[] = [
   },
 ];
 
-export const vocabularyCountry: IWord[] = [
+export const vocabularyCountry: IWordOrSentence[] = [
   {
-    word: "くに",
+    wordOrSentence: "くに",
     kanji: "国",
     meaning: "country",
     total: 0,
@@ -1984,7 +1984,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "にほん",
+    wordOrSentence: "にほん",
     kanji: "日本",
     meaning: "Japan",
     total: 0,
@@ -1992,7 +1992,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "アメリカ",
+    wordOrSentence: "アメリカ",
     kanji: "アメリカ",
     meaning: "America",
     total: 0,
@@ -2000,7 +2000,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "イギリス",
+    wordOrSentence: "イギリス",
     kanji: "イギリス",
     meaning: "England",
     total: 0,
@@ -2008,7 +2008,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "フランス",
+    wordOrSentence: "フランス",
     kanji: "フランス",
     meaning: "France",
     total: 0,
@@ -2016,7 +2016,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "ドイツ",
+    wordOrSentence: "ドイツ",
     kanji: "ドイツ",
     meaning: "Germany",
     total: 0,
@@ -2024,7 +2024,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "かんこく",
+    wordOrSentence: "かんこく",
     kanji: "韓国",
     meaning: "Korea",
     total: 0,
@@ -2032,7 +2032,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "ちゅうごく",
+    wordOrSentence: "ちゅうごく",
     kanji: "中国",
     meaning: "China",
     total: 0,
@@ -2040,7 +2040,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "イタリア",
+    wordOrSentence: "イタリア",
     kanji: "イタリア",
     meaning: "Italy",
     total: 0,
@@ -2048,7 +2048,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "スペイン",
+    wordOrSentence: "スペイン",
     kanji: "スペイン",
     meaning: "Spain",
     total: 0,
@@ -2056,7 +2056,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "ロシア",
+    wordOrSentence: "ロシア",
     kanji: "ロシア",
     meaning: "Russia",
     total: 0,
@@ -2064,7 +2064,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "かんしん",
+    wordOrSentence: "かんしん",
     kanji: "韓国",
     meaning: "Korea",
     total: 0,
@@ -2072,7 +2072,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "ブラジル",
+    wordOrSentence: "ブラジル",
     kanji: "ブラジル",
     meaning: "Brazil",
     total: 0,
@@ -2080,7 +2080,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "カナダ",
+    wordOrSentence: "カナダ",
     kanji: "カナダ",
     meaning: "Canada",
     total: 0,
@@ -2088,7 +2088,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "オーストラリア",
+    wordOrSentence: "オーストラリア",
     kanji: "オーストラリア",
     meaning: "Australia",
     total: 0,
@@ -2096,7 +2096,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "インド",
+    wordOrSentence: "インド",
     kanji: "インド",
     meaning: "India",
     total: 0,
@@ -2104,7 +2104,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "メキシコ",
+    wordOrSentence: "メキシコ",
     kanji: "メキシコ",
     meaning: "Mexico",
     total: 0,
@@ -2112,7 +2112,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "タイ",
+    wordOrSentence: "タイ",
     kanji: "タイ",
     meaning: "Thailand",
     total: 0,
@@ -2120,7 +2120,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "インドネシア",
+    wordOrSentence: "インドネシア",
     kanji: "インドネシア",
     meaning: "Indonesia",
     total: 0,
@@ -2128,7 +2128,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "フィリピン",
+    wordOrSentence: "フィリピン",
     kanji: "フィリピン",
     meaning: "Philippines",
     total: 0,
@@ -2136,7 +2136,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "ベトナム",
+    wordOrSentence: "ベトナム",
     kanji: "ベトナム",
     meaning: "Vietnam",
     total: 0,
@@ -2144,7 +2144,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "モロッコ",
+    wordOrSentence: "モロッコ",
     kanji: "モロッコ",
     meaning: "Morocco",
     total: 0,
@@ -2152,7 +2152,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "サウジアラビア",
+    wordOrSentence: "サウジアラビア",
     kanji: "サウジアラビア",
     meaning: "Saudi Arabia",
     total: 0,
@@ -2160,7 +2160,7 @@ export const vocabularyCountry: IWord[] = [
     topic: ETopic.COUNTRY,
   },
   {
-    word: "エジプト",
+    wordOrSentence: "エジプト",
     kanji: "エジプト",
     meaning: "Egypt",
     total: 0,
@@ -2169,9 +2169,9 @@ export const vocabularyCountry: IWord[] = [
   },
 ];
 
-export const vocabularyTechnology: IWord[] = [
+export const vocabularyTechnology: IWordOrSentence[] = [
   {
-    word: "パソコン",
+    wordOrSentence: "パソコン",
     kanji: "パソコン",
     meaning: "personal computer",
     total: 0,
@@ -2179,7 +2179,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "スマートフォン",
+    wordOrSentence: "スマートフォン",
     kanji: "スマートフォン",
     meaning: "smartphone",
     total: 0,
@@ -2187,7 +2187,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "インターネット",
+    wordOrSentence: "インターネット",
     kanji: "インターネット",
     meaning: "internet",
     total: 0,
@@ -2195,7 +2195,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "ウェブサイト",
+    wordOrSentence: "ウェブサイト",
     kanji: "ウェブサイト",
     meaning: "website",
     total: 0,
@@ -2203,7 +2203,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "メール",
+    wordOrSentence: "メール",
     kanji: "メール",
     meaning: "email",
     total: 0,
@@ -2211,7 +2211,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "アプリ",
+    wordOrSentence: "アプリ",
     kanji: "アプリ",
     meaning: "app",
     total: 0,
@@ -2219,7 +2219,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "パスワード",
+    wordOrSentence: "パスワード",
     kanji: "パスワード",
     meaning: "password",
     total: 0,
@@ -2227,7 +2227,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "カメラ",
+    wordOrSentence: "カメラ",
     kanji: "カメラ",
     meaning: "camera",
     total: 0,
@@ -2235,7 +2235,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "ビデオ",
+    wordOrSentence: "ビデオ",
     kanji: "ビデオ",
     meaning: "video",
     total: 0,
@@ -2243,7 +2243,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "テレビ",
+    wordOrSentence: "テレビ",
     kanji: "テレビ",
     meaning: "television",
     total: 0,
@@ -2251,7 +2251,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "ゲーム",
+    wordOrSentence: "ゲーム",
     kanji: "ゲーム",
     meaning: "game",
     total: 0,
@@ -2259,7 +2259,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "ネットワーク",
+    wordOrSentence: "ネットワーク",
     kanji: "ネットワーク",
     meaning: "network",
     total: 0,
@@ -2267,7 +2267,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "ソフトウェア",
+    wordOrSentence: "ソフトウェア",
     kanji: "ソフトウェア",
     meaning: "software",
     total: 0,
@@ -2275,7 +2275,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "ハードウェア",
+    wordOrSentence: "ハードウェア",
     kanji: "ハードウェア",
     meaning: "hardware",
     total: 0,
@@ -2283,7 +2283,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "データ",
+    wordOrSentence: "データ",
     kanji: "データ",
     meaning: "data",
     total: 0,
@@ -2291,7 +2291,7 @@ export const vocabularyTechnology: IWord[] = [
     topic: ETopic.TECHNOLOGY,
   },
   {
-    word: "バックアップ",
+    wordOrSentence: "バックアップ",
     kanji: "バックアップ",
     meaning: "backup",
     total: 0,
@@ -2300,9 +2300,9 @@ export const vocabularyTechnology: IWord[] = [
   },
 ];
 
-export const vocabularyTaste: IWord[] = [
+export const vocabularyTaste: IWordOrSentence[] = [
   {
-    word: "あまい",
+    wordOrSentence: "あまい",
     kanji: "甘い",
     meaning: "sweet",
     total: 0,
@@ -2310,7 +2310,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "からい",
+    wordOrSentence: "からい",
     kanji: "辛い",
     meaning: "spicy",
     total: 0,
@@ -2318,7 +2318,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "しおからい",
+    wordOrSentence: "しおからい",
     kanji: "塩辛い",
     meaning: "salty",
     total: 0,
@@ -2326,7 +2326,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "すっぱい",
+    wordOrSentence: "すっぱい",
     kanji: "酸っぱい",
     meaning: "sour",
     total: 0,
@@ -2334,7 +2334,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "にがい",
+    wordOrSentence: "にがい",
     kanji: "苦い",
     meaning: "bitter",
     total: 0,
@@ -2342,7 +2342,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "うまい",
+    wordOrSentence: "うまい",
     kanji: "うまい",
     meaning: "delicious",
     total: 0,
@@ -2350,7 +2350,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "まずい",
+    wordOrSentence: "まずい",
     kanji: "まずい",
     meaning: "bad-tasting",
     total: 0,
@@ -2358,7 +2358,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "おいしい",
+    wordOrSentence: "おいしい",
     kanji: "おいしい",
     meaning: "tasty",
     total: 0,
@@ -2366,7 +2366,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "じゃがいも",
+    wordOrSentence: "じゃがいも",
     kanji: "じゃがいも",
     meaning: "potato",
     total: 0,
@@ -2374,7 +2374,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "にんじん",
+    wordOrSentence: "にんじん",
     kanji: "人参",
     meaning: "carrot",
     total: 0,
@@ -2382,7 +2382,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "たまねぎ",
+    wordOrSentence: "たまねぎ",
     kanji: "玉ねぎ",
     meaning: "onion",
     total: 0,
@@ -2390,7 +2390,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "にく",
+    wordOrSentence: "にく",
     kanji: "肉",
     meaning: "meat",
     total: 0,
@@ -2398,7 +2398,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "さかな",
+    wordOrSentence: "さかな",
     kanji: "魚",
     meaning: "fish",
     total: 0,
@@ -2406,7 +2406,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "くだもの",
+    wordOrSentence: "くだもの",
     kanji: "果物",
     meaning: "fruit",
     total: 0,
@@ -2414,7 +2414,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "やさい",
+    wordOrSentence: "やさい",
     kanji: "野菜",
     meaning: "vegetable",
     total: 0,
@@ -2422,7 +2422,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "あじ",
+    wordOrSentence: "あじ",
     kanji: "味",
     meaning: "flavor",
     total: 0,
@@ -2430,7 +2430,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "かおり",
+    wordOrSentence: "かおり",
     kanji: "香り",
     meaning: "aroma",
     total: 0,
@@ -2438,7 +2438,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "しょうゆ",
+    wordOrSentence: "しょうゆ",
     kanji: "しょうゆ",
     meaning: "soy sauce",
     total: 0,
@@ -2446,7 +2446,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "みそ",
+    wordOrSentence: "みそ",
     kanji: "味噌",
     meaning: "miso",
     total: 0,
@@ -2454,7 +2454,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "しお",
+    wordOrSentence: "しお",
     kanji: "塩",
     meaning: "salt",
     total: 0,
@@ -2462,7 +2462,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "さとう",
+    wordOrSentence: "さとう",
     kanji: "砂糖",
     meaning: "sugar",
     total: 0,
@@ -2470,7 +2470,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "にくやき",
+    wordOrSentence: "にくやき",
     kanji: "肉焼き",
     meaning: "grilled meat",
     total: 0,
@@ -2478,7 +2478,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "すし",
+    wordOrSentence: "すし",
     kanji: "寿司",
     meaning: "sushi",
     total: 0,
@@ -2486,7 +2486,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "たこやき",
+    wordOrSentence: "たこやき",
     kanji: "たこ焼き",
     meaning: "octopus balls",
     total: 0,
@@ -2494,7 +2494,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "てんぷら",
+    wordOrSentence: "てんぷら",
     kanji: "天ぷら",
     meaning: "tempura",
     total: 0,
@@ -2502,7 +2502,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "ゆでたまご",
+    wordOrSentence: "ゆでたまご",
     kanji: "ゆでたまご",
     meaning: "boiled egg",
     total: 0,
@@ -2510,7 +2510,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "みず",
+    wordOrSentence: "みず",
     kanji: "水",
     meaning: "water",
     total: 0,
@@ -2518,7 +2518,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "おちゃ",
+    wordOrSentence: "おちゃ",
     kanji: "お茶",
     meaning: "tea",
     total: 0,
@@ -2526,7 +2526,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "こうちゃ",
+    wordOrSentence: "こうちゃ",
     kanji: "紅茶",
     meaning: "black tea",
     total: 0,
@@ -2534,7 +2534,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "ほうじちゃ",
+    wordOrSentence: "ほうじちゃ",
     kanji: "ほうじ茶",
     meaning: "roasted green tea",
     total: 0,
@@ -2542,7 +2542,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "こーら",
+    wordOrSentence: "こーら",
     kanji: "コーラ",
     meaning: "cola",
     total: 0,
@@ -2550,7 +2550,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "みるく",
+    wordOrSentence: "みるく",
     kanji: "ミルク",
     meaning: "milk",
     total: 0,
@@ -2558,7 +2558,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "みず",
+    wordOrSentence: "みず",
     kanji: "水",
     meaning: "water",
     total: 0,
@@ -2566,7 +2566,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "しんせんな",
+    wordOrSentence: "しんせんな",
     kanji: "新鮮な",
     meaning: "fresh",
     total: 0,
@@ -2574,7 +2574,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "にんにく",
+    wordOrSentence: "にんにく",
     kanji: "にんにく",
     meaning: "garlic",
     total: 0,
@@ -2582,7 +2582,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "めんたいこ",
+    wordOrSentence: "めんたいこ",
     kanji: "明太子",
     meaning: "spicy cod roe",
     total: 0,
@@ -2590,7 +2590,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "しょうが",
+    wordOrSentence: "しょうが",
     kanji: "しょうが",
     meaning: "ginger",
     total: 0,
@@ -2598,7 +2598,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "からし",
+    wordOrSentence: "からし",
     kanji: "からし",
     meaning: "mustard",
     total: 0,
@@ -2606,7 +2606,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "わさび",
+    wordOrSentence: "わさび",
     kanji: "わさび",
     meaning: "wasabi",
     total: 0,
@@ -2614,7 +2614,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "あく",
+    wordOrSentence: "あく",
     kanji: "酸っぱい",
     meaning: "sour",
     total: 0,
@@ -2622,7 +2622,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "かおる",
+    wordOrSentence: "かおる",
     kanji: "香る",
     meaning: "fragrant",
     total: 0,
@@ -2630,7 +2630,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "くさい",
+    wordOrSentence: "くさい",
     kanji: "臭い",
     meaning: "smelly",
     total: 0,
@@ -2638,7 +2638,7 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
   {
-    word: "からい",
+    wordOrSentence: "からい",
     kanji: "辛い",
     meaning: "hot (spicy)",
     total: 0,
@@ -2646,9 +2646,9 @@ export const vocabularyTaste: IWord[] = [
     topic: ETopic.TASTE,
   },
 ];
-export const vocabularyFeeling: IWord[] = [
+export const vocabularyFeeling: IWordOrSentence[] = [
   {
-    word: "うれしい",
+    wordOrSentence: "うれしい",
     kanji: "嬉しい",
     meaning: "happy",
     total: 0,
@@ -2656,7 +2656,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "かなしい",
+    wordOrSentence: "かなしい",
     kanji: "悲しい",
     meaning: "sad",
     total: 0,
@@ -2664,7 +2664,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "こわい",
+    wordOrSentence: "こわい",
     kanji: "怖い",
     meaning: "scared",
     total: 0,
@@ -2672,7 +2672,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "はずかしい",
+    wordOrSentence: "はずかしい",
     kanji: "恥ずかしい",
     meaning: "embarrassed",
     total: 0,
@@ -2680,7 +2680,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "きんちょうする",
+    wordOrSentence: "きんちょうする",
     kanji: "緊張する",
     meaning: "nervous",
     total: 0,
@@ -2688,7 +2688,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "いたい",
+    wordOrSentence: "いたい",
     kanji: "痛い",
     meaning: "painful",
     total: 0,
@@ -2696,7 +2696,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "くやしい",
+    wordOrSentence: "くやしい",
     kanji: "悔しい",
     meaning: "frustrated",
     total: 0,
@@ -2704,7 +2704,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "さびしい",
+    wordOrSentence: "さびしい",
     kanji: "寂しい",
     meaning: "lonely",
     total: 0,
@@ -2712,7 +2712,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "いかり",
+    wordOrSentence: "いかり",
     kanji: "怒り",
     meaning: "angry",
     total: 0,
@@ -2720,7 +2720,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "あんしん",
+    wordOrSentence: "あんしん",
     kanji: "安心",
     meaning: "relieved",
     total: 0,
@@ -2728,7 +2728,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "あきらめる",
+    wordOrSentence: "あきらめる",
     kanji: "諦める",
     meaning: "resigned",
     total: 0,
@@ -2736,7 +2736,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "きまりいい",
+    wordOrSentence: "きまりいい",
     kanji: "気持ちいい",
     meaning: "comfortable",
     total: 0,
@@ -2744,7 +2744,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "くすぐったい",
+    wordOrSentence: "くすぐったい",
     kanji: "くすぐったい",
     meaning: "ticklish",
     total: 0,
@@ -2752,7 +2752,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "ほっとする",
+    wordOrSentence: "ほっとする",
     kanji: "ほっとする",
     meaning: "relieved",
     total: 0,
@@ -2760,7 +2760,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "うらやましい",
+    wordOrSentence: "うらやましい",
     kanji: "羨ましい",
     meaning: "envious",
     total: 0,
@@ -2768,7 +2768,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "うとうとする",
+    wordOrSentence: "うとうとする",
     kanji: "うとうとする",
     meaning: "drowsy",
     total: 0,
@@ -2776,7 +2776,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "ざんねん",
+    wordOrSentence: "ざんねん",
     kanji: "残念",
     meaning: "disappointed",
     total: 0,
@@ -2784,7 +2784,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "はらがいたい",
+    wordOrSentence: "はらがいたい",
     kanji: "腹が痛い",
     meaning: "stomachache",
     total: 0,
@@ -2792,7 +2792,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "おおはしゃぎ",
+    wordOrSentence: "おおはしゃぎ",
     kanji: "大はしゃぎ",
     meaning: "excited",
     total: 0,
@@ -2800,7 +2800,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "とまどう",
+    wordOrSentence: "とまどう",
     kanji: "戸惑う",
     meaning: "confused",
     total: 0,
@@ -2808,7 +2808,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "おそれる",
+    wordOrSentence: "おそれる",
     kanji: "恐れる",
     meaning: "afraid",
     total: 0,
@@ -2816,7 +2816,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "うんざり",
+    wordOrSentence: "うんざり",
     kanji: "うんざり",
     meaning: "fed up",
     total: 0,
@@ -2824,7 +2824,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "のろのろする",
+    wordOrSentence: "のろのろする",
     kanji: "のろのろする",
     meaning: "sluggish",
     total: 0,
@@ -2832,7 +2832,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "ざわざわする",
+    wordOrSentence: "ざわざわする",
     kanji: "ざわざわする",
     meaning: "nervous",
     total: 0,
@@ -2840,7 +2840,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "きまずい",
+    wordOrSentence: "きまずい",
     kanji: "気まずい",
     meaning: "awkward",
     total: 0,
@@ -2848,7 +2848,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "たいくつ",
+    wordOrSentence: "たいくつ",
     kanji: "退屈",
     meaning: "bored",
     total: 0,
@@ -2856,7 +2856,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "ほがらか",
+    wordOrSentence: "ほがらか",
     kanji: "ほがらか",
     meaning: "cheerful",
     total: 0,
@@ -2864,7 +2864,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "ひんしゅく",
+    wordOrSentence: "ひんしゅく",
     kanji: "憤慨",
     meaning: "indignant",
     total: 0,
@@ -2872,7 +2872,7 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
   {
-    word: "ゆううつ",
+    wordOrSentence: "ゆううつ",
     kanji: "憂鬱",
     meaning: "depressed",
     total: 0,
@@ -2880,9 +2880,9 @@ export const vocabularyFeeling: IWord[] = [
     topic: ETopic.FELLING,
   },
 ];
-export const vocabularyMusic: IWord[] = [
+export const vocabularyMusic: IWordOrSentence[] = [
   {
-    word: "おんがく",
+    wordOrSentence: "おんがく",
     kanji: "音楽",
     meaning: "music",
     total: 0,
@@ -2890,7 +2890,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "うた",
+    wordOrSentence: "うた",
     kanji: "歌",
     meaning: "song",
     total: 0,
@@ -2898,7 +2898,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "がっき",
+    wordOrSentence: "がっき",
     kanji: "楽器",
     meaning: "musical instrument",
     total: 0,
@@ -2906,7 +2906,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "ピアノ",
+    wordOrSentence: "ピアノ",
     kanji: "ピアノ",
     meaning: "piano",
     total: 0,
@@ -2914,7 +2914,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "ギター",
+    wordOrSentence: "ギター",
     kanji: "ギター",
     meaning: "guitar",
     total: 0,
@@ -2922,7 +2922,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "ヴァイオリン",
+    wordOrSentence: "ヴァイオリン",
     kanji: "ヴァイオリン",
     meaning: "violin",
     total: 0,
@@ -2930,7 +2930,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "トランペット",
+    wordOrSentence: "トランペット",
     kanji: "トランペット",
     meaning: "trumpet",
     total: 0,
@@ -2938,7 +2938,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "フルート",
+    wordOrSentence: "フルート",
     kanji: "フルート",
     meaning: "flute",
     total: 0,
@@ -2946,7 +2946,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "ドラム",
+    wordOrSentence: "ドラム",
     kanji: "ドラム",
     meaning: "drum",
     total: 0,
@@ -2954,7 +2954,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "バイオリン",
+    wordOrSentence: "バイオリン",
     kanji: "バイオリン",
     meaning: "violin",
     total: 0,
@@ -2962,7 +2962,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "トロンボーン",
+    wordOrSentence: "トロンボーン",
     kanji: "トロンボーン",
     meaning: "trombone",
     total: 0,
@@ -2970,7 +2970,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "ハーモニカ",
+    wordOrSentence: "ハーモニカ",
     kanji: "ハーモニカ",
     meaning: "harmonica",
     total: 0,
@@ -2978,7 +2978,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "オルガン",
+    wordOrSentence: "オルガン",
     kanji: "オルガン",
     meaning: "organ",
     total: 0,
@@ -2986,7 +2986,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "ベース",
+    wordOrSentence: "ベース",
     kanji: "ベース",
     meaning: "bass",
     total: 0,
@@ -2994,7 +2994,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "マイク",
+    wordOrSentence: "マイク",
     kanji: "マイク",
     meaning: "microphone",
     total: 0,
@@ -3002,7 +3002,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "コンサート",
+    wordOrSentence: "コンサート",
     kanji: "コンサート",
     meaning: "concert",
     total: 0,
@@ -3010,7 +3010,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "アルバム",
+    wordOrSentence: "アルバム",
     kanji: "アルバム",
     meaning: "album",
     total: 0,
@@ -3018,7 +3018,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "アーティスト",
+    wordOrSentence: "アーティスト",
     kanji: "アーティスト",
     meaning: "artist",
     total: 0,
@@ -3026,7 +3026,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "バンド",
+    wordOrSentence: "バンド",
     kanji: "バンド",
     meaning: "band",
     total: 0,
@@ -3034,7 +3034,7 @@ export const vocabularyMusic: IWord[] = [
     topic: ETopic.MUSIC,
   },
   {
-    word: "メロディー",
+    wordOrSentence: "メロディー",
     kanji: "メロディー",
     meaning: "melody",
     total: 0,
@@ -3043,9 +3043,9 @@ export const vocabularyMusic: IWord[] = [
   },
 ];
 
-export const vocabularyMovie: IWord[] = [
+export const vocabularyMovie: IWordOrSentence[] = [
   {
-    word: "えいが",
+    wordOrSentence: "えいが",
     kanji: "映画",
     meaning: "movie",
     total: 0,
@@ -3053,7 +3053,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "がっこうえいが",
+    wordOrSentence: "がっこうえいが",
     kanji: "学校映画",
     meaning: "educational film",
     total: 0,
@@ -3061,7 +3061,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "かんぱんえいが",
+    wordOrSentence: "かんぱんえいが",
     kanji: "感犯映画",
     meaning: "pornographic film",
     total: 0,
@@ -3069,7 +3069,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "きねんびえいが",
+    wordOrSentence: "きねんびえいが",
     kanji: "記念日映画",
     meaning: "commemorative film",
     total: 0,
@@ -3077,7 +3077,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "げきえい",
+    wordOrSentence: "げきえい",
     kanji: "劇映",
     meaning: "drama",
     total: 0,
@@ -3085,7 +3085,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "じしんえいが",
+    wordOrSentence: "じしんえいが",
     kanji: "自信映画",
     meaning: "self-confidence film",
     total: 0,
@@ -3093,7 +3093,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "しゃちょうえいが",
+    wordOrSentence: "しゃちょうえいが",
     kanji: "社長映画",
     meaning: "company president film",
     total: 0,
@@ -3101,7 +3101,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "しんえんえいが",
+    wordOrSentence: "しんえんえいが",
     kanji: "新円映画",
     meaning: "new yen film",
     total: 0,
@@ -3109,7 +3109,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "すずえいが",
+    wordOrSentence: "すずえいが",
     kanji: "鈴映画",
     meaning: "bell film",
     total: 0,
@@ -3117,7 +3117,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "せいふえいが",
+    wordOrSentence: "せいふえいが",
     kanji: "政府映画",
     meaning: "government film",
     total: 0,
@@ -3125,7 +3125,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "じごくえいが",
+    wordOrSentence: "じごくえいが",
     kanji: "地獄映画",
     meaning: "hell film",
     total: 0,
@@ -3133,7 +3133,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "ともだちえいが",
+    wordOrSentence: "ともだちえいが",
     kanji: "友達映画",
     meaning: "friend film",
     total: 0,
@@ -3141,7 +3141,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "なつやすみえいが",
+    wordOrSentence: "なつやすみえいが",
     kanji: "夏休み映画",
     meaning: "summer vacation film",
     total: 0,
@@ -3149,7 +3149,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "はらえいが",
+    wordOrSentence: "はらえいが",
     kanji: "原映画",
     meaning: "original film",
     total: 0,
@@ -3157,7 +3157,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "まるえいが",
+    wordOrSentence: "まるえいが",
     kanji: "丸映画",
     meaning: "circle film",
     total: 0,
@@ -3165,7 +3165,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "やくざえいが",
+    wordOrSentence: "やくざえいが",
     kanji: "ヤクザ映画",
     meaning: "yakuza film",
     total: 0,
@@ -3173,7 +3173,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "おとこえいが",
+    wordOrSentence: "おとこえいが",
     kanji: "男映画",
     meaning: "men's film",
     total: 0,
@@ -3181,7 +3181,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "おねえさんえいが",
+    wordOrSentence: "おねえさんえいが",
     kanji: "お姉さん映画",
     meaning: "big sister movie",
     total: 0,
@@ -3189,7 +3189,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "じぎょうえいが",
+    wordOrSentence: "じぎょうえいが",
     kanji: "事業映画",
     meaning: "business film",
     total: 0,
@@ -3197,7 +3197,7 @@ export const vocabularyMovie: IWord[] = [
     topic: ETopic.MOVIE,
   },
   {
-    word: "じせいえいが",
+    wordOrSentence: "じせいえいが",
     kanji: "自生映画",
     meaning: "self-produced film",
     total: 0,
@@ -3206,9 +3206,9 @@ export const vocabularyMovie: IWord[] = [
   },
 ];
 
-const vocabularyHouseholdItems: IWord[] = [
+const vocabularyHouseholdItems: IWordOrSentence[] = [
   {
-    word: "いす",
+    wordOrSentence: "いす",
     kanji: "椅子",
     meaning: "chair",
     total: 0,
@@ -3216,7 +3216,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "テーブル",
+    wordOrSentence: "テーブル",
     kanji: "テーブル",
     meaning: "table",
     total: 0,
@@ -3224,7 +3224,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "とけい",
+    wordOrSentence: "とけい",
     kanji: "時計",
     meaning: "clock",
     total: 0,
@@ -3232,7 +3232,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "ほんだな",
+    wordOrSentence: "ほんだな",
     kanji: "本棚",
     meaning: "bookshelf",
     total: 0,
@@ -3240,7 +3240,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "ねこ",
+    wordOrSentence: "ねこ",
     kanji: "猫",
     meaning: "cat",
     total: 0,
@@ -3248,7 +3248,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "いぬ",
+    wordOrSentence: "いぬ",
     kanji: "犬",
     meaning: "dog",
     total: 0,
@@ -3256,7 +3256,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "ほん",
+    wordOrSentence: "ほん",
     kanji: "本",
     meaning: "book",
     total: 0,
@@ -3264,7 +3264,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "パソコン",
+    wordOrSentence: "パソコン",
     kanji: "パソコン",
     meaning: "computer",
     total: 0,
@@ -3272,7 +3272,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "でんき",
+    wordOrSentence: "でんき",
     kanji: "電気",
     meaning: "electricity",
     total: 0,
@@ -3280,7 +3280,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "ほんだな",
+    wordOrSentence: "ほんだな",
     kanji: "本棚",
     meaning: "bookshelf",
     total: 0,
@@ -3288,7 +3288,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "ひかり",
+    wordOrSentence: "ひかり",
     kanji: "光",
     meaning: "light",
     total: 0,
@@ -3296,7 +3296,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "ドア",
+    wordOrSentence: "ドア",
     kanji: "ドア",
     meaning: "door",
     total: 0,
@@ -3304,7 +3304,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "まど",
+    wordOrSentence: "まど",
     kanji: "窓",
     meaning: "window",
     total: 0,
@@ -3312,7 +3312,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "ふとん",
+    wordOrSentence: "ふとん",
     kanji: "布団",
     meaning: "futon",
     total: 0,
@@ -3320,7 +3320,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "いえ",
+    wordOrSentence: "いえ",
     kanji: "家",
     meaning: "house",
     total: 0,
@@ -3328,7 +3328,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "ねかご",
+    wordOrSentence: "ねかご",
     kanji: "寝かご",
     meaning: "crib",
     total: 0,
@@ -3336,7 +3336,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "れいぞうこ",
+    wordOrSentence: "れいぞうこ",
     kanji: "冷蔵庫",
     meaning: "refrigerator",
     total: 0,
@@ -3344,7 +3344,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "こたつ",
+    wordOrSentence: "こたつ",
     kanji: "こたつ",
     meaning: "heated table",
     total: 0,
@@ -3352,7 +3352,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "テレビ",
+    wordOrSentence: "テレビ",
     kanji: "テレビ",
     meaning: "television",
     total: 0,
@@ -3360,7 +3360,7 @@ const vocabularyHouseholdItems: IWord[] = [
     topic: ETopic.HOUSEHOLD_ITEMS,
   },
   {
-    word: "せんたくき",
+    wordOrSentence: "せんたくき",
     kanji: "洗濯機",
     meaning: "washing machine",
     total: 0,
@@ -3369,9 +3369,9 @@ const vocabularyHouseholdItems: IWord[] = [
   },
 ];
 
-const vocabularyMenu: IWord[] = [
+const vocabularyMenu: IWordOrSentence[] = [
   {
-    word: "ごはん",
+    wordOrSentence: "ごはん",
     kanji: "御飯",
     meaning: "cooked rice",
     total: 0,
@@ -3379,7 +3379,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "めん",
+    wordOrSentence: "めん",
     kanji: "麺",
     meaning: "noodles",
     total: 0,
@@ -3387,7 +3387,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "そば",
+    wordOrSentence: "そば",
     kanji: "蕎麦",
     meaning: "buckwheat noodles",
     total: 0,
@@ -3395,7 +3395,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "うどん",
+    wordOrSentence: "うどん",
     kanji: "うどん",
     meaning: "udon noodles",
     total: 0,
@@ -3403,7 +3403,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "そうめん",
+    wordOrSentence: "そうめん",
     kanji: "そうめん",
     meaning: "somen noodles",
     total: 0,
@@ -3411,7 +3411,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "おにぎり",
+    wordOrSentence: "おにぎり",
     kanji: "お握り",
     meaning: "rice ball",
     total: 0,
@@ -3419,7 +3419,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "やきとり",
+    wordOrSentence: "やきとり",
     kanji: "焼き鳥",
     meaning: "grilled chicken skewers",
     total: 0,
@@ -3427,7 +3427,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "おすし",
+    wordOrSentence: "おすし",
     kanji: "お寿司",
     meaning: "sushi",
     total: 0,
@@ -3435,7 +3435,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "てんぷら",
+    wordOrSentence: "てんぷら",
     kanji: "天ぷら",
     meaning: "tempura",
     total: 0,
@@ -3443,7 +3443,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "すきやき",
+    wordOrSentence: "すきやき",
     kanji: "すき焼き",
     meaning: "sukiyaki",
     total: 0,
@@ -3451,7 +3451,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "しゃぶしゃぶ",
+    wordOrSentence: "しゃぶしゃぶ",
     kanji: "しゃぶしゃぶ",
     meaning: "shabu-shabu",
     total: 0,
@@ -3459,7 +3459,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "たこやき",
+    wordOrSentence: "たこやき",
     kanji: "たこ焼き",
     meaning: "octopus balls",
     total: 0,
@@ -3467,7 +3467,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "おでん",
+    wordOrSentence: "おでん",
     kanji: "おでん",
     meaning: "oden",
     total: 0,
@@ -3475,7 +3475,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "らーめん",
+    wordOrSentence: "らーめん",
     kanji: "らーめん",
     meaning: "ramen",
     total: 0,
@@ -3483,7 +3483,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "とんかつ",
+    wordOrSentence: "とんかつ",
     kanji: "とんかつ",
     meaning: "pork cutlet",
     total: 0,
@@ -3491,7 +3491,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "かつどん",
+    wordOrSentence: "かつどん",
     kanji: "カツ丼",
     meaning: "pork cutlet bowl",
     total: 0,
@@ -3499,7 +3499,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "カレーライス",
+    wordOrSentence: "カレーライス",
     kanji: "カレーライス",
     meaning: "curry rice",
     total: 0,
@@ -3507,7 +3507,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "おちゃ",
+    wordOrSentence: "おちゃ",
     kanji: "お茶",
     meaning: "tea",
     total: 0,
@@ -3515,7 +3515,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "ビール",
+    wordOrSentence: "ビール",
     kanji: "ビール",
     meaning: "beer",
     total: 0,
@@ -3523,7 +3523,7 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
   {
-    word: "ワイン",
+    wordOrSentence: "ワイン",
     kanji: "ワイン",
     meaning: "wine",
     total: 0,
@@ -3531,9 +3531,9 @@ const vocabularyMenu: IWord[] = [
     topic: ETopic.MENU,
   },
 ];
-export const vocabularyTown: IWord[] = [
+export const vocabularyTown: IWordOrSentence[] = [
   {
-    word: "まち",
+    wordOrSentence: "まち",
     kanji: "町",
     meaning: "town",
     total: 0,
@@ -3541,7 +3541,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "くうこう",
+    wordOrSentence: "くうこう",
     kanji: "空港",
     meaning: "airport",
     total: 0,
@@ -3549,7 +3549,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "えき",
+    wordOrSentence: "えき",
     kanji: "駅",
     meaning: "station",
     total: 0,
@@ -3557,7 +3557,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "ひこうき",
+    wordOrSentence: "ひこうき",
     kanji: "飛行機",
     meaning: "airplane",
     total: 0,
@@ -3565,7 +3565,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "でんしゃ",
+    wordOrSentence: "でんしゃ",
     kanji: "電車",
     meaning: "train",
     total: 0,
@@ -3573,7 +3573,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "ばす",
+    wordOrSentence: "ばす",
     kanji: "バス",
     meaning: "bus",
     total: 0,
@@ -3581,7 +3581,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "タクシー",
+    wordOrSentence: "タクシー",
     kanji: "タクシー",
     meaning: "taxi",
     total: 0,
@@ -3589,7 +3589,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "ホテル",
+    wordOrSentence: "ホテル",
     kanji: "ホテル",
     meaning: "hotel",
     total: 0,
@@ -3597,7 +3597,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "いえ",
+    wordOrSentence: "いえ",
     kanji: "家",
     meaning: "house",
     total: 0,
@@ -3605,7 +3605,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "アパート",
+    wordOrSentence: "アパート",
     kanji: "アパート",
     meaning: "apartment",
     total: 0,
@@ -3613,7 +3613,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "みせ",
+    wordOrSentence: "みせ",
     kanji: "店",
     meaning: "shop",
     total: 0,
@@ -3621,7 +3621,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "レストラン",
+    wordOrSentence: "レストラン",
     kanji: "レストラン",
     meaning: "restaurant",
     total: 0,
@@ -3629,7 +3629,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "こうえん",
+    wordOrSentence: "こうえん",
     kanji: "公園",
     meaning: "park",
     total: 0,
@@ -3637,7 +3637,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "ぎんこう",
+    wordOrSentence: "ぎんこう",
     kanji: "銀行",
     meaning: "bank",
     total: 0,
@@ -3645,7 +3645,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "としょかん",
+    wordOrSentence: "としょかん",
     kanji: "図書館",
     meaning: "library",
     total: 0,
@@ -3653,7 +3653,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "えいがかん",
+    wordOrSentence: "えいがかん",
     kanji: "映画館",
     meaning: "movie theater",
     total: 0,
@@ -3661,7 +3661,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "びょういん",
+    wordOrSentence: "びょういん",
     kanji: "病院",
     meaning: "hospital",
     total: 0,
@@ -3669,7 +3669,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "ひょうじょう",
+    wordOrSentence: "ひょうじょう",
     kanji: "表情",
     meaning: "post office",
     total: 0,
@@ -3677,7 +3677,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "くうこうえき",
+    wordOrSentence: "くうこうえき",
     kanji: "空港駅",
     meaning: "airport station",
     total: 0,
@@ -3685,7 +3685,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "しんこう",
+    wordOrSentence: "しんこう",
     kanji: "信号",
     meaning: "traffic light",
     total: 0,
@@ -3693,7 +3693,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "みなと",
+    wordOrSentence: "みなと",
     kanji: "港",
     meaning: "harbor",
     total: 0,
@@ -3701,7 +3701,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "たてもの",
+    wordOrSentence: "たてもの",
     kanji: "建物",
     meaning: "building",
     total: 0,
@@ -3709,7 +3709,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "しょうぼうしょ",
+    wordOrSentence: "しょうぼうしょ",
     kanji: "消防署",
     meaning: "fire station",
     total: 0,
@@ -3717,7 +3717,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "こうばん",
+    wordOrSentence: "こうばん",
     kanji: "交番",
     meaning: "police box",
     total: 0,
@@ -3725,7 +3725,7 @@ export const vocabularyTown: IWord[] = [
     topic: ETopic.TOWN,
   },
   {
-    word: "コンビニ",
+    wordOrSentence: "コンビニ",
     kanji: "コンビニ",
     meaning: "convenience store",
     total: 0,
@@ -3736,7 +3736,7 @@ export const vocabularyTown: IWord[] = [
 
 export const vocabularyTrainStation = [
   {
-    word: "えき",
+    wordOrSentence: "えき",
     kanji: "駅",
     meaning: "station",
     total: 0,
@@ -3744,7 +3744,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "でんしゃ",
+    wordOrSentence: "でんしゃ",
     kanji: "電車",
     meaning: "train",
     total: 0,
@@ -3752,7 +3752,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "のりば",
+    wordOrSentence: "のりば",
     kanji: "乗り場",
     meaning: "platform",
     total: 0,
@@ -3760,7 +3760,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "きっぷ",
+    wordOrSentence: "きっぷ",
     kanji: "切符",
     meaning: "ticket",
     total: 0,
@@ -3768,7 +3768,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "ひき",
+    wordOrSentence: "ひき",
     kanji: "引き",
     meaning: "fare",
     total: 0,
@@ -3776,7 +3776,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "きっぷうりば",
+    wordOrSentence: "きっぷうりば",
     kanji: "切符売り場",
     meaning: "ticket counter",
     total: 0,
@@ -3784,7 +3784,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "みどりのまど",
+    wordOrSentence: "みどりのまど",
     kanji: "緑の窓",
     meaning: "green window (where tickets are sold)",
     total: 0,
@@ -3792,7 +3792,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "えきいん",
+    wordOrSentence: "えきいん",
     kanji: "駅員",
     meaning: "station attendant",
     total: 0,
@@ -3800,7 +3800,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "ちか",
+    wordOrSentence: "ちか",
     kanji: "地下",
     meaning: "underground",
     total: 0,
@@ -3808,7 +3808,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "のぼりば",
+    wordOrSentence: "のぼりば",
     kanji: "上り場",
     meaning: "up escalator",
     total: 0,
@@ -3816,7 +3816,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "くだりば",
+    wordOrSentence: "くだりば",
     kanji: "下り場",
     meaning: "down escalator",
     total: 0,
@@ -3824,7 +3824,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "じどうはんば",
+    wordOrSentence: "じどうはんば",
     kanji: "自動販売機",
     meaning: "vending machine",
     total: 0,
@@ -3832,7 +3832,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "ホーム",
+    wordOrSentence: "ホーム",
     kanji: "ホーム",
     meaning: "platform",
     total: 0,
@@ -3840,7 +3840,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "のぼり",
+    wordOrSentence: "のぼり",
     kanji: "上り",
     meaning: "upbound (train)",
     total: 0,
@@ -3848,7 +3848,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "くだり",
+    wordOrSentence: "くだり",
     kanji: "下り",
     meaning: "downbound (train)",
     total: 0,
@@ -3856,7 +3856,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "こうつう",
+    wordOrSentence: "こうつう",
     kanji: "交通",
     meaning: "traffic",
     total: 0,
@@ -3864,7 +3864,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "みち",
+    wordOrSentence: "みち",
     kanji: "道",
     meaning: "road",
     total: 0,
@@ -3872,7 +3872,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "ちかてつ",
+    wordOrSentence: "ちかてつ",
     kanji: "地下鉄",
     meaning: "subway",
     total: 0,
@@ -3880,7 +3880,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "りょうしん",
+    wordOrSentence: "りょうしん",
     kanji: "両親",
     meaning: "parents",
     total: 0,
@@ -3888,7 +3888,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "おとうさん",
+    wordOrSentence: "おとうさん",
     kanji: "お父さん",
     meaning: "father",
     total: 0,
@@ -3896,7 +3896,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "おかあさん",
+    wordOrSentence: "おかあさん",
     kanji: "お母さん",
     meaning: "mother",
     total: 0,
@@ -3904,7 +3904,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "こども",
+    wordOrSentence: "こども",
     kanji: "子供",
     meaning: "child",
     total: 0,
@@ -3912,7 +3912,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "きょうだい",
+    wordOrSentence: "きょうだい",
     kanji: "兄弟",
     meaning: "siblings",
     total: 0,
@@ -3920,7 +3920,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "ともだち",
+    wordOrSentence: "ともだち",
     kanji: "友達",
     meaning: "friend",
     total: 0,
@@ -3928,7 +3928,7 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
   {
-    word: "ひとり",
+    wordOrSentence: "ひとり",
     kanji: "一人",
     meaning: "one person",
     total: 0,
@@ -3936,9 +3936,9 @@ export const vocabularyTrainStation = [
     topic: ETopic.TRAIN_STATION,
   },
 ];
-const vocabularyHealth: IWord[] = [
+const vocabularyHealth: IWordOrSentence[] = [
   {
-    word: "けが",
+    wordOrSentence: "けが",
     kanji: "怪我",
     meaning: "injury",
     total: 0,
@@ -3946,7 +3946,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "びょうき",
+    wordOrSentence: "びょうき",
     kanji: "病気",
     meaning: "illness",
     total: 0,
@@ -3954,7 +3954,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "かぜ",
+    wordOrSentence: "かぜ",
     kanji: "風邪",
     meaning: "cold",
     total: 0,
@@ -3962,7 +3962,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "ねつ",
+    wordOrSentence: "ねつ",
     kanji: "熱",
     meaning: "fever",
     total: 0,
@@ -3970,7 +3970,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "げり",
+    wordOrSentence: "げり",
     kanji: "下痢",
     meaning: "diarrhea",
     total: 0,
@@ -3978,7 +3978,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "ほね",
+    wordOrSentence: "ほね",
     kanji: "骨",
     meaning: "bone",
     total: 0,
@@ -3986,7 +3986,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "ほしゅ",
+    wordOrSentence: "ほしゅ",
     kanji: "包帯",
     meaning: "bandage",
     total: 0,
@@ -3994,7 +3994,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "いしゅ",
+    wordOrSentence: "いしゅ",
     kanji: "医療",
     meaning: "medical care",
     total: 0,
@@ -4002,7 +4002,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "けんこう",
+    wordOrSentence: "けんこう",
     kanji: "健康",
     meaning: "health",
     total: 0,
@@ -4010,7 +4010,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "ふくしゅう",
+    wordOrSentence: "ふくしゅう",
     kanji: "復習",
     meaning: "review",
     total: 0,
@@ -4018,7 +4018,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "やくそく",
+    wordOrSentence: "やくそく",
     kanji: "約束",
     meaning: "promise",
     total: 0,
@@ -4026,7 +4026,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "しゅじゅつ",
+    wordOrSentence: "しゅじゅつ",
     kanji: "手術",
     meaning: "surgery",
     total: 0,
@@ -4034,7 +4034,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "けいたいでんわ",
+    wordOrSentence: "けいたいでんわ",
     kanji: "携帯電話",
     meaning: "cell phone",
     total: 0,
@@ -4042,7 +4042,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "いんしゅつ",
+    wordOrSentence: "いんしゅつ",
     kanji: "印刷",
     meaning: "printing",
     total: 0,
@@ -4050,7 +4050,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "ぎゃく",
+    wordOrSentence: "ぎゃく",
     kanji: "逆",
     meaning: "reverse",
     total: 0,
@@ -4058,7 +4058,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "しあわせ",
+    wordOrSentence: "しあわせ",
     kanji: "幸せ",
     meaning: "happiness",
     total: 0,
@@ -4066,7 +4066,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "ほし",
+    wordOrSentence: "ほし",
     kanji: "星",
     meaning: "star",
     total: 0,
@@ -4074,7 +4074,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "かがく",
+    wordOrSentence: "かがく",
     kanji: "科学",
     meaning: "science",
     total: 0,
@@ -4082,7 +4082,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "じしん",
+    wordOrSentence: "じしん",
     kanji: "地震",
     meaning: "earthquake",
     total: 0,
@@ -4090,7 +4090,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "けしょう",
+    wordOrSentence: "けしょう",
     kanji: "化粧",
     meaning: "makeup",
     total: 0,
@@ -4098,7 +4098,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "そうじ",
+    wordOrSentence: "そうじ",
     kanji: "掃除",
     meaning: "cleaning",
     total: 0,
@@ -4106,7 +4106,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "くすり",
+    wordOrSentence: "くすり",
     kanji: "薬",
     meaning: "medicine",
     total: 0,
@@ -4114,7 +4114,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "いたみ",
+    wordOrSentence: "いたみ",
     kanji: "痛み",
     meaning: "pain",
     total: 0,
@@ -4122,7 +4122,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "せんたく",
+    wordOrSentence: "せんたく",
     kanji: "洗濯",
     meaning: "laundry",
     total: 0,
@@ -4130,7 +4130,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "あたま",
+    wordOrSentence: "あたま",
     kanji: "頭",
     meaning: "head",
     total: 0,
@@ -4138,7 +4138,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "しばい",
+    wordOrSentence: "しばい",
     kanji: "芝居",
     meaning: "play (theatrical)",
     total: 0,
@@ -4146,7 +4146,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "ねむり",
+    wordOrSentence: "ねむり",
     kanji: "眠り",
     meaning: "sleep",
     total: 0,
@@ -4154,7 +4154,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "あたまいたい",
+    wordOrSentence: "あたまいたい",
     kanji: "頭痛い",
     meaning: "headache",
     total: 0,
@@ -4162,7 +4162,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "わかれる",
+    wordOrSentence: "わかれる",
     kanji: "別れる",
     meaning: "separate",
     total: 0,
@@ -4170,7 +4170,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "せいふく",
+    wordOrSentence: "せいふく",
     kanji: "制服",
     meaning: "uniform",
     total: 0,
@@ -4178,7 +4178,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "きびしい",
+    wordOrSentence: "きびしい",
     kanji: "厳しい",
     meaning: "strict",
     total: 0,
@@ -4186,7 +4186,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "めまい",
+    wordOrSentence: "めまい",
     kanji: "めまい",
     meaning: "dizziness",
     total: 0,
@@ -4194,7 +4194,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "しんぱい",
+    wordOrSentence: "しんぱい",
     kanji: "心配",
     meaning: "worry",
     total: 0,
@@ -4202,7 +4202,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "きけん",
+    wordOrSentence: "きけん",
     kanji: "危険",
     meaning: "danger",
     total: 0,
@@ -4210,7 +4210,7 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
   {
-    word: "つぎ",
+    wordOrSentence: "つぎ",
     kanji: "次",
     meaning: "next",
     total: 0,
@@ -4218,9 +4218,9 @@ const vocabularyHealth: IWord[] = [
     topic: ETopic.HEALTH,
   },
 ];
-const vocabularyMovement: IWord[] = [
+const vocabularyMovement: IWordOrSentence[] = [
   {
-    word: "あるく",
+    wordOrSentence: "あるく",
     kanji: "歩く",
     meaning: "to walk",
     total: 0,
@@ -4228,7 +4228,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "はしる",
+    wordOrSentence: "はしる",
     kanji: "走る",
     meaning: "to run",
     total: 0,
@@ -4236,7 +4236,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "とぶ",
+    wordOrSentence: "とぶ",
     kanji: "飛ぶ",
     meaning: "to fly",
     total: 0,
@@ -4244,7 +4244,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "およぐ",
+    wordOrSentence: "およぐ",
     kanji: "泳ぐ",
     meaning: "to swim",
     total: 0,
@@ -4252,7 +4252,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "のる",
+    wordOrSentence: "のる",
     kanji: "乗る",
     meaning: "to ride",
     total: 0,
@@ -4260,7 +4260,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "うごく",
+    wordOrSentence: "うごく",
     kanji: "動く",
     meaning: "to move",
     total: 0,
@@ -4268,7 +4268,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "まがる",
+    wordOrSentence: "まがる",
     kanji: "曲がる",
     meaning: "to turn",
     total: 0,
@@ -4276,7 +4276,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "とまる",
+    wordOrSentence: "とまる",
     kanji: "止まる",
     meaning: "to stop",
     total: 0,
@@ -4284,7 +4284,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "ひく",
+    wordOrSentence: "ひく",
     kanji: "引く",
     meaning: "to pull",
     total: 0,
@@ -4292,7 +4292,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "おしえる",
+    wordOrSentence: "おしえる",
     kanji: "教える",
     meaning: "to push",
     total: 0,
@@ -4300,7 +4300,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "もつ",
+    wordOrSentence: "もつ",
     kanji: "持つ",
     meaning: "to carry",
     total: 0,
@@ -4308,7 +4308,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "はこぶ",
+    wordOrSentence: "はこぶ",
     kanji: "運ぶ",
     meaning: "to transport",
     total: 0,
@@ -4316,7 +4316,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "けす",
+    wordOrSentence: "けす",
     kanji: "消す",
     meaning: "to extinguish",
     total: 0,
@@ -4324,7 +4324,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "とおる",
+    wordOrSentence: "とおる",
     kanji: "通る",
     meaning: "to pass through",
     total: 0,
@@ -4332,7 +4332,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "はなれる",
+    wordOrSentence: "はなれる",
     kanji: "離れる",
     meaning: "to separate",
     total: 0,
@@ -4340,7 +4340,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "かえる",
+    wordOrSentence: "かえる",
     kanji: "帰る",
     meaning: "to return",
     total: 0,
@@ -4348,7 +4348,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "いく",
+    wordOrSentence: "いく",
     kanji: "行く",
     meaning: "to go",
     total: 0,
@@ -4356,7 +4356,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "くる",
+    wordOrSentence: "くる",
     kanji: "来る",
     meaning: "to come",
     total: 0,
@@ -4364,7 +4364,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "いる",
+    wordOrSentence: "いる",
     kanji: "居る",
     meaning: "to be (animate)",
     total: 0,
@@ -4372,7 +4372,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "ある",
+    wordOrSentence: "ある",
     kanji: "有る",
     meaning: "to be (inanimate)",
     total: 0,
@@ -4380,7 +4380,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "うごく",
+    wordOrSentence: "うごく",
     kanji: "動く",
     meaning: "to be in motion",
     total: 0,
@@ -4388,7 +4388,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "すわる",
+    wordOrSentence: "すわる",
     kanji: "座る",
     meaning: "to sit",
     total: 0,
@@ -4396,7 +4396,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "たつ",
+    wordOrSentence: "たつ",
     kanji: "立つ",
     meaning: "to stand",
     total: 0,
@@ -4404,7 +4404,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "のぼる",
+    wordOrSentence: "のぼる",
     kanji: "登る",
     meaning: "to climb",
     total: 0,
@@ -4412,7 +4412,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "くだる",
+    wordOrSentence: "くだる",
     kanji: "下る",
     meaning: "to descend",
     total: 0,
@@ -4420,7 +4420,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "すべる",
+    wordOrSentence: "すべる",
     kanji: "滑る",
     meaning: "to slide",
     total: 0,
@@ -4428,7 +4428,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "はねる",
+    wordOrSentence: "はねる",
     kanji: "跳ねる",
     meaning: "to jump",
     total: 0,
@@ -4436,7 +4436,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "おりる",
+    wordOrSentence: "おりる",
     kanji: "降りる",
     meaning: "to get off",
     total: 0,
@@ -4444,7 +4444,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "のる",
+    wordOrSentence: "のる",
     kanji: "乗る",
     meaning: "to get on",
     total: 0,
@@ -4452,7 +4452,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "すわる",
+    wordOrSentence: "すわる",
     kanji: "座る",
     meaning: "to sit down",
     total: 0,
@@ -4460,7 +4460,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "たつ",
+    wordOrSentence: "たつ",
     kanji: "立つ",
     meaning: "to stand up",
     total: 0,
@@ -4468,7 +4468,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "うごかす",
+    wordOrSentence: "うごかす",
     kanji: "動かす",
     meaning: "to move (something)",
     total: 0,
@@ -4476,7 +4476,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "いる",
+    wordOrSentence: "いる",
     kanji: "居る",
     meaning: "to be present",
     total: 0,
@@ -4484,7 +4484,7 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
   {
-    word: "ある",
+    wordOrSentence: "ある",
     kanji: "有る",
     meaning: "to exist",
     total: 0,
@@ -4492,9 +4492,9 @@ const vocabularyMovement: IWord[] = [
     topic: ETopic.MOVEMENT,
   },
 ];
-const vocabularyClothing: IWord[] = [
+const vocabularyClothing: IWordOrSentence[] = [
   {
-    word: "セーター",
+    wordOrSentence: "セーター",
     kanji: "",
     meaning: "sweater",
     total: 0,
@@ -4502,7 +4502,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "シャツ",
+    wordOrSentence: "シャツ",
     kanji: "",
     meaning: "shirt",
     total: 0,
@@ -4510,7 +4510,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ズボン",
+    wordOrSentence: "ズボン",
     kanji: "",
     meaning: "pants",
     total: 0,
@@ -4518,7 +4518,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ジーンズ",
+    wordOrSentence: "ジーンズ",
     kanji: "",
     meaning: "jeans",
     total: 0,
@@ -4526,7 +4526,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ワンピース",
+    wordOrSentence: "ワンピース",
     kanji: "",
     meaning: "dress",
     total: 0,
@@ -4534,7 +4534,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "スカート",
+    wordOrSentence: "スカート",
     kanji: "",
     meaning: "skirt",
     total: 0,
@@ -4542,7 +4542,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ショーツ",
+    wordOrSentence: "ショーツ",
     kanji: "",
     meaning: "shorts",
     total: 0,
@@ -4550,7 +4550,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "コート",
+    wordOrSentence: "コート",
     kanji: "",
     meaning: "coat",
     total: 0,
@@ -4558,7 +4558,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ジャケット",
+    wordOrSentence: "ジャケット",
     kanji: "",
     meaning: "jacket",
     total: 0,
@@ -4566,7 +4566,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "タイ",
+    wordOrSentence: "タイ",
     kanji: "",
     meaning: "tie",
     total: 0,
@@ -4574,7 +4574,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ベルト",
+    wordOrSentence: "ベルト",
     kanji: "",
     meaning: "belt",
     total: 0,
@@ -4582,7 +4582,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "くつ",
+    wordOrSentence: "くつ",
     kanji: "靴",
     meaning: "shoes",
     total: 0,
@@ -4590,7 +4590,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "めがね",
+    wordOrSentence: "めがね",
     kanji: "眼鏡",
     meaning: "glasses",
     total: 0,
@@ -4598,7 +4598,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "てぶくろ",
+    wordOrSentence: "てぶくろ",
     kanji: "手袋",
     meaning: "gloves",
     total: 0,
@@ -4606,7 +4606,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ぼうし",
+    wordOrSentence: "ぼうし",
     kanji: "帽子",
     meaning: "hat",
     total: 0,
@@ -4614,7 +4614,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ネクタイ",
+    wordOrSentence: "ネクタイ",
     kanji: "",
     meaning: "necktie",
     total: 0,
@@ -4622,7 +4622,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ハンカチ",
+    wordOrSentence: "ハンカチ",
     kanji: "",
     meaning: "handkerchief",
     total: 0,
@@ -4630,7 +4630,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ズック",
+    wordOrSentence: "ズック",
     kanji: "",
     meaning: "socks",
     total: 0,
@@ -4638,7 +4638,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "くつした",
+    wordOrSentence: "くつした",
     kanji: "靴下",
     meaning: "socks",
     total: 0,
@@ -4646,7 +4646,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ショーツ",
+    wordOrSentence: "ショーツ",
     kanji: "",
     meaning: "shorts",
     total: 0,
@@ -4654,7 +4654,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "パンツ",
+    wordOrSentence: "パンツ",
     kanji: "",
     meaning: "underpants",
     total: 0,
@@ -4662,7 +4662,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ワイシャツ",
+    wordOrSentence: "ワイシャツ",
     kanji: "",
     meaning: "white shirt",
     total: 0,
@@ -4670,7 +4670,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "せびろ",
+    wordOrSentence: "せびろ",
     kanji: "背広",
     meaning: "suit",
     total: 0,
@@ -4678,7 +4678,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ふくろ",
+    wordOrSentence: "ふくろ",
     kanji: "袋",
     meaning: "bag",
     total: 0,
@@ -4686,7 +4686,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "かばん",
+    wordOrSentence: "かばん",
     kanji: "鞄",
     meaning: "bag",
     total: 0,
@@ -4694,7 +4694,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "たとう",
+    wordOrSentence: "たとう",
     kanji: "塔",
     meaning: "tower",
     total: 0,
@@ -4702,7 +4702,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "かさ",
+    wordOrSentence: "かさ",
     kanji: "傘",
     meaning: "umbrella",
     total: 0,
@@ -4710,7 +4710,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "ゆびわ",
+    wordOrSentence: "ゆびわ",
     kanji: "指輪",
     meaning: "ring",
     total: 0,
@@ -4718,7 +4718,7 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
   {
-    word: "かめん",
+    wordOrSentence: "かめん",
     kanji: "仮面",
     meaning: "mask",
     total: 0,
@@ -4726,9 +4726,9 @@ const vocabularyClothing: IWord[] = [
     topic: ETopic.CLOTHES,
   },
 ];
-export const vocabularyHumanLife: IWord[] = [
+export const vocabularyHumanLife: IWordOrSentence[] = [
   {
-    word: "こども",
+    wordOrSentence: "こども",
     kanji: "子供",
     meaning: "child",
     total: 0,
@@ -4736,7 +4736,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "おとな",
+    wordOrSentence: "おとな",
     kanji: "大人",
     meaning: "adult",
     total: 0,
@@ -4744,7 +4744,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "しゅうしょく",
+    wordOrSentence: "しゅうしょく",
     kanji: "就職",
     meaning: "employment",
     total: 0,
@@ -4752,7 +4752,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "そつぎょう",
+    wordOrSentence: "そつぎょう",
     kanji: "卒業",
     meaning: "graduation",
     total: 0,
@@ -4760,7 +4760,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "けっこん",
+    wordOrSentence: "けっこん",
     kanji: "結婚",
     meaning: "marriage",
     total: 0,
@@ -4768,7 +4768,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "りこん",
+    wordOrSentence: "りこん",
     kanji: "離婚",
     meaning: "divorce",
     total: 0,
@@ -4776,7 +4776,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "おとこ",
+    wordOrSentence: "おとこ",
     kanji: "男",
     meaning: "man",
     total: 0,
@@ -4784,7 +4784,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "おんな",
+    wordOrSentence: "おんな",
     kanji: "女",
     meaning: "woman",
     total: 0,
@@ -4792,7 +4792,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "かぞく",
+    wordOrSentence: "かぞく",
     kanji: "家族",
     meaning: "family",
     total: 0,
@@ -4800,7 +4800,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "しんせつ",
+    wordOrSentence: "しんせつ",
     kanji: "親切",
     meaning: "kindness",
     total: 0,
@@ -4808,7 +4808,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "けいかん",
+    wordOrSentence: "けいかん",
     kanji: "警官",
     meaning: "police officer",
     total: 0,
@@ -4816,7 +4816,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "けいこう",
+    wordOrSentence: "けいこう",
     kanji: "景色",
     meaning: "scenery",
     total: 0,
@@ -4824,7 +4824,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "しごと",
+    wordOrSentence: "しごと",
     kanji: "仕事",
     meaning: "work",
     total: 0,
@@ -4832,7 +4832,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "たいいく",
+    wordOrSentence: "たいいく",
     kanji: "体育",
     meaning: "physical education",
     total: 0,
@@ -4840,7 +4840,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "ちゅうがくせい",
+    wordOrSentence: "ちゅうがくせい",
     kanji: "中学生",
     meaning: "junior high school student",
     total: 0,
@@ -4848,7 +4848,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "せんせい",
+    wordOrSentence: "せんせい",
     kanji: "先生",
     meaning: "teacher",
     total: 0,
@@ -4856,7 +4856,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "かいしゃ",
+    wordOrSentence: "かいしゃ",
     kanji: "会社",
     meaning: "company",
     total: 0,
@@ -4864,7 +4864,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "けんきゅうしつ",
+    wordOrSentence: "けんきゅうしつ",
     kanji: "研究室",
     meaning: "research lab",
     total: 0,
@@ -4872,7 +4872,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "しゅうまつ",
+    wordOrSentence: "しゅうまつ",
     kanji: "週末",
     meaning: "weekend",
     total: 0,
@@ -4880,7 +4880,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "かんごし",
+    wordOrSentence: "かんごし",
     kanji: "看護師",
     meaning: "nurse",
     total: 0,
@@ -4888,7 +4888,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "ふたご",
+    wordOrSentence: "ふたご",
     kanji: "双子",
     meaning: "twins",
     total: 0,
@@ -4896,7 +4896,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "がっきゅう",
+    wordOrSentence: "がっきゅう",
     kanji: "学級",
     meaning: "classroom",
     total: 0,
@@ -4904,7 +4904,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "りょうしん",
+    wordOrSentence: "りょうしん",
     kanji: "両親",
     meaning: "parents",
     total: 0,
@@ -4912,7 +4912,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "かお",
+    wordOrSentence: "かお",
     kanji: "顔",
     meaning: "face",
     total: 0,
@@ -4920,7 +4920,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "たんじょうび",
+    wordOrSentence: "たんじょうび",
     kanji: "誕生日",
     meaning: "birthday",
     total: 0,
@@ -4928,7 +4928,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "しごと",
+    wordOrSentence: "しごと",
     kanji: "仕事",
     meaning: "job",
     total: 0,
@@ -4936,7 +4936,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "ともだち",
+    wordOrSentence: "ともだち",
     kanji: "友達",
     meaning: "friend",
     total: 0,
@@ -4944,7 +4944,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "かんぽう",
+    wordOrSentence: "かんぽう",
     kanji: "寒波",
     meaning: "cold wave",
     total: 0,
@@ -4952,7 +4952,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "とし",
+    wordOrSentence: "とし",
     kanji: "年",
     meaning: "year",
     total: 0,
@@ -4960,7 +4960,7 @@ export const vocabularyHumanLife: IWord[] = [
     topic: ETopic.HUMAN_LIFE,
   },
   {
-    word: "じんせい",
+    wordOrSentence: "じんせい",
     kanji: "人生",
     meaning: "life",
     total: 0,
@@ -4969,108 +4969,108 @@ export const vocabularyHumanLife: IWord[] = [
   },
 ];
 
-export const vocabularyVerbs: IWord[] = [
+export const vocabularyVerbs: IWordOrSentence[] = [
   // N5 Verbs
-  { word: "する", meaning: "to do", total: 0, right: 0, topic: ETopic.VERBS },
-  { word: "いく", meaning: "to go", total: 0, right: 0, topic: ETopic.VERBS },
-  { word: "くる", meaning: "to come", total: 0, right: 0, topic: ETopic.VERBS },
-  { word: "みる", meaning: "to see", total: 0, right: 0, topic: ETopic.VERBS },
+  { wordOrSentence: "する", meaning: "to do", total: 0, right: 0, topic: ETopic.VERBS },
+  { wordOrSentence: "いく", meaning: "to go", total: 0, right: 0, topic: ETopic.VERBS },
+  { wordOrSentence: "くる", meaning: "to come", total: 0, right: 0, topic: ETopic.VERBS },
+  { wordOrSentence: "みる", meaning: "to see", total: 0, right: 0, topic: ETopic.VERBS },
   {
-    word: "あるく",
+    wordOrSentence: "あるく",
     meaning: "to walk",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "たべる",
+    wordOrSentence: "たべる",
     meaning: "to eat",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "のむ",
+    wordOrSentence: "のむ",
     meaning: "to drink",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "ねる",
+    wordOrSentence: "ねる",
     meaning: "to sleep",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "きく",
+    wordOrSentence: "きく",
     meaning: "to listen",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
-  { word: "よむ", meaning: "to read", total: 0, right: 0, topic: ETopic.VERBS },
+  { wordOrSentence: "よむ", meaning: "to read", total: 0, right: 0, topic: ETopic.VERBS },
   // N4 Verbs
-  { word: "かう", meaning: "to buy", total: 0, right: 0, topic: ETopic.VERBS },
+  { wordOrSentence: "かう", meaning: "to buy", total: 0, right: 0, topic: ETopic.VERBS },
   {
-    word: "うたう",
+    wordOrSentence: "うたう",
     meaning: "to sing",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "かく",
+    wordOrSentence: "かく",
     meaning: "to write",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "はなす",
+    wordOrSentence: "はなす",
     meaning: "to speak",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "およぐ",
+    wordOrSentence: "およぐ",
     meaning: "to swim",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "あびる",
+    wordOrSentence: "あびる",
     meaning: "to take a shower",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "あるく",
+    wordOrSentence: "あるく",
     meaning: "to walk",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "たべる",
+    wordOrSentence: "たべる",
     meaning: "to eat",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "のむ",
+    wordOrSentence: "のむ",
     meaning: "to drink",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "ねる",
+    wordOrSentence: "ねる",
     meaning: "to sleep",
     total: 0,
     right: 0,
@@ -5078,58 +5078,58 @@ export const vocabularyVerbs: IWord[] = [
   },
   // N3 Verbs
   {
-    word: "あるく",
+    wordOrSentence: "あるく",
     meaning: "to walk",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "たべる",
+    wordOrSentence: "たべる",
     meaning: "to eat",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "のむ",
+    wordOrSentence: "のむ",
     meaning: "to drink",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "ねる",
+    wordOrSentence: "ねる",
     meaning: "to sleep",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "きく",
+    wordOrSentence: "きく",
     meaning: "to listen",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
-  { word: "よむ", meaning: "to read", total: 0, right: 0, topic: ETopic.VERBS },
-  { word: "かう", meaning: "to buy", total: 0, right: 0, topic: ETopic.VERBS },
+  { wordOrSentence: "よむ", meaning: "to read", total: 0, right: 0, topic: ETopic.VERBS },
+  { wordOrSentence: "かう", meaning: "to buy", total: 0, right: 0, topic: ETopic.VERBS },
   {
-    word: "うたう",
+    wordOrSentence: "うたう",
     meaning: "to sing",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "かく",
+    wordOrSentence: "かく",
     meaning: "to write",
     total: 0,
     right: 0,
     topic: ETopic.VERBS,
   },
   {
-    word: "はなす",
+    wordOrSentence: "はなす",
     meaning: "to speak",
     total: 0,
     right: 0,
@@ -5137,69 +5137,69 @@ export const vocabularyVerbs: IWord[] = [
   },
   // Add more verbs as needed
 ];
-export const vocabularyN5: IWord[] = [
+export const vocabularyN5: IWordOrSentence[] = [
   // Numbers
-  { word: "いち", meaning: "one", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "に", meaning: "two", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "さん", meaning: "three", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "よん", meaning: "four", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ご", meaning: "five", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ろく", meaning: "six", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "しち", meaning: "seven", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "はち", meaning: "eight", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "きゅう", meaning: "nine", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "じゅう", meaning: "ten", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "いち", meaning: "one", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "に", meaning: "two", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "さん", meaning: "three", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "よん", meaning: "four", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ご", meaning: "five", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ろく", meaning: "six", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "しち", meaning: "seven", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "はち", meaning: "eight", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "きゅう", meaning: "nine", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "じゅう", meaning: "ten", total: 0, right: 0, topic: ETopic.N5 },
   // Colors
-  { word: "あか", meaning: "red", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "あお", meaning: "blue", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "しろ", meaning: "white", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "くろ", meaning: "black", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "きいろ", meaning: "yellow", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "あか", meaning: "red", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "あお", meaning: "blue", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "しろ", meaning: "white", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "くろ", meaning: "black", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "きいろ", meaning: "yellow", total: 0, right: 0, topic: ETopic.N5 },
   // Days of the Week
   {
-    word: "げつようび",
+    wordOrSentence: "げつようび",
     meaning: "Monday",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "かようび",
+    wordOrSentence: "かようび",
     meaning: "Tuesday",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "すいようび",
+    wordOrSentence: "すいようび",
     meaning: "Wednesday",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "もくようび",
+    wordOrSentence: "もくようび",
     meaning: "Thursday",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "きんようび",
+    wordOrSentence: "きんようび",
     meaning: "Friday",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "どようび",
+    wordOrSentence: "どようび",
     meaning: "Saturday",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "にちようび",
+    wordOrSentence: "にちようび",
     meaning: "Sunday",
     total: 0,
     right: 0,
@@ -5207,343 +5207,343 @@ export const vocabularyN5: IWord[] = [
   },
   // Family
   {
-    word: "おとうさん",
+    wordOrSentence: "おとうさん",
     meaning: "father",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "おかあさん",
+    wordOrSentence: "おかあさん",
     meaning: "mother",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "おにいさん",
+    wordOrSentence: "おにいさん",
     meaning: "older brother",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "おねえさん",
+    wordOrSentence: "おねえさん",
     meaning: "older sister",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "いもうと",
+    wordOrSentence: "いもうと",
     meaning: "younger sister",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "おとうと",
+    wordOrSentence: "おとうと",
     meaning: "younger brother",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "じいさん",
+    wordOrSentence: "じいさん",
     meaning: "grandfather",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "ばあさん",
+    wordOrSentence: "ばあさん",
     meaning: "grandmother",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   // Animals
-  { word: "いぬ", meaning: "dog", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ねこ", meaning: "cat", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "とり", meaning: "bird", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "さかな", meaning: "fish", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "うし", meaning: "cow", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ひつじ", meaning: "sheep", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ねずみ", meaning: "mouse", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "うま", meaning: "horse", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "いぬ", meaning: "dog", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ねこ", meaning: "cat", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "とり", meaning: "bird", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "さかな", meaning: "fish", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "うし", meaning: "cow", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ひつじ", meaning: "sheep", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ねずみ", meaning: "mouse", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "うま", meaning: "horse", total: 0, right: 0, topic: ETopic.N5 },
   // Food and Drink
   {
-    word: "ごはん",
+    wordOrSentence: "ごはん",
     meaning: "rice;meal",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
-  { word: "みず", meaning: "water", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "おさけ", meaning: "alcohol", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "おちゃ", meaning: "tea", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "みず", meaning: "water", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "おさけ", meaning: "alcohol", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "おちゃ", meaning: "tea", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "こうちゃ",
+    wordOrSentence: "こうちゃ",
     meaning: "black tea",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "ぎゅうにゅう",
+    wordOrSentence: "ぎゅうにゅう",
     meaning: "cow's milk",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
-  { word: "パン", meaning: "bread", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "たまご", meaning: "egg", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "パン", meaning: "bread", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "たまご", meaning: "egg", total: 0, right: 0, topic: ETopic.N5 },
   // Body Parts
-  { word: "あたま", meaning: "head", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "かお", meaning: "face", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "くち", meaning: "mouth", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "め", meaning: "eye", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "て", meaning: "hand", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "あし", meaning: "leg", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "は", meaning: "tooth", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ひざ", meaning: "knee", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "あたま", meaning: "head", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "かお", meaning: "face", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "くち", meaning: "mouth", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "め", meaning: "eye", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "て", meaning: "hand", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "あし", meaning: "leg", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "は", meaning: "tooth", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ひざ", meaning: "knee", total: 0, right: 0, topic: ETopic.N5 },
   // Places
-  { word: "うち", meaning: "home", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "いえ", meaning: "house", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "がっこう", meaning: "school", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "いえ", meaning: "home", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "こうえん", meaning: "park", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "うち", meaning: "home", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "いえ", meaning: "house", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "がっこう", meaning: "school", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "いえ", meaning: "home", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "こうえん", meaning: "park", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "としょかん",
+    wordOrSentence: "としょかん",
     meaning: "library",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
-  { word: "いえ", meaning: "home", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "おおきい", meaning: "big", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "いえ", meaning: "home", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "おおきい", meaning: "big", total: 0, right: 0, topic: ETopic.N5 },
   // Basic Verbs
-  { word: "する", meaning: "to do", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "いく", meaning: "to go", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "する", meaning: "to do", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "いく", meaning: "to go", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "かえる",
+    wordOrSentence: "かえる",
     meaning: "to return;to go back",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
-  { word: "くる", meaning: "to come", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "みる", meaning: "to see", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "きく", meaning: "to listen", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "はなす", meaning: "to speak", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "たべる", meaning: "to eat", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "のむ", meaning: "to drink", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ねる", meaning: "to sleep", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "くる", meaning: "to come", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "みる", meaning: "to see", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "きく", meaning: "to listen", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "はなす", meaning: "to speak", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "たべる", meaning: "to eat", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "のむ", meaning: "to drink", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ねる", meaning: "to sleep", total: 0, right: 0, topic: ETopic.N5 },
   // Time
-  { word: "じかん", meaning: "time", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "じかん", meaning: "time", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "とき",
+    wordOrSentence: "とき",
     meaning: "time;moment",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
-  { word: "いつ", meaning: "when", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "いつ", meaning: "when", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "まいにち",
+    wordOrSentence: "まいにち",
     meaning: "every day",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
-  { word: "あした", meaning: "tomorrow", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "あした", meaning: "tomorrow", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "きのう",
+    wordOrSentence: "きのう",
     meaning: "yesterday",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   // Directions
-  { word: "みぎ", meaning: "right", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ひだり", meaning: "left", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "まえ", meaning: "front", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "うしろ", meaning: "back", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "うえ", meaning: "up;above", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "みぎ", meaning: "right", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ひだり", meaning: "left", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "まえ", meaning: "front", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "うしろ", meaning: "back", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "うえ", meaning: "up;above", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "した",
+    wordOrSentence: "した",
     meaning: "down;below",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   // Daily Activities
-  { word: "たべる", meaning: "to eat", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ねる", meaning: "to sleep", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "たべる", meaning: "to eat", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ねる", meaning: "to sleep", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "ぎょうざをやく",
+    wordOrSentence: "ぎょうざをやく",
     meaning: "to make dumplings",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "あさごはんをたべる",
+    wordOrSentence: "あさごはんをたべる",
     meaning: "to eat breakfast",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "てをあらう",
+    wordOrSentence: "てをあらう",
     meaning: "to wash hands",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
-  { word: "うたう", meaning: "to sing", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "うたう", meaning: "to sing", total: 0, right: 0, topic: ETopic.N5 },
   // Descriptive Words
-  { word: "あたたかい", meaning: "warm", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "さむい", meaning: "cold", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "おおきい", meaning: "big", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ちいさい", meaning: "small", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "あたたかい", meaning: "warm", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "さむい", meaning: "cold", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "おおきい", meaning: "big", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ちいさい", meaning: "small", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "たかい",
+    wordOrSentence: "たかい",
     meaning: "high;tall",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "ひくい",
+    wordOrSentence: "ひくい",
     meaning: "low;short",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   // Actions
-  { word: "する", meaning: "to do", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "する", meaning: "to do", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "かえる",
+    wordOrSentence: "かえる",
     meaning: "to return;to go back",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
-  { word: "くる", meaning: "to come", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "たべる", meaning: "to eat", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "のむ", meaning: "to drink", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ねる", meaning: "to sleep", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "くる", meaning: "to come", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "たべる", meaning: "to eat", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "のむ", meaning: "to drink", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ねる", meaning: "to sleep", total: 0, right: 0, topic: ETopic.N5 },
   // Travel
-  { word: "くるま", meaning: "car", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "でんしゃ", meaning: "train", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "くるま", meaning: "car", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "でんしゃ", meaning: "train", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "ひこうき",
+    wordOrSentence: "ひこうき",
     meaning: "airplane",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "じてんしゃ",
+    wordOrSentence: "じてんしゃ",
     meaning: "bicycle",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
-  { word: "バス", meaning: "bus", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "バス", meaning: "bus", total: 0, right: 0, topic: ETopic.N5 },
   // Clothing
-  { word: "ぼうし", meaning: "hat", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "くつ", meaning: "shoes", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ぼうし", meaning: "hat", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "くつ", meaning: "shoes", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "せびろ",
+    wordOrSentence: "せびろ",
     meaning: "trousers;pants",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "ワンピース",
+    wordOrSentence: "ワンピース",
     meaning: "dress",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
-  { word: "シャツ", meaning: "shirt", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "シャツ", meaning: "shirt", total: 0, right: 0, topic: ETopic.N5 },
   // Common Objects
-  { word: "かさ", meaning: "umbrella", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "かばん", meaning: "bag", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "かさ", meaning: "umbrella", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "かばん", meaning: "bag", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "じしょ",
+    wordOrSentence: "じしょ",
     meaning: "dictionary",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
-  { word: "かぎ", meaning: "key", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "かぎ", meaning: "key", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "とけい",
+    wordOrSentence: "とけい",
     meaning: "clock;watch",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   // Feelings
-  { word: "うれしい", meaning: "happy", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "かなしい", meaning: "sad", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "うれしい", meaning: "happy", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "かなしい", meaning: "sad", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "おそろしい",
+    wordOrSentence: "おそろしい",
     meaning: "scary",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
-  { word: "ねむい", meaning: "sleepy", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "いたい", meaning: "painful", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ねむい", meaning: "sleepy", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "いたい", meaning: "painful", total: 0, right: 0, topic: ETopic.N5 },
   // Others
-  { word: "たまご", meaning: "egg", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "くつした", meaning: "socks", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ぼうし", meaning: "hat", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "てがみ", meaning: "letter", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ほん", meaning: "book", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "たまご", meaning: "egg", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "くつした", meaning: "socks", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ぼうし", meaning: "hat", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "てがみ", meaning: "letter", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ほん", meaning: "book", total: 0, right: 0, topic: ETopic.N5 },
   // Months
   {
-    word: "いちがつ",
+    wordOrSentence: "いちがつ",
     meaning: "January",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
-  { word: "にがつ", meaning: "February", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "さんがつ", meaning: "March", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "しがつ", meaning: "April", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ごがつ", meaning: "May", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "ろくがつ", meaning: "June", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "しちがつ", meaning: "July", total: 0, right: 0, topic: ETopic.N5 },
-  { word: "はちがつ", meaning: "August", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "にがつ", meaning: "February", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "さんがつ", meaning: "March", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "しがつ", meaning: "April", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ごがつ", meaning: "May", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "ろくがつ", meaning: "June", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "しちがつ", meaning: "July", total: 0, right: 0, topic: ETopic.N5 },
+  { wordOrSentence: "はちがつ", meaning: "August", total: 0, right: 0, topic: ETopic.N5 },
   {
-    word: "くがつ",
+    wordOrSentence: "くがつ",
     meaning: "September",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "じゅうがつ",
+    wordOrSentence: "じゅうがつ",
     meaning: "October",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "じゅういちがつ",
+    wordOrSentence: "じゅういちがつ",
     meaning: "November",
     total: 0,
     right: 0,
     topic: ETopic.N5,
   },
   {
-    word: "じゅうにがつ",
+    wordOrSentence: "じゅうにがつ",
     meaning: "December",
     total: 0,
     right: 0,
@@ -5551,7 +5551,1991 @@ export const vocabularyN5: IWord[] = [
   },
 ];
 
-export const vocabularyAll: IWord[] = [
+export const basicJapaneseConversation: IWordOrSentence[] = [
+  {
+    wordOrSentence: "こんにちは",
+    meaning: "Hello",
+    vn: "Xin chào",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "ありがとう",
+    meaning: "Thank you",
+    vn: "Cảm ơn",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "どうぞ",
+    meaning: "Please",
+    vn: "Xin mời",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すみません",
+    meaning: "Excuse me / I'm sorry",
+    vn: "Xin lỗi",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "おはようございます",
+    meaning: "Good morning",
+    vn: "Chào buổi sáng",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "こんばんは",
+    meaning: "Good evening",
+    vn: "Chào buổi tối",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "おやすみなさい",
+    meaning: "Good night",
+    vn: "Chúc ngủ ngon",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "はじめまして",
+    meaning: "Nice to meet you",
+    vn: "Rất vui được gặp bạn",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "さようなら",
+    meaning: "Goodbye",
+    vn: "Tạm biệt",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "おげんきですか",
+    meaning: "How are you?",
+    vn: "Bạn khỏe không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "わたしはげんきです",
+    meaning: "I'm fine, thank you",
+    vn: "Tôi khỏe, cảm ơn",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "どういたしまして",
+    meaning: "You're welcome",
+    vn: "Không có gì",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すみませんが",
+    meaning: "Excuse me, but ...",
+    vn: "Xin lỗi, nhưng ...",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "おはしをもっていますか",
+    meaning: "Do you have chopsticks?",
+    vn: "Anh có đũa không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "いくらですか",
+    meaning: "How much is it?",
+    vn: "Nó giá bao nhiêu?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すみません、これはとりけしですか",
+    meaning: "Excuse me, is this takeout?",
+    vn: "Xin lỗi, cái này mang đi phải không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "おねがいします",
+    meaning: "Please",
+    vn: "Làm ơn",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "とてもおいしいです",
+    meaning: "It's very delicious",
+    vn: "Ngon lắm",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "おもしろいですね",
+    meaning: "It's interesting, isn't it?",
+    vn: "Thú vị nhỉ",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "いってらっしゃい",
+    meaning: "Have a good day (said to someone leaving)",
+    vn: "Chúc anh ra ngoài có một ngày tốt lành",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "ただいま",
+    meaning: "I'm back (said upon returning home)",
+    vn: "Tôi đã về",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "おかえりなさい",
+    meaning: "Welcome back (said to someone returning home)",
+    vn: "Chào mừng đã trở về",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "いただきます",
+    meaning: "Let's eat (said before eating)",
+    vn: "Xin mời",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "ごちそうさまでした",
+    meaning: "Thank you for the meal (said after eating)",
+    vn: "Cảm ơn đã mời",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "おなかがすきました",
+    meaning: "I'm hungry",
+    vn: "Tôi đói rồi",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "のどがかわきました",
+    meaning: "I'm thirsty",
+    vn: "Tôi khát nước",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "おめでとうございます",
+    meaning: "Congratulations",
+    vn: "Chúc mừng",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "おねがいします",
+    meaning: "I'm sorry",
+    vn: "Xin lỗi",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "わかりました",
+    meaning: "I understand",
+    vn: "Tôi hiểu",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "ごめんなさい",
+    meaning: "I'm sorry",
+    vn: "Xin lỗi",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "わかりません",
+    meaning: "I don't understand",
+    vn: "Tôi không hiểu",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "おねがいします",
+    meaning: "Please",
+    vn: "Làm ơn",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "もういちどおねがいします",
+    meaning: "One more time, please",
+    vn: "Làm ơn một lần nữa",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "おねがいします",
+    meaning: "Please",
+    vn: "Làm ơn",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "きれいですね",
+    meaning: "It's beautiful, isn't it?",
+    vn: "Đẹp quá",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すごいですね",
+    meaning: "Amazing, isn't it?",
+    vn: "Tuyệt vời quá",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "かっこいいですね",
+    meaning: "It's cool, isn't it?",
+    vn: "Đẹp trai quá",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "どうしたんですか",
+    meaning: "What's wrong?",
+    vn: "Có chuyện gì vậy?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "いいえ",
+    meaning: "No",
+    vn: "Không",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "はい",
+    meaning: "Yes",
+    vn: "Vâng",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すごく",
+    meaning: "Very",
+    vn: "Rất",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "ちょっと",
+    meaning: "A little",
+    vn: "Một chút",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "もうすこし",
+    meaning: "A little more",
+    vn: "Thêm một chút nữa",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すぐに",
+    meaning: "Immediately",
+    vn: "Ngay lập tức",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "いま",
+    meaning: "Now",
+    vn: "Bây giờ",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "あとで",
+    meaning: "Later",
+    vn: "Sau",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "とても",
+    meaning: "Very",
+    vn: "Rất",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "きれいですね",
+    meaning: "It's beautiful, isn't it?",
+    vn: "Đẹp quá",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すごいですね",
+    meaning: "Amazing, isn't it?",
+    vn: "Tuyệt vời quá",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "かっこいいですね",
+    meaning: "It's cool, isn't it?",
+    vn: "Đẹp trai quá",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "どうしたんですか",
+    meaning: "What's wrong?",
+    vn: "Có chuyện gì vậy?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "いいえ",
+    meaning: "No",
+    vn: "Không",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "はい",
+    meaning: "Yes",
+    vn: "Vâng",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すごく",
+    meaning: "Very",
+    vn: "Rất",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "ちょっと",
+    meaning: "A little",
+    vn: "Một chút",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "もうすこし",
+    meaning: "A little more",
+    vn: "Thêm một chút nữa",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すぐに",
+    meaning: "Immediately",
+    vn: "Ngay lập tức",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "いま",
+    meaning: "Now",
+    vn: "Bây giờ",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "あとで",
+    meaning: "Later",
+    vn: "Sau",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "とても",
+    meaning: "Very",
+    vn: "Rất",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "だいじょうぶですか",
+    meaning: "Are you okay?",
+    vn: "Bạn ổn không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "どうしましたか",
+    meaning: "What's the matter?",
+    vn: "Có chuyện gì vậy?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "どうしてですか",
+    meaning: "Why?",
+    vn: "Tại sao?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "どうすればいいですか",
+    meaning: "What should I do?",
+    vn: "Tôi nên làm gì?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "どこですか",
+    meaning: "Where is it?",
+    vn: "Nó ở đâu?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "どうやって",
+    meaning: "How?",
+    vn: "Như thế nào?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "いつですか",
+    meaning: "When?",
+    vn: "Khi nào?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "なぜですか",
+    meaning: "Why?",
+    vn: "Tại sao?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "誰ですか",
+    meaning: "Who is it?",
+    vn: "Ai đó?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "いくらですか",
+    meaning: "How much is it?",
+    vn: "Nó giá bao nhiêu?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すみません、これはとりけしですか",
+    meaning: "Excuse me, is this takeout?",
+    vn: "Xin lỗi, cái này mang đi phải không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すみません、これはここでたべられますか",
+    meaning: "Excuse me, can I eat this here?",
+    vn: "Xin lỗi, tôi có thể ăn ở đây được không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "おいくつですか",
+    meaning: "How old are you?",
+    vn: "Bạn bao nhiêu tuổi?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "どんな",
+    meaning: "What kind of ...?",
+    vn: "Loại ... như thế nào?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "とても",
+    meaning: "Very",
+    vn: "Rất",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "かわいいですね",
+    meaning: "It's cute, isn't it?",
+    vn: "Dễ thương quá",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "ほんとうですか",
+    meaning: "Really?",
+    vn: "Thật không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "まじですか",
+    meaning: "Are you serious?",
+    vn: "Nghiêm túc hả?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "やばいですね",
+    meaning: "That's bad, isn't it?",
+    vn: "Đó là xấu, phải không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "ちがいます",
+    meaning: "That's not right",
+    vn: "Điều đó không đúng",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "たすけてください",
+    meaning: "Help me, please",
+    vn: "Làm ơn giúp tôi",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "わかりません",
+    meaning: "I don't understand",
+    vn: "Tôi không hiểu",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "それはいいですね",
+    meaning: "That's nice, isn't it?",
+    vn: "Đó là tốt, phải không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "なんですか",
+    meaning: "What is it?",
+    vn: "Đó là cái gì?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "なんですか",
+    meaning: "What's wrong?",
+    vn: "Có chuyện gì?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "それはなんですか",
+    meaning: "What is that?",
+    vn: "Đó là cái gì?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "それはなんですか",
+    meaning: "What's that?",
+    vn: "Đó là cái gì?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "それはどういう意味ですか",
+    meaning: "What does that mean?",
+    vn: "Đó có nghĩa là gì?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "それはどういうことですか",
+    meaning: "What does that mean?",
+    vn: "Đó có nghĩa là gì?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すべては",
+    meaning: "It's all",
+    vn: "Tất cả là",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "きみはばかだ",
+    meaning: "You're an idiot",
+    vn: "Bạn là một kẻ ngốc",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "もしもし",
+    meaning: "Hello (on the phone)",
+    vn: "Xin chào (trên điện thoại)",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "あなたの名前は何ですか",
+    meaning: "What's your name?",
+    vn: "Tên của bạn là gì?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "わたしの名前は...",
+    meaning: "My name is ...",
+    vn: "Tên tôi là ...",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "たのしい",
+    meaning: "Fun",
+    vn: "Vui vẻ",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すごい",
+    meaning: "Amazing",
+    vn: "Tuyệt vời",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "じゃあまたね",
+    meaning: "See you later",
+    vn: "Hẹn gặp lại",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "どうぞおあがりください",
+    meaning: "Please come in",
+    vn: "Xin mời vào",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すみません、わかりません",
+    meaning: "Sorry, I don't know",
+    vn: "Xin lỗi, tôi không biết",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "はじめまして、どうぞよろしくおねがいします",
+    meaning: "Nice to meet you, please take care of me",
+    vn: "Rất vui được gặp bạn, xin hãy chăm sóc tôi",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "もしもし、おげんきですか",
+    meaning: "Hello, how are you?",
+    vn: "Xin chào, bạn có khỏe không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "はじめまして、わたしは...です",
+    meaning: "Nice to meet you, I'm ...",
+    vn: "Rất vui được gặp bạn, tôi là ...",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "ありがとう、おなかがすいた",
+    meaning: "Thank you, I'm hungry",
+    vn: "Cảm ơn, tôi đói rồi",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "はい、いくらですか",
+    meaning: "Yes, how much is it?",
+    vn: "Vâng, nó giá bao nhiêu?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "あなたのたんじょうびはいつですか",
+    meaning: "When is your birthday?",
+    vn: "Sinh nhật của bạn là khi nào?",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "すみません、わたしは...がわかりません",
+    meaning: "Sorry, I don't know ...",
+    vn: "Xin lỗi, tôi không biết ...",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "いいえ、すみません",
+    meaning: "No, sorry",
+    vn: "Không, xin lỗi",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+  {
+    wordOrSentence: "さようなら、またね",
+    meaning: "Goodbye, see you",
+    vn: "Tạm biệt, hẹn gặp lại",
+    total: 0,
+    right: 0,
+    topic: ETopic.CONVERSATION,
+  },
+];
+export const introduceYourselfSentences: IWordOrSentence[] = [
+  {
+    wordOrSentence: "わたしはエンジニアです。",
+    meaning: "I am an engineer.",
+    vn: "Tôi là một kỹ sư.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしは２５さいです。",
+    meaning: "I am 25 years old.",
+    vn: "Tôi 25 tuổi.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのなまえはたろうです。",
+    meaning: "My name is Taro.",
+    vn: "Tên tôi là Taro.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはがっこういんです。",
+    meaning: "I am a student.",
+    vn: "Tôi là một sinh viên.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはがっこうせいです。",
+    meaning: "I am a student.",
+    vn: "Tôi là một sinh viên.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのいえはとうきょうです。",
+    meaning: "My house is in Tokyo.",
+    vn: "Nhà tôi ở Tokyo.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはがっこうにいきます。",
+    meaning: "I go to school.",
+    vn: "Tôi đến trường.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのかぞくはよんにんです。",
+    meaning: "My family has four people.",
+    vn: "Gia đình tôi có bốn người.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのあねはいぬがいます。",
+    meaning: "My older sister has a dog.",
+    vn: "Chị gái tôi có một con chó.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはにほんじんです。",
+    meaning: "I am Japanese.",
+    vn: "Tôi là người Nhật.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはじゅうろくさいです。",
+    meaning: "I am sixteen years old.",
+    vn: "Tôi mười sáu tuổi.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはおなじえいごのせんせいです。",
+    meaning: "I am an English teacher.",
+    vn: "Tôi là một giáo viên tiếng Anh.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはあめりかじんです。",
+    meaning: "I am American.",
+    vn: "Tôi là người Mỹ.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはかんごしです。",
+    meaning: "I am a nurse.",
+    vn: "Tôi là một y tá.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはぎんこういんです。",
+    meaning: "I am a bank employee.",
+    vn: "Tôi là một nhân viên ngân hàng.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはいしゃです。",
+    meaning: "I am a doctor.",
+    vn: "Tôi là một bác sĩ.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはがくせいです。",
+    meaning: "I am a student.",
+    vn: "Tôi là một sinh viên.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのかおはまるいです。",
+    meaning: "My face is round.",
+    vn: "Khuôn mặt của tôi tròn.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはこどもが２ります。",
+    meaning: "I have two children.",
+    vn: "Tôi có hai đứa con.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはじてんしゃでがっこうにいきます。",
+    meaning: "I go to school by bicycle.",
+    vn: "Tôi đi đến trường bằng xe đạp.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはまじめです。",
+    meaning: "I am serious.",
+    vn: "Tôi nghiêm túc.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのきょうだいはみなおとこのこです。",
+    meaning: "All of my siblings are boys.",
+    vn: "Tất cả các anh em của tôi đều là con trai.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはきょうだいがふたりいます。",
+    meaning: "I have two siblings.",
+    vn: "Tôi có hai anh em.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのはははせんせいです。",
+    meaning: "My mother is a teacher.",
+    vn: "Mẹ tôi là một giáo viên.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのしゅみはえいがをみることです。",
+    meaning: "My hobby is watching movies.",
+    vn: "Sở thích của tôi là xem phim.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのちちはビジネスマンです。",
+    meaning: "My father is a businessman.",
+    vn: "Bố tôi là một doanh nhân.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのにほんごはへたです。",
+    meaning: "My Japanese is poor.",
+    vn: "Tiếng Nhật của tôi kém.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはおかあさんです。",
+    meaning: "I am a mother.",
+    vn: "Tôi là một người mẹ.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのあにはにんぎょうせいです。",
+    meaning: "My older brother is a student.",
+    vn: "Anh trai của tôi là một sinh viên.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはでんきこうじゅうです。",
+    meaning: "I am an electrician.",
+    vn: "Tôi là một thợ điện.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはかいしゃいんです。",
+    meaning: "I am an office worker.",
+    vn: "Tôi là một nhân viên văn phòng.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはこうちょうです。",
+    meaning: "I am a manager.",
+    vn: "Tôi là một quản lý.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのともだちはひとりもいません。",
+    meaning: "I don't have any friends.",
+    vn: "Tôi không có bạn nào cả.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはおとこのこです。",
+    meaning: "I am a boy.",
+    vn: "Tôi là một con trai.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはおんなのこです。",
+    meaning: "I am a girl.",
+    vn: "Tôi là một cô gái.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはこどものときからにほんにすんでいます。",
+    meaning: "I have been living in Japan since I was a child.",
+    vn: "Tôi đã sống ở Nhật Bản từ khi còn nhỏ.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはきのうはたらきませんでした。",
+    meaning: "I didn't work yesterday.",
+    vn: "Hôm qua tôi không làm việc.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのせんせいはやさしいです。",
+    meaning: "My teacher is kind.",
+    vn: "Thầy cô của tôi là người tốt bụng.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのねこはくろいです。",
+    meaning: "My cat is black.",
+    vn: "Mèo của tôi là màu đen.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのうしろにいっぴきねこがいます。",
+    meaning: "There is a cat behind me.",
+    vn: "Có một con mèo ở phía sau tôi.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのむすめははくぶつかんではたらいています。",
+    meaning: "My daughter works at a museum.",
+    vn: "Con gái tôi làm việc tại một bảo tàng.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはいえでかいてんしています。",
+    meaning: "I am doing housework.",
+    vn: "Tôi đang làm việc nhà.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはきねんがいがくせいです。",
+    meaning: "I am a college student.",
+    vn: "Tôi là một sinh viên đại học.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはおなじこうこうのなつまつりが好きです。",
+    meaning: "I like the same high school summer festival.",
+    vn: "Tôi thích lễ hội mùa hè của trường cấp 3.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはにほんのえいががすきです。",
+    meaning: "I like Japanese movies.",
+    vn: "Tôi thích phim Nhật.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはじっしんがいがくせいです。",
+    meaning: "I am a graduate student.",
+    vn: "Tôi là một sinh viên sau đại học.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのとうきょうにいえんはやすいです。",
+    meaning: "My Tokyo apartment is cheap.",
+    vn: "Căn hộ của tôi ở Tokyo rẻ.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしははじめまして。",
+    meaning: "Nice to meet you.",
+    vn: "Rất vui được gặp bạn.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはにほんごのべんきょうがすきです。",
+    meaning: "I like studying Japanese.",
+    vn: "Tôi thích học tiếng Nhật.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのがっこうはあおいです。",
+    meaning: "My school is blue.",
+    vn: "Trường của tôi là màu xanh dương.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはひまなとき、えいがをみます。",
+    meaning: "When I have free time, I watch movies.",
+    vn: "Khi tôi rảnh rỗi, tôi xem phim.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはにほんごのせんこうがすきです。",
+    meaning: "I like Japanese as my major.",
+    vn: "Tôi thích tiếng Nhật là chuyên ngành của mình.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのおとうさんはだいがくいんせいです。",
+    meaning: "My father is a university student.",
+    vn: "Bố tôi là một sinh viên đại học.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのおかあさんはせんせいです。",
+    meaning: "My mother is a teacher.",
+    vn: "Mẹ tôi là một giáo viên.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのいえはおおきいです。",
+    meaning: "My house is big.",
+    vn: "Nhà tôi to.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはともだちがすくないです。",
+    meaning: "I don't have many friends.",
+    vn: "Tôi không có nhiều bạn.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしはにほんのぎんこういんです。",
+    meaning: "I am a Japanese banker.",
+    vn: "Tôi là một ngân hàng Nhật Bản.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+  {
+    wordOrSentence: "わたしのうちでいちばんふといのはわたしです。",
+    meaning: "I am the fattest in my house.",
+    vn: "Tôi là người béo nhất trong nhà tôi.",
+    total: 0,
+    right: 0,
+    topic: ETopic.INTRODUCE_YOURSELF,
+  },
+];
+
+export const locationGrammarN5: IWordOrSentence[] = [
+  {
+    wordOrSentence: "ほんをテーブルの上においてください。",
+    meaning: "Please put the book on the table.",
+    vn: "Xin hãy đặt quyển sách lên bàn.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "えんぴつが机の上にあります。",
+    meaning: "The pencil is on the desk.",
+    vn: "Bút chì đang ở trên bàn.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "とけいが壁にかかっています。",
+    meaning: "The clock is hung on the wall.",
+    vn: "Đồng hồ đang treo trên tường.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "かばんをいすの上に置いてください。",
+    meaning: "Please place the bag on the chair.",
+    vn: "Xin hãy đặt cặp sách lên ghế.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "くつがドアのそばにあります。",
+    meaning: "The shoes are near the door.",
+    vn: "Đôi giày đang ở gần cửa.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "かばんがベッドの下にありますか。",
+    meaning: "Is the bag under the bed?",
+    vn: "Cái cặp có ở dưới giường không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "いすの後ろに本棚があります。",
+    meaning: "There is a bookshelf behind the chair.",
+    vn: "Sau cái ghế có một cái kệ sách.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "リモコンがテーブルの下にあります。",
+    meaning: "The remote control is under the table.",
+    vn: "Remote đang ở dưới bàn.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "いすの上にぬいぐるみがあります。",
+    meaning: "There is a stuffed animal on the chair.",
+    vn: "Có một con búp bê đồ chơi trên ghế.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "ベッドの近くにランプがあります。",
+    meaning: "There is a lamp near the bed.",
+    vn: "Gần giường có một cái đèn.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "とけいはつくえのうえにあります。",
+    meaning: "The clock is on the desk.",
+    vn: "Đồng hồ đang ở trên bàn.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "つくえのしたにかぎがあります。",
+    meaning: "There is a key under the desk.",
+    vn: "Dưới bàn có một chìa khóa.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "かばんはいすのうえにあります。",
+    meaning: "The bag is on the chair.",
+    vn: "Cái cặp đang ở trên ghế.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "へやの中にテーブルがあります。",
+    meaning: "There is a table in the room.",
+    vn: "Trong phòng có một cái bàn.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "きっさてんのそばにホテルがあります。",
+    meaning: "There is a hotel near the cafe.",
+    vn: "Gần quán cà phê có một khách sạn.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "ここにじてんしゃをとめてもいいですか。",
+    meaning: "Can I park my bicycle here?",
+    vn: "Tôi có thể đậu xe đạp ở đây được không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "いすのしたにねこがいます。",
+    meaning: "There is a cat under the chair.",
+    vn: "Dưới ghế có một con mèo.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "くつはドアのそばにあります。",
+    meaning: "The shoes are near the door.",
+    vn: "Đôi giày đang ở gần cửa.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "かぎはどこにありますか。",
+    meaning: "Where is the key?",
+    vn: "Chìa khóa ở đâu?",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+  {
+    wordOrSentence: "いすの後ろにテレビがあります。",
+    meaning: "There is a TV behind the chair.",
+    vn: "Sau ghế có một cái tivi.",
+    total: 0,
+    right: 0,
+    topic: ETopic.OBJECT_LOCATION,
+  },
+];
+
+export const actionExecutionTimeSentences: IWordOrSentence[] = [
+  {
+    wordOrSentence: "あとで映画を見ます。",
+    meaning: "I will watch a movie later.",
+    vn: "Tôi sẽ xem phim sau.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "今晩、友達と食事に行きます。",
+    meaning: "I will go out for dinner with my friends tonight.",
+    vn: "Tôi sẽ đi ăn tối với bạn bè tối nay.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "来週、日本に行きます。",
+    meaning: "I will go to Japan next week.",
+    vn: "Tuần sau, tôi sẽ đi Nhật Bản.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "今から勉強を始めます。",
+    meaning: "I will start studying now.",
+    vn: "Tôi sẽ bắt đầu học từ bây giờ.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "明日、テストがあります。",
+    meaning: "I will have a test tomorrow.",
+    vn: "Ngày mai, tôi sẽ có bài kiểm tra.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "後で電話します。",
+    meaning: "I will call you later.",
+    vn: "Tôi sẽ gọi bạn sau.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "この週末、買い物に行きます。",
+    meaning: "I will go shopping this weekend.",
+    vn: "Cuối tuần này, tôi sẽ đi mua sắm.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "ちょっと待ってから、食べます。",
+    meaning: "I will eat after waiting a bit.",
+    vn: "Tôi sẽ ăn sau khi đợi một chút.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "来月、結婚式があります。",
+    meaning: "I will have a wedding next month.",
+    vn: "Tháng sau, tôi sẽ có đám cưới.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "明後日、会議があります。",
+    meaning: "I will have a meeting the day after tomorrow.",
+    vn: "Ngày kia, tôi sẽ có cuộc họp.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "今晩、遅くまで勉強します。",
+    meaning: "I will study late tonight.",
+    vn: "Tôi sẽ học muộn tối nay.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "夜、ゲームをします。",
+    meaning: "I will play games at night.",
+    vn: "Tôi sẽ chơi game vào buổi tối.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "今日、遅くまで働きます。",
+    meaning: "I will work until late today.",
+    vn: "Tôi sẽ làm việc đến muộn hôm nay.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "すぐに来ます。",
+    meaning: "I will come right away.",
+    vn: "Tôi sẽ đến ngay.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "毎晩、歯を磨きます。",
+    meaning: "I will brush my teeth every night.",
+    vn: "Tôi sẽ đánh răng mỗi tối.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "次の週末、友達と旅行に行きます。",
+    meaning: "I will go on a trip with my friends next weekend.",
+    vn: "Cuối tuần tới, tôi sẽ đi du lịch cùng bạn bè.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "今週、授業がありません。",
+    meaning: "I will not have classes this week.",
+    vn: "Tuần này, tôi sẽ không có lớp học.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "今からスポーツをします。",
+    meaning: "I will do sports from now.",
+    vn: "Tôi sẽ thể dục từ bây giờ.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "明日、友達と映画を見ます。",
+    meaning: "I will watch a movie with my friends tomorrow.",
+    vn: "Ngày mai, tôi sẽ xem phim với bạn bè.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+  {
+    wordOrSentence: "週末、ピクニックに行きます。",
+    meaning: "I will go on a picnic on the weekend.",
+    vn: "Cuối tuần, tôi sẽ đi dã ngoại.",
+    total: 0,
+    right: 0,
+    topic: ETopic.ACTION_EXECUTION_TIME,
+  },
+];
+
+export const movementSentencesN5: IWordOrSentence[] = [
+  {
+    wordOrSentence: "ここはどこですか。",
+    meaning: "Where is here?",
+    vn: "Đây là đâu?",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "ここから東京まで電車で何時間ですか。",
+    meaning: "How many hours does it take by train from here to Tokyo?",
+    vn: "Từ đây đến Tokyo bằng tàu điện mất bao nhiêu giờ?",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "彼は毎朝バスで学校に行きます。",
+    meaning: "He goes to school by bus every morning.",
+    vn: "Anh ấy đi học bằng xe bus mỗi sáng.",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "あの店はどこにありますか。",
+    meaning: "Where is that store?",
+    vn: "Cửa hàng đó ở đâu?",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "昨日、友達と公園に行きました。",
+    meaning: "Yesterday, I went to the park with my friends.",
+    vn: "Hôm qua, tôi đi công viên với bạn bè.",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "今日、学校へ行きます。",
+    meaning: "I will go to school today.",
+    vn: "Hôm nay, tôi sẽ đi học.",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "この川を渡ってください。",
+    meaning: "Please cross this river.",
+    vn: "Xin vui lòng qua sông này.",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "彼女は毎週末車で海に行きます。",
+    meaning: "She goes to the sea by car every weekend.",
+    vn: "Cô ấy đi biển bằng ô tô mỗi cuối tuần.",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "どうやって駅に行きますか。",
+    meaning: "How do I get to the station?",
+    vn: "Làm sao để đi đến ga?",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "あなたの家はどこにありますか。",
+    meaning: "Where is your house?",
+    vn: "Nhà của bạn ở đâu?",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "あの会社はどのぐらい遠いですか。",
+    meaning: "How far is that company?",
+    vn: "Công ty đó cách đây bao xa?",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "バスでどれくらいかかりますか。",
+    meaning: "How long does it take by bus?",
+    vn: "Mất bao lâu đi bằng xe buýt?",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "駅は近いですか。",
+    meaning: "Is the station nearby?",
+    vn: "Ga có gần không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "この道をまっすぐ行ってください。",
+    meaning: "Please go straight on this road.",
+    vn: "Xin vui lòng đi thẳng trên con đường này.",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "公園で鳥を見ました。",
+    meaning: "I saw a bird at the park.",
+    vn: "Tôi đã thấy một con chim ở công viên.",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "あの大きな建物は何ですか。",
+    meaning: "What is that big building?",
+    vn: "Tòa nhà lớn đó là gì?",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "明日、友達と映画を見に行きます。",
+    meaning: "Tomorrow, I will go to see a movie with my friends.",
+    vn: "Ngày mai, tôi sẽ đi xem phim với bạn bè.",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "このバスは渋谷に行きますか。",
+    meaning: "Does this bus go to Shibuya?",
+    vn: "Xe bus này đi đến Shibuya không?",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "彼は電車で学校に通っています。",
+    meaning: "He commutes to school by train.",
+    vn: "Anh ấy đi học bằng tàu hỏa.",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+  {
+    wordOrSentence: "あなたはここで何をしていますか。",
+    meaning: "What are you doing here?",
+    vn: "Bạn đang làm gì ở đây?",
+    total: 0,
+    right: 0,
+    topic: ETopic.MOVEMENT_SENTENCE,
+  },
+];
+
+export const exampleSentencesN5: IWordOrSentence[] = [
+  {
+    wordOrSentence: "たべる",
+    meaning: "to eat",
+    vn: "ăn",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "あそぶ",
+    meaning: "to play",
+    vn: "chơi",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "のむ",
+    meaning: "to drink",
+    vn: "uống",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "およぐ",
+    meaning: "to swim",
+    vn: "bơi",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "あるく",
+    meaning: "to walk",
+    vn: "đi bộ",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "ねる",
+    meaning: "to sleep",
+    vn: "ngủ",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "たべる",
+    meaning: "to eat lunch",
+    vn: "ăn trưa",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "あさごはんをたべる",
+    meaning: "to eat breakfast",
+    vn: "ăn sáng",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "こうえんであそぶ",
+    meaning: "to play in the park",
+    vn: "chơi ở công viên",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "えをかく",
+    meaning: "to draw a picture",
+    vn: "vẽ tranh",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "きょうしつでべんきょうする",
+    meaning: "to study in the classroom",
+    vn: "học ở lớp học",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "ともだちとあそぶ",
+    meaning: "to play with friends",
+    vn: "chơi với bạn bè",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "ケーキをたべる",
+    meaning: "to eat cake",
+    vn: "ăn bánh",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "かばんをもつ",
+    meaning: "to carry a bag",
+    vn: "mang túi xách",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "うたをうたう",
+    meaning: "to sing a song",
+    vn: "hát bài hát",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "てをあらう",
+    meaning: "to wash hands",
+    vn: "rửa tay",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "おふろにはいる",
+    meaning: "to take a bath",
+    vn: "tắm",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "ひるごはんをたべる",
+    meaning: "to eat lunch",
+    vn: "ăn trưa",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "テレビをみる",
+    meaning: "to watch TV",
+    vn: "xem TV",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+  {
+    wordOrSentence: "ほんをよむ",
+    meaning: "to read a book",
+    vn: "đọc sách",
+    total: 0,
+    right: 0,
+    topic: ETopic.DESCRIPTION_ACTION,
+  },
+];
+export const vocabularyAll: IWordOrSentence[] = [
   ...vocabularyAnimals,
   ...vocabularyColors,
   ...vocabularyFood,
@@ -5584,4 +7568,10 @@ export const vocabularyAll: IWord[] = [
   ...vocabularyHumanLife,
   ...vocabularyVerbs,
   ...vocabularyN5,
-];
+  ...basicJapaneseConversation,
+  ...introduceYourselfSentences,
+  ...locationGrammarN5,
+  ...actionExecutionTimeSentences,
+  ...movementSentencesN5,
+  ...exampleSentencesN5,
+]; 

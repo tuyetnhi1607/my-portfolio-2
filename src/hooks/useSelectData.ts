@@ -1,5 +1,5 @@
 export interface IItem{
-  word: string;
+  wordOrSentence: string;
   reading: string;
   meaning: string;
   percent: number;

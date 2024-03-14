@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Dropdown } from "../../components/dropdown";
 import {
-  IWord,
+  IWordOrSentence,
   filterTopic,
   setModeView,
 } from "../../redux/features/words/slices";
@@ -21,8 +21,8 @@ export function ListWords(props: IListWordsProps) {
     };
   });
   const modeViewOptions = [...LANGUAGES];
-  const filteredWords = [...words].filter((word) => {
-    return topic === ETopic.All || word.topic === topic;
+  const filteredWords = [...words].filter((wordOrSentence) => {
+    return topic === ETopic.All || wordOrSentence.topic === topic;
   });
   return (
     <div className="relative z-10 w-full h-max flex flex-col bg-white py-4 gap-4 max-h-screen md:max-w-64">
@@ -46,8 +46,8 @@ export function ListWords(props: IListWordsProps) {
 
       <div className="grid grid-cols-1 gap-2 overflow-y-auto w-full">
         {" "}
-        {filteredWords.map((word: IWord, index: number) => {
-          const percentageRight = (word.right / word.total) * 100 || 0;
+        {filteredWords.map((wordOrSentence: IWordOrSentence, index: number) => {
+          const percentageRight = (wordOrSentence.right / wordOrSentence.total) * 100 || 0;
           return (
             <div
               key={index}
@@ -58,10 +58,10 @@ export function ListWords(props: IListWordsProps) {
             >
               <div className="whitespace-nowrap">{index + 1}</div>
               <div className="whitespace-nowrap text-left w-full md:text-ellipsis max-w-[100px] overflow-hidden">
-                {modeView === LANGUAGES_CODE.JA ? word.word : word.meaning}
+                {modeView === LANGUAGES_CODE.JA ? wordOrSentence.wordOrSentence : wordOrSentence.meaning}
               </div>
               <div className="whitespace-nowrap">
-                {percentageRight.toFixed(1)}% ({word.right}/{word.total})
+                {percentageRight.toFixed(1)}% ({wordOrSentence.right}/{wordOrSentence.total})
               </div>
             </div>
           );

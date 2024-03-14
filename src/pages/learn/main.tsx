@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { IWord } from "../../redux/features/words/slices";
+import { IWordOrSentence } from "../../redux/features/words/slices";
 import { RootState } from "../../redux/store";
 import { LANGUAGES_CODE } from "../../types/text-to-speech.types";
 import { ETopic } from "../../types/topic.types";
@@ -8,9 +8,9 @@ import { CustomTTSComponent } from "./tts";
 
 export interface IMainProps {}
 
-function getRandomObjectByLowestPercentage(objects: IWord[], topic: ETopic) {
-  const filteredWords = [...objects].filter((word) => {
-    return topic === ETopic.All || word.topic === topic;
+function getRandomObjectByLowestPercentage(objects: IWordOrSentence[], topic: ETopic) {
+  const filteredWords = [...objects].filter((wordOrSentence) => {
+    return topic === ETopic.All || wordOrSentence.topic === topic;
   });
   const objectsWithLowestPercentage = filteredWords.filter((obj) => {
     const percentage = (obj.right / obj.total) * 100 || 0;
@@ -25,18 +25,18 @@ function getRandomObjectByLowestPercentage(objects: IWord[], topic: ETopic) {
 
 export function Main(props: IMainProps) {
   const { words, topic, modeView } = useSelector((state: RootState) => state);
-  const wordSelected: IWord = getRandomObjectByLowestPercentage(words, topic);
+  const wordSelected: IWordOrSentence = getRandomObjectByLowestPercentage(words, topic);
 
   const wordView = {
     ...wordSelected,
     view:
       modeView === LANGUAGES_CODE.JA
-        ? wordSelected?.word
+        ? wordSelected?.wordOrSentence
         : wordSelected?.meaning,
     answer:
       modeView === LANGUAGES_CODE.JA
         ? wordSelected?.meaning
-        : wordSelected?.word,
+        : wordSelected?.wordOrSentence,
   };
   const percentage = (wordSelected.right / wordSelected.total) * 100 || 0;
   const listColor = ["#35b8a6", "#fc8f58", "#399acb", "#c93eec", "#f30940"];
