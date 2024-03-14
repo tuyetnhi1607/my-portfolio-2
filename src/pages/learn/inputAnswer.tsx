@@ -17,12 +17,12 @@ export function InputAnswer({
   const [count, setCount] = React.useState(1);
   const { modeView } = useSelector((state: RootState) => state);
   const [status, setStatus] = React.useState<"right" | "wrong" | null>(null);
-  const answer = wordView.answer.split(";");
+  const answer = wordView.answer.toLowerCase().split("; ");
   const modeAnswer =
     modeView === LANGUAGES_CODE.JA ? LANGUAGES_CODE.EN : LANGUAGES_CODE.JA;
   const handleSubmit = useCallback(() => {
     let newWord = wordSelected;
-    if (answer.includes(inputValue)) {
+    if (answer.includes(inputValue.toLowerCase())) {
       setStatus("right");
       newWord = {
         ...wordSelected,
@@ -63,7 +63,10 @@ export function InputAnswer({
         }}
       />
       {status === "wrong" && (
-        <div id="answer" className="text-4xl font-bold text-red-500 flex gap-4">
+        <div
+          id="answer"
+          className="text-4xl font-bold text-red-500 flex gap-4 flex-col items-center"
+        >
           <CustomTTSComponent
             lang={modeAnswer}
             classNameIcon="relative"
@@ -72,6 +75,9 @@ export function InputAnswer({
           >
             {wordView.answer}{" "}
           </CustomTTSComponent>
+          <span className="text-2xl font-bold text-yellow-500">
+            {wordView.vn}
+          </span>
         </div>
       )}
     </>

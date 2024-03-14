@@ -71,7 +71,7 @@ export function Main(props: IMainProps) {
             <CustomTTSComponent
               lang={modeView}
               classNameIcon="absolute right-3 bottom-3"
-              className=""
+              className="relative z-10"
               key={wordView.view + Math.random()}
             >
               <div
