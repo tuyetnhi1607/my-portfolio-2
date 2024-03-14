@@ -6,3 +6,4 @@ export * from './link-external';
 export * from './branch';
 export * from './commit';
 export * from './speaker';
+export * from './eye';

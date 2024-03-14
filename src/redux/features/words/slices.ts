@@ -1,8 +1,9 @@
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
+import _ from "lodash";
 import { vocabularyAll } from "../../../constants/new-words";
-import { ETopic } from "../../../types/topic.types";
 import { LANGUAGES_CODE } from "../../../types/text-to-speech.types";
+import { ETopic } from "../../../types/topic.types";
 
 let data: IWordOrSentence[] = [...vocabularyAll];
 export interface IWordOrSentence {
@@ -32,17 +33,20 @@ export const WordsSlice = createSlice({
   initialState,
   reducers: {
     addNewWord: (state, action: PayloadAction<IWordOrSentence>) => {
-      let tmp = state.words;
-      let index = tmp.findIndex((wordOrSentence) => wordOrSentence.wordOrSentence === action.payload.wordOrSentence);
+      const index = state.words.findIndex(
+        (word) =>
+          word.wordOrSentence === action.payload.wordOrSentence &&
+          word.topic === action.payload.topic
+      );
       if (index !== -1) {
-        tmp[index] = action.payload;
+        state.words[index] = {
+          ...state.words[index],
+          ...action.payload,
+        };
       } else {
-        tmp = [action.payload, ...tmp];
+        state.words.push(action.payload);
       }
-      tmp.sort((a, b) => {
-        return a.right / a.total - b.right / b.total;
-      });
-      state.words = tmp;
+      state.words = _.orderBy(state.words, ["right", "total"], ["asc", "desc"]);
     },
     filterTopic: (state, action: PayloadAction<ETopic>) => {
       state.topic = action.payload;

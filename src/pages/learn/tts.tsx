@@ -2,6 +2,7 @@ import type { TTSHookProps } from "tts-react";
 import { useTts } from "tts-react";
 import { SpeakerIcon } from "../../components/icons";
 import { LANGUAGES_CODE } from "../../types/text-to-speech.types";
+import { useEffect } from "react";
 
 interface CustomProps extends TTSHookProps {
   lang?: LANGUAGES_CODE;
@@ -20,8 +21,20 @@ export const CustomTTSComponent = ({
     lang: lang,
     autoPlay: true,
   });
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        play();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [play]);
   return (
-    <div className={`${className} w-full h-full`}>
+    <div className={`${className} z-10 w-full h-full`}>
       <SpeakerIcon
         className={`w-10 h-10 cursor-pointer ${classNameIcon}`}
         onClick={() => {

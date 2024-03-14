@@ -24,6 +24,15 @@ export function ListWords(props: IListWordsProps) {
   const filteredWords = [...words].filter((wordOrSentence) => {
     return topic === ETopic.All || wordOrSentence.topic === topic;
   });
+
+  const totalPercentage =
+    (filteredWords.reduce((acc, wordOrSentence) => {
+      return acc + wordOrSentence.right;
+    }, 0) /
+      filteredWords.reduce((acc, wordOrSentence) => {
+        return acc + wordOrSentence.total;
+      }, 0)) *
+      100 || 0;
   return (
     <div className="relative z-10 w-full h-max flex flex-col bg-white py-4 gap-4 max-h-screen md:max-w-64">
       <div className="flex w-full gap-2">
@@ -43,11 +52,18 @@ export function ListWords(props: IListWordsProps) {
           defaultSelected={modeView}
         />
       </div>
-
+      <span
+        className={`text-right text-xl font-bold ${
+          totalPercentage >= 90 ? "text-green-500" : "text-red-500"
+        }`}
+      >
+        {totalPercentage.toFixed(1)}%
+      </span>
       <div className="grid grid-cols-1 gap-2 overflow-y-auto w-full">
         {" "}
         {filteredWords.map((wordOrSentence: IWordOrSentence, index: number) => {
-          const percentageRight = (wordOrSentence.right / wordOrSentence.total) * 100 || 0;
+          const percentageRight =
+            (wordOrSentence.right / wordOrSentence.total) * 100 || 0;
           return (
             <div
               key={index}
@@ -58,10 +74,13 @@ export function ListWords(props: IListWordsProps) {
             >
               <div className="whitespace-nowrap">{index + 1}</div>
               <div className="whitespace-nowrap text-left w-full md:text-ellipsis max-w-[100px] overflow-hidden">
-                {modeView === LANGUAGES_CODE.JA ? wordOrSentence.wordOrSentence : wordOrSentence.meaning}
+                {modeView === LANGUAGES_CODE.JA
+                  ? wordOrSentence.wordOrSentence
+                  : wordOrSentence.meaning}
               </div>
               <div className="whitespace-nowrap">
-                {percentageRight.toFixed(1)}% ({wordOrSentence.right}/{wordOrSentence.total})
+                {percentageRight.toFixed(1)}% ({wordOrSentence.right}/
+                {wordOrSentence.total})
               </div>
             </div>
           );

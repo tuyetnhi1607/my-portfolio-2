@@ -1,31 +1,19 @@
+import { useMemo, useState } from "react";
 import { useSelector } from "react-redux";
+import { Eye } from "../../components/icons";
 import { IWordOrSentence } from "../../redux/features/words/slices";
 import { RootState } from "../../redux/store";
 import { LANGUAGES_CODE } from "../../types/text-to-speech.types";
-import { ETopic } from "../../types/topic.types";
 import { InputAnswer } from "./inputAnswer";
 import { CustomTTSComponent } from "./tts";
 
-export interface IMainProps {}
-
-function getRandomObjectByLowestPercentage(objects: IWordOrSentence[], topic: ETopic) {
-  const filteredWords = [...objects].filter((wordOrSentence) => {
-    return topic === ETopic.All || wordOrSentence.topic === topic;
-  });
-  const objectsWithLowestPercentage = filteredWords.filter((obj) => {
-    const percentage = (obj.right / obj.total) * 100 || 0;
-    return percentage < 100;
-  });
-
-  const randomIndex = Math.floor(
-    Math.random() * objectsWithLowestPercentage.length
-  );
-  return objectsWithLowestPercentage[randomIndex];
+export interface IMainProps {
+  wordSelected: IWordOrSentence;
 }
 
-export function Main(props: IMainProps) {
-  const { words, topic, modeView } = useSelector((state: RootState) => state);
-  const wordSelected: IWordOrSentence = getRandomObjectByLowestPercentage(words, topic);
+export function Main({ wordSelected }: IMainProps) {
+  const [hidden, setHidden] = useState(false);
+  const { modeView } = useSelector((state: RootState) => state);
 
   const wordView = {
     ...wordSelected,
@@ -45,13 +33,11 @@ export function Main(props: IMainProps) {
     <>
       {wordSelected.kanji && (
         <div className="absolute z-0 flex flex-wrap items-center justify-center top-0 left-0 w-screen h-screen font-bold text-black opacity-5 overflow-hidden">
-          {
-            Array.from({ length: 200 }, (_, i) => i + 1).map((i) => (
-              <div key={i} className="text-[100px]">
-                {wordSelected.kanji}
-              </div>
-            ))
-          }
+          {Array.from({ length: 200 }, (_, i) => i + 1).map((i) => (
+            <div key={i} className="text-[100px]">
+              {wordSelected.kanji}
+            </div>
+          ))}
         </div>
       )}
 
@@ -71,18 +57,26 @@ export function Main(props: IMainProps) {
             <CustomTTSComponent
               lang={modeView}
               classNameIcon="absolute right-3 bottom-3"
-              className="relative z-10"
-              key={wordView.view + Math.random()}
+              className=""
+              key={wordView.view + wordView.total}
             >
               <div
                 className="z-10 text-8xl font-bold text-center w-full h-full"
                 style={{
                   color: color,
+                  filter: hidden ? "blur(15px)" : "none",
                 }}
               >
                 {wordView.view}
               </div>
             </CustomTTSComponent>
+            <div className="absolute left-0 top-0 z-10 text-xl py-2 px-3 text-white font-bold">
+              <Eye
+                isOff={hidden}
+                onClick={() => setHidden(!hidden)}
+                className="w-8 h-8 cursor-pointer"
+              />
+            </div>
             <div className="absolute right-0 top-0 text-xl py-2 px-3 text-white font-bold">
               {percentage.toFixed(1)}% ({wordSelected.right}/
               {wordSelected.total})

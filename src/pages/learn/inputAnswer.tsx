@@ -14,7 +14,7 @@ export function InputAnswer({
 }) {
   const [inputValue, setInputValue] = React.useState("");
   const dispatch = useDispatch();
-  const [count, setCount] = React.useState(1);
+  const [count, setCount] = React.useState(0);
   const { modeView } = useSelector((state: RootState) => state);
   const [status, setStatus] = React.useState<"right" | "wrong" | null>(null);
   const answer = wordView.answer.toLowerCase().split("; ");
@@ -27,11 +27,12 @@ export function InputAnswer({
       newWord = {
         ...wordSelected,
         right: wordSelected.right + 1,
-        total: wordSelected.total + count,
+        total: wordSelected.total + count + 1,
       };
       dispatch(addNewWord(newWord));
       setInputValue("");
-      setCount(1);
+      setCount(0);
+      console.log(newWord);
     } else {
       setStatus("wrong");
       setCount((prev) => prev + 1);
