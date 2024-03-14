@@ -22,13 +22,14 @@ export function Dropdown(props: IDropdownProps) {
       <div>
         <button
           type="button"
-          className="capitalize inline-flex w-full justify-between gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 "
+          className="capitalize inline-flex w-full justify-between gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
           id="menu-button"
           aria-expanded="true"
           aria-haspopup="true"
           onClick={() => setOpen(!open)}
         >
-          {props.options.find((option) => option.value === selected)?.label}
+          <span className=" text-ellipsis overflow-hidden max-w-[80px] whitespace-nowrap"> {props.options.find((option) => option.value === selected)?.label}</span>
+         
           <svg
             className="-mr-1 h-5 w-5 text-gray-400"
             viewBox="0 0 20 20"
@@ -62,6 +63,9 @@ export function Dropdown(props: IDropdownProps) {
               className="capitalize text-gray-700 block w-full px-4 py-2 text-left text-sm hover:bg-gray-100 hover:text-gray-900 first:rounded-t-md last:rounded-b-md"
               role="menuitem"
               id={`menu-item-${index}`}
+              style={{
+                backgroundColor: selected === option.value ? "rgba(81, 255, 148, 0.705)" : "",
+              }}
               onClick={() => {
                 props.onChange(option.value.toString());
                 setOpen(false);
