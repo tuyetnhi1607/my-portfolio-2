@@ -34,7 +34,7 @@ export function ListWords(props: IListWordsProps) {
       }, 0)) *
       100 || 0;
   return (
-    <div className="relative z-10 w-full h-max flex flex-col bg-white py-4 gap-4 max-h-screen md:max-w-64">
+    <div className="relative z-10 w-full h-max flex flex-col py-4 gap-4 max-h-screen md:max-w-64 bg-transparent">
       <div className="flex w-full gap-2">
         {" "}
         <Dropdown
