@@ -1,7 +1,7 @@
-import { useMemo, useState } from "react";
-import { useSelector } from "react-redux";
+import { useCallback, useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Eye } from "../../components/icons";
-import { IWordOrSentence } from "../../redux/features/words/slices";
+import { IWordOrSentence, addNewWord } from "../../redux/features/words/slices";
 import { RootState } from "../../redux/store";
 import { LANGUAGES_CODE } from "../../types/text-to-speech.types";
 import { InputAnswer } from "./inputAnswer";
@@ -14,6 +14,8 @@ export interface IMainProps {
 export function Main({ wordSelected }: IMainProps) {
   const [hidden, setHidden] = useState(false);
   const { modeView } = useSelector((state: RootState) => state);
+  const dispatch = useDispatch();
+  const words = useSelector((state: RootState) => state.words);
 
   const wordView = {
     ...wordSelected,
@@ -29,6 +31,22 @@ export function Main({ wordSelected }: IMainProps) {
   const percentage = (wordSelected.right / wordSelected.total) * 100 || 0;
   const listColor = ["#35b8a6", "#fc8f58", "#399acb", "#c93eec", "#f30940"];
   const color = listColor[Math.floor(Math.random() * listColor.length)];
+
+  const handleNext = useCallback(() => {
+    dispatch(addNewWord({ ...wordSelected, total: wordSelected.total + 1 }));
+  }, [wordSelected, dispatch]);
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight") {
+        handleNext();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [wordSelected, dispatch, handleNext]);
+
   return (
     <>
       {wordSelected.kanji && (
@@ -83,7 +101,15 @@ export function Main({ wordSelected }: IMainProps) {
             </div>
           </div>
         </div>
+
         <InputAnswer wordSelected={wordSelected} wordView={wordView} />
+
+        <button
+          onClick={handleNext}
+        className="w-max h-max px-3 text-2xl font-bold text-white  bg-blue-600 rounded-lg flex items-center justify-center">
+          {">"}
+          {">"}
+        </button>
       </div>
     </>
   );
