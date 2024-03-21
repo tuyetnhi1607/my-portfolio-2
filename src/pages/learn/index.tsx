@@ -14,15 +14,15 @@ function getRandomObjectByLowestPercentage(
   const filteredWords = [...objects].filter((wordOrSentence) => {
     return topic === ETopic.All || wordOrSentence.topic === topic;
   });
-  const objectsWithLowestPercentage = filteredWords.filter((obj) => {
-    const percentage = (obj.right / obj.total) * 100 || 0;
-    return percentage < 100;
-  });
+  // const objectsWithLowestPercentage = filteredWords.filter((obj) => {
+  //   const percentage = (obj.right / obj.total) * 100 || 0;
+  //   return percentage < 100;
+  // });
 
   const randomIndex = Math.floor(
-    Math.random() * objectsWithLowestPercentage.length
+    Math.random() * filteredWords.length
   );
-  return objectsWithLowestPercentage[randomIndex];
+  return filteredWords[randomIndex];
 }
 
 export function Learn(props: ILearnProps) {
