@@ -75,7 +75,7 @@ export function ListWords(props: IListWordsProps) {
               <div className="whitespace-nowrap">{index + 1}</div>
               <div className="whitespace-nowrap text-left w-full md:text-ellipsis max-w-[100px] overflow-hidden">
                 {modeView === LANGUAGES_CODE.JA
-                  ? wordOrSentence.wordOrSentence
+                  ? wordOrSentence.hiragana
                   : wordOrSentence.meaning}
               </div>
               <div className="whitespace-nowrap">

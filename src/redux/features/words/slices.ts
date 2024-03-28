@@ -7,13 +7,12 @@ import { ETopic } from "../../../types/topic.types";
 
 let data: IWordOrSentence[] = [...vocabularyAll];
 export interface IWordOrSentence {
-  wordOrSentence: string;
-  meaning: string;
+  hiragana: string;
+  meaning: string; 
+  kanji: string;
   total: number;
   right: number;
   topic: ETopic;
-  kanji?: string;
-  vn?: string;
 }
 
 export interface WordsState {
@@ -35,7 +34,7 @@ export const WordsSlice = createSlice({
     addNewWord: (state, action: PayloadAction<IWordOrSentence>) => {
       const index = state.words.findIndex(
         (word) =>
-          word.wordOrSentence === action.payload.wordOrSentence &&
+          word.hiragana === action.payload.hiragana &&
           word.topic === action.payload.topic
       );
       if (index !== -1) {

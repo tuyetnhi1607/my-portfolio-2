@@ -21,12 +21,12 @@ export function Main({ wordSelected }: IMainProps) {
     ...wordSelected,
     view:
       modeView === LANGUAGES_CODE.JA
-        ? wordSelected?.wordOrSentence
+        ? wordSelected?.hiragana
         : wordSelected?.meaning,
     answer:
       modeView === LANGUAGES_CODE.JA
         ? wordSelected?.meaning
-        : wordSelected?.wordOrSentence,
+        : wordSelected?.hiragana,
   };
   const percentage = (wordSelected.right / wordSelected.total) * 100 || 0;
   const listColor = ["#35b8a6", "#fc8f58", "#399acb", "#c93eec", "#f30940"];

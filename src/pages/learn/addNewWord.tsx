@@ -7,23 +7,25 @@ export interface IAddNewWordProps {}
 
 export function AddNewWord(props: IAddNewWordProps) {
   const [wordOrSentence, setWord] = React.useState<IWordOrSentence>({
-    wordOrSentence: "",
+    hiragana: "",
     meaning: "",
     total: 0,
     right: 0,
     topic: ETopic.All,
+    kanji: "",
   });
   const dispatch = useDispatch();
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!wordOrSentence.wordOrSentence || !wordOrSentence.meaning) return;
+    if (!wordOrSentence.hiragana || !wordOrSentence.meaning) return;
     dispatch(addNewWord(wordOrSentence));
     setWord({
-      wordOrSentence: "",
+      hiragana: "",
       meaning: "",
       total: 0,
       right: 0,
       topic: ETopic.All,
+      kanji: "",
     });
   };
   return (
@@ -36,7 +38,7 @@ export function AddNewWord(props: IAddNewWordProps) {
           type="text"
           placeholder="wordOrSentence"
           className="p-2 border border-slate-200 rounded-md focus:border-blue-600 outline-none"
-          onChange={(e) => setWord({ ...wordOrSentence, wordOrSentence: e.target.value })}
+          onChange={(e) => setWord({ ...wordOrSentence, hiragana: e.target.value })}
         />
         <input
           type="text"

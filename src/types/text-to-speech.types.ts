@@ -3,12 +3,13 @@ export enum LANGUAGES_CODE {
   DE = "de-de",
   JA = "ja-jp",
   RU = "ru-ru",
+  VN = "",
 
 }
 export const LANGUAGES = [
   {
-    value: LANGUAGES_CODE.EN,
-    label: "English (United States)",
+    value: LANGUAGES_CODE.VN,
+    label: "Vietnamese",
   },
   // {
   //   CODE: LANGUAGES_CODE.DE,
