@@ -37,7 +37,7 @@ export function Main({ wordSelected }: IMainProps) {
   }, [wordSelected, dispatch]);
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight") {
+      if (e.key === "ArrowDown") {
         handleNext();
       }
     };
