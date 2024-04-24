@@ -6,6 +6,7 @@ import { RootState } from "../../redux/store";
 import { LANGUAGES_CODE } from "../../types/text-to-speech.types";
 import { InputAnswer } from "./inputAnswer";
 import { CustomTTSComponent } from "./tts";
+import { formatToCSV } from "../../constants/new-words";
 
 export interface IMainProps {
   wordSelected: IWordOrSentence;
@@ -46,7 +47,10 @@ export function Main({ wordSelected }: IMainProps) {
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [wordSelected, dispatch, handleNext]);
-
+useEffect(() => {
+ const tmp = formatToCSV(words);
+ console.log(tmp);
+} , [words])
   return (
     <>
       {wordSelected.kanji && (

@@ -3881,7 +3881,7 @@ export const vocabularyUnit10: IWordOrSentence[] = [
     right: 0,
     topic: ETopic.UNIT10_N5,
     kanji: " ",
-    meaning: "tương ớt (chili sauce)\n\n",
+    meaning: "tương ớt (chili sauce)",
   },
 ];
 export const vocabularyUnit11: IWordOrSentence[] = [
@@ -4244,7 +4244,7 @@ export const vocabularyUnit12: IWordOrSentence[] = [
     total: 0,
     right: 0,
     topic: ETopic.UNIT12_N5,
-    kanji: "季節\n",
+    kanji: "季節",
     meaning: "mùa",
   },
   {
@@ -4284,7 +4284,7 @@ export const vocabularyUnit12: IWordOrSentence[] = [
     total: 0,
     right: 0,
     topic: ETopic.UNIT12_N5,
-    kanji: "天‌気\n",
+    kanji: "天‌気",
     meaning: "thời tiết",
   },
   {
@@ -4340,7 +4340,7 @@ export const vocabularyUnit12: IWordOrSentence[] = [
     total: 0,
     right: 0,
     topic: ETopic.UNIT12_N5,
-    kanji: "世‌界\n",
+    kanji: "世‌界",
     meaning: "thế giới",
   },
   {
@@ -4372,7 +4372,7 @@ export const vocabularyUnit12: IWordOrSentence[] = [
     total: 0,
     right: 0,
     topic: ETopic.UNIT12_N5,
-    kanji: "す‌き‌焼‌き\n",
+    kanji: "す‌き‌焼‌き",
     meaning: "Sukiyaki (món thịt bò nấu rau)",
   },
   {
@@ -4484,7 +4484,7 @@ export const vocabularyUnit12: IWordOrSentence[] = [
     total: 0,
     right: 0,
     topic: ETopic.UNIT12_N5,
-    kanji: "疲‌れ‌ま‌し‌た‌\n",
+    kanji: "疲‌れ‌ま‌し‌た‌",
     meaning: "Tôi mệt rồi",
   },
   {
@@ -7792,6 +7792,27 @@ export const vocabularyAll: IWordOrSentence[] = [
   ...vocabularyUnit24,
   ...vocabularyUnit25,
 ];
+
+export const formatToCSV = (data: IWordOrSentence[]) => {
+  let csv =
+    "No,Romaji,Hiragana,Kanji,Các từ đi kèm (collocation),Meaning,Ví dụ,Đồng nghĩa,Trái nghĩa,Level của từ,Chủ đề,Nguồn\n";
+  data.forEach((item, index) => {
+    // item.topic = unit1_n5; => item.topic = "Unit1, N5" ans capilize first letter of each word.
+    const topics = item.topic.split("_");
+    let topic = "";
+    topics.forEach((t) => {
+      topic += t.charAt(0).toUpperCase() + t.slice(1).toLowerCase();
+      if (topics.indexOf(t) !== topics.length - 1) {
+        topic += ", ";
+      }
+    });
+    csv += `${index + 1},,${item.hiragana},${item.kanji},,"${
+      item.meaning
+    }",,,,"${topic}",,\n`;
+  });
+  return csv;
+}
+
 // var vocabulary = "";
 // var result = [];
 
