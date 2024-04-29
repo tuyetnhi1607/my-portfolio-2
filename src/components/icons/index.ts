@@ -7,3 +7,5 @@ export * from './branch';
 export * from './commit';
 export * from './speaker';
 export * from './eye';
+export * from './arrow';
+export * from './angle';

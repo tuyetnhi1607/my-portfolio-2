@@ -8,15 +8,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { Learn } from "./pages/learn";
+import { Swap } from "./pages/swap";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       {" "}
-      <Route path="/" element={<Home />}>
-        {/* ... etc. */}
-      </Route>
+      <Route path="/" element={<Home />} />
       <Route path="/learn" element={<Learn />} />
+      <Route path="/swap" element={<Swap />} />
     </>
   )
 );
